@@ -1,4 +1,9 @@
 var shutdowns = {}, states = [], colorScales = [];
+
+var defaultColor = 'grey';
+var startColor = '#FF5F20';
+var endColor = 'red';
+
 $.getJSON("data/shutdowns.json", function (data) {
   prepareData(data);
 });
@@ -13,8 +18,8 @@ function prepareData(raw) {
   shutdowns.yearWise = _.groupBy(raw, function (o) { return moment(o.date).year(); });
   shutdowns.stateWise = _.groupBy(raw, 'state');
   shutdowns.maxCount = _.max(_.map(_.countBy(shutdowns.data, 'state'), function (o) { return o; }));
-  shutdowns.colors = chroma.scale(['yellow', ['red']]).colors(shutdowns.maxCount);
-  shutdowns.colors.unshift("white");
+  shutdowns.colors = chroma.scale([startColor, endColor]).colors(shutdowns.maxCount);
+  shutdowns.colors.unshift("grey");
 }
 
 var map = L.map('map').setView([23, 83], 5);
@@ -51,7 +56,7 @@ info.addTo(map);
 
 
 function getColor(stateName) {
-  var color = (shutdowns.stateWise[stateName])? shutdowns.colors[shutdowns.stateWise[stateName].length]: 'white';
+  var color = (shutdowns.stateWise[stateName])? shutdowns.colors[shutdowns.stateWise[stateName].length]: defaultColor;
   return color;
 }
 
