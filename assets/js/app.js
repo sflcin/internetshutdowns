@@ -44,12 +44,20 @@ info.onAdd = function (map) {
 
 info.update = function (props) {
   var count = 0;
-  if (props && shutdowns.stateWise[props.name]) {
-    count = shutdowns.stateWise[props.name].length;
+  var header = '<h4>Internet Shutdowns Info</h4>';
+  var hint = '<i> Hover over a state for info </i>';
+
+
+  if (props && props.name) {
+    var stateName = '<div class= "shutdown-state">' + props.name + '</div>';
+    if (shutdowns.stateWise[props.name]) {
+      count = shutdowns.stateWise[props.name].length;
+    }
+    var summary = '<div class = "shutdown summary">' + count + ' shutdowns reported so far</div>';
+    this._div.innerHTML = header + stateName + summary;
+  } else {
+    this._div.innerHTML = header + hint;
   }
-  this._div.innerHTML = '<h4>Internet Shutdowns Info</h4>' +  (props ?
-    '<b>' + props.name + '</b><br />' + count + ' shutdowns reported so far.'
-    : '<i>Hover over a state for summary, click for details.</i>');
 };
 
 info.addTo(map);
