@@ -22,7 +22,27 @@ function prepareData(raw) {
   shutdowns.colors.unshift("grey");
 }
 
-var map = L.map('map').setView([23, 83], 5);
+function stateDetails (name) {
+  if (shutdowns.stateWise[name]) {
+    var info = "<div class='shutdown-details'>";
+    var stateName = '<div class= "shutdown-state-name">' + name + '</div>';
+    count = shutdowns.stateWise[name].length;
+    var summary = '<div class = "shutdown summary">' + count + ' shutdowns reported so far</div>';
+    shutdowns.stateWise[name].forEach(function (item) {
+      info += "<div class='shutdown-case'>";
+      info += "<div class='shutdown date'>" + item.date + " </div>";
+      info += "<div class='shutdown desc'>" + item.description + " </div>";
+      info += "<div class='shutdown source'> <a href='" + item.source + "'> Source </a> </div>";
+      info += "</div>";
+    });
+    info += "</div>";
+    return info;
+  } else {
+    return 0;
+  }
+}
+
+var map = L.map('map').setView([23, 90], 4);
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw', {
   maxZoom: 20,
@@ -113,6 +133,10 @@ function onEachFeature(feature, layer) {
     mouseout: resetHighlight,
     click: zoomToFeature
   });
+  var popupContent = stateDetails(feature.properties.name);
+  if (popupContent) {
+    layer.bindPopup(popupContent);
+  }
 }
 
 var states = L.geoJson(null, {
