@@ -116,7 +116,7 @@ $.getJSON("data/india_states.geojson", function (data) {
   states.addData(data);
 });
 
-map.attributionControl.addAttribution('<span class="missing"><strong> Insert Data License/Attribution here.</strong></span>');
+map.attributionControl.addAttribution('<span class="data-license"><strong>Data compiled by SFLC.in</strong></span>');
 
 /* Legend (disabled) */
 
