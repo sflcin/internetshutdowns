@@ -1,7 +1,7 @@
 var shutdowns = {}, states = [], colorScales = [];
 
 var defaultColor = 'grey';
-var startColor = '#FF5F20';
+var startColor = 'yellow';
 var endColor = 'red';
 
 $.getJSON("data/shutdowns.json", function (data) {
