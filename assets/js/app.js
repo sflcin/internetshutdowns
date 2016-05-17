@@ -1,5 +1,9 @@
 var shutdowns = {}, states = [], colorScales = [];
 
+var defaultLat = 23;
+var defaultLng = 90;
+var defaultZoom = 4;
+
 var defaultColor = 'grey';
 var startColor = 'yellow';
 var endColor = 'red';
@@ -43,7 +47,7 @@ function stateDetails (name) {
   }
 }
 
-var map = L.map('map').setView([23, 90], 4);
+var map = L.map('map').setView([defaultLat, defaultLng], defaultZoom);
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw', {
   maxZoom: 20,
@@ -172,3 +176,11 @@ legend.onAdd = function (map) {
 function addLegend() {
   legend.addTo(map);
 }
+
+function resetView() {
+  map.setView([defaultLat, defaultLng], defaultZoom);
+}
+
+map.on('popupclose', function (e) {
+  resetView();
+});
