@@ -94,6 +94,16 @@ info.update = function (props, stateHTML) {
 
 info.addTo(map);
 
+// Avoid scrolling map when scrolling in info box
+info.getContainer().addEventListener('mouseover', function () {
+  map.dragging.disable();
+});
+
+// Re-enable dragging when user's cursor leaves the element
+info.getContainer().addEventListener('mouseout', function () {
+  map.dragging.enable();
+});
+
 
 function getColor(stateName) {
   var color = (shutdowns.stateWise[stateName])? shutdowns.colors[shutdowns.stateWise[stateName].length]: defaultColor;
