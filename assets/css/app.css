@@ -39,6 +39,20 @@ html, body {
   opacity: 0.7;
 }
 
+.legend .labels {
+  display: inline;
+  float: left;
+}
+
+.legend .instructions {
+  float: right;
+  display: inline;
+  margin-left: 10px;
+  width: 50px;
+  font-size: smaller;
+  font-style: italic;
+}
+
 .shutdown-state {
   font-weight: bold;
 }

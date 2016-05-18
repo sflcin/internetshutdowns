@@ -163,16 +163,22 @@ var legend = L.control({position: 'bottomright'});
 
 legend.onAdd = function (map) {
 
-  var div = L.DomUtil.create('div', 'legend info'),
-    labels = [];
+  var container = L.DomUtil.create('div', 'legend info');
+
+  var instructions = L.DomUtil.create('div', 'instructions', container);
+  instructions.innerHTML = "Code available on <a href='https://gitlab.com/sflc.in/internetshutdowns'>GitLab</a>";
+
+  var labels = L.DomUtil.create('div', 'labels', container);
+  var labelItems = [];
 
   for (var i = 0; i <= shutdowns.maxCount; i++) {
-    labels.push(
-      '<i style="background:' + shutdowns.colors[i] + '"> </i> ' + i);
+    labelItems.push(
+      '<i style="background:' + shutdowns.colors[i] + '"></i> ' + i);
   }
 
-  div.innerHTML = labels.join('<br>');
-  return div;
+  labels.innerHTML = labelItems.join('<br>');
+
+  return container;
 };
 
 function addLegend() {
