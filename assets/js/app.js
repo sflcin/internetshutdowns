@@ -129,7 +129,9 @@ function resetHighlight(e) {
 }
 
 function zoomToFeature(e) {
-  map.fitBounds(e.target.getBounds());
+  if (shutdowns.stateWise[e.target.feature.properties.name]) {
+    map.fitBounds(e.target.getBounds());
+  }
 }
 
 function onEachFeature(feature, layer) {
