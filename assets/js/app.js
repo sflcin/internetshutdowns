@@ -66,7 +66,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 var info = L.control();
 
 info.onAdd = function (map) {
-  this._div = L.DomUtil.create('div', 'info');
+  this._div = L.DomUtil.create('div', 'info sidebar');
   this.update();
   return this._div;
 };
