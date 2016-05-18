@@ -67,10 +67,10 @@ info.onAdd = function (map) {
   return this._div;
 };
 
-info.update = function (props) {
+info.update = function (props, stateHTML) {
   var count = 0;
   var header = '<h4>Internet Shutdowns Info</h4>';
-  var hint = '<i> Hover over a state for info </i>';
+  var hint = '<i> Click on a state for detailed information </i>';
 
 
   if (props && props.name) {
@@ -78,8 +78,11 @@ info.update = function (props) {
     if (shutdowns.stateWise[props.name]) {
       count = shutdowns.stateWise[props.name].length;
     }
-    var summary = '<div class = "shutdown summary">' + count + ' shutdowns reported so far</div>';
+    var summary = '<div class = "shutdown summary"> Number of shutdowns so far: <span class="shutdown-count">' + count + '</span></div>';
     this._div.innerHTML = header + stateName + summary;
+    if (stateHTML) {
+      this._div.innerHTML += stateHTML;
+    }
   } else {
     this._div.innerHTML = header + hint;
   }
@@ -117,15 +120,12 @@ function highlightFeature(e) {
   if (!L.Browser.ie && !L.Browser.opera) {
     layer.bringToFront();
   }
-
-  info.update(layer.feature.properties);
 }
 
 var states;
 
 function resetHighlight(e) {
   states.resetStyle(e.target);
-  info.update();
 }
 
 function zoomToFeature(e) {
@@ -134,16 +134,17 @@ function zoomToFeature(e) {
   }
 }
 
+function showStateInfo(e) {
+  var stateHTML = stateDetails(e.target.feature.properties.name);
+  info.update(e.target.feature.properties, stateHTML);
+}
+
 function onEachFeature(feature, layer) {
   layer.on({
     mouseover: highlightFeature,
     mouseout: resetHighlight,
-    click: zoomToFeature
+    click: showStateInfo
   });
-  var popupContent = stateDetails(feature.properties.name);
-  if (popupContent) {
-    layer.bindPopup(popupContent);
-  }
 }
 
 var states = L.geoJson(null, {
