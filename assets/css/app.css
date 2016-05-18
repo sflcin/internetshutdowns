@@ -19,6 +19,13 @@ html, body {
   border-radius: 5px;
   width: 360px;
 }
+
+.info.sidebar.leaflet-control{
+  height: 100vh;
+  overflow-y: scroll;
+  margin: 0px;
+}
+
 .info h4 {
   margin: 0 0 5px;
   color: #777;
