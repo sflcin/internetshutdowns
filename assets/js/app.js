@@ -174,7 +174,7 @@ map.attributionControl.addAttribution('<span class="data-license"><strong>Data c
 
 /* Legend */
 
-var legend = L.control({position: 'bottomright'});
+var legend = L.control({position: 'bottomleft'});
 
 legend.onAdd = function (map) {
 
