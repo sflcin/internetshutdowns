@@ -35,20 +35,35 @@ html, body {
   width: 18px;
   height: 18px;
   float: left;
-  margin-right: 8px;
   opacity: 0.7;
 }
 
-.legend .labels {
-  display: inline;
+.legend .info {
+  width: 33%;
+}
+
+.legend .range {
+	width: 80%;
+	height: 18px;
+	/*background: linear-gradient(90deg, yellow, red); // generated from code */
+	padding: 1px 4px;
+	font-weight: bold;
+	margin: 0px 15px;
+	flex-grow: 10px;
+}
+
+.legend .min {
   float: left;
+  margin-left: -15px;
+}
+.legend .max {
+  float: right;
+  margin-right: -15px;
 }
 
 .legend .instructions {
-  float: right;
-  display: inline;
-  margin-left: 10px;
-  width: 50px;
+  float: left;
+  display: block;
   font-size: smaller;
   font-style: italic;
 }

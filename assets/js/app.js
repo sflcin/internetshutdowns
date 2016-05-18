@@ -157,7 +157,7 @@ $.getJSON("data/india_states.geojson", function (data) {
 
 map.attributionControl.addAttribution('<span class="data-license"><strong>Data compiled by SFLC.in</strong></span>');
 
-/* Legend (disabled) */
+/* Legend */
 
 var legend = L.control({position: 'bottomright'});
 
@@ -165,18 +165,13 @@ legend.onAdd = function (map) {
 
   var container = L.DomUtil.create('div', 'legend info');
 
+  container.innerHTML = "<div class='range' style='background: linear-gradient(90deg, " + startColor + "," + endColor + ");'>" +
+    "<span class='min'>0</span><span class='max'>" +
+    shutdowns.maxCount +
+    "</span> </div>";
+
   var instructions = L.DomUtil.create('div', 'instructions', container);
-  instructions.innerHTML = "Code available on <a href='https://gitlab.com/sflc.in/internetshutdowns'>GitLab</a>";
-
-  var labels = L.DomUtil.create('div', 'labels', container);
-  var labelItems = [];
-
-  for (var i = 0; i <= shutdowns.maxCount; i++) {
-    labelItems.push(
-      '<i style="background:' + shutdowns.colors[i] + '"></i> ' + i);
-  }
-
-  labels.innerHTML = labelItems.join('<br>');
+  instructions.innerHTML = "Report issues | Contribute code | <a href='https://gitlab.com/sflc.in/internetshutdowns'>GitLab</a>";
 
   return container;
 };
