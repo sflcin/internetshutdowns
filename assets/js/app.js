@@ -19,6 +19,10 @@ $.getJSON("data/shutdowns.json", function (data) {
   2. TBD
 */
 function prepareData(raw) {
+  /* Sort the data in reverse chronology */
+  raw.sort(function (one, another) {
+    return (new Date(one.date).getTime() - new Date(another.date).getTime()) * -1;
+  });
   shutdowns.data = raw;
   shutdowns.yearWise = _.groupBy(raw, function (o) { return moment(o.date).year(); });
   shutdowns.stateWise = _.groupBy(raw, 'state');
