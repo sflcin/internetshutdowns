@@ -34,14 +34,11 @@ function prepareData(raw) {
 function stateDetails (name) {
   if (shutdowns.stateWise[name]) {
     var info = "<div class='shutdown-details'>";
-    var stateName = '<div class= "shutdown-state-name">' + name + '</div>';
-    count = shutdowns.stateWise[name].length;
-    var summary = '<div class = "shutdown summary">' + count + ' shutdowns reported so far</div>';
     shutdowns.stateWise[name].forEach(function (item) {
       info += "<div class='shutdown-case'>";
-      info += "<div class='shutdown date'>" + item.date + " </div>";
+      info += "<div class='shutdown date fa fa-calendar'>" + moment(item.date).format("DD MMMM YYYY") + " </div>";
+      info += "<div class='shutdown source fa fa-external-link'> <a href='" + item.source + "'> Source </a> </div>";
       info += "<div class='shutdown desc'>" + item.description + " </div>";
-      info += "<div class='shutdown source'> <a href='" + item.source + "'> Source </a> </div>";
       info += "</div>";
     });
     info += "</div>";
@@ -86,7 +83,7 @@ info.update = function (props, stateHTML) {
     if (shutdowns.stateWise[props.name]) {
       count = shutdowns.stateWise[props.name].length;
     }
-    var summary = '<div class = "shutdown summary"> Number of shutdowns so far: <span class="shutdown-count">' + count + '</span></div>';
+    var summary = '<div class = "shutdown summary"><span class="shutdown count">' + count + '</span></div>';
     this._div.innerHTML = header + stateName + summary;
     if (stateHTML) {
       this._div.innerHTML += stateHTML;
@@ -190,7 +187,7 @@ legend.onAdd = function (map) {
     "</span> </div>";
 
   var instructions = L.DomUtil.create('div', 'instructions', container);
-  instructions.innerHTML = "Report issues | Contribute code | <a href='https://gitlab.com/sflc.in/internetshutdowns'>GitLab</a>";
+  instructions.innerHTML = "Report issues | Contribute code | <a class='fa fa-gitlab fa-calendar' href='https://gitlab.com/sflc.in/internetshutdowns'>GitLab</a>";
 
   return container;
 };

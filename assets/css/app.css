@@ -77,10 +77,49 @@ html, body {
 
 .shutdown-state {
   font-weight: bold;
+  font-size: 20px;
+  display: inline;
+}
+
+.shutdown.summary {
+  line-height: 30px;
+  font-size: 18px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.shutdown.count {
+  display: inline-block;
+  text-align: center;
+  background-color: red;
+  line-height: 30px;
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
 }
 
 .shutdown-case {
-  margin: 2px;
-  padding: 2px;
-  background-color: rgba(100,100,100,0.2);
+  margin: 0px -8px;
+  border-bottom: solid 2px black;
+  padding: 10px 5px;
+  background-color: #ffffff10;
+}
+
+.shutdown.date {
+  font-size: smaller;
+  line-height: 12px;
+  float: left;
+}
+
+.shutdown.source {
+  font-size: smaller;
+  line-height: 12px;
+  float: right;
+}
+
+.shutdown.desc {
+  display: inline-block;
+  margin-top: 2px;
 }
