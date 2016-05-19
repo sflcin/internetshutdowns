@@ -5,8 +5,8 @@ var defaultLng = 90;
 var defaultZoom = 4;
 
 var defaultColor = 'grey';
-var startColor = '#a6bddb';
-var endColor = '#2b8cbe';
+var startColor = 'yellow';
+var endColor = 'red';
 
 $.getJSON("data/shutdowns.json", function (data) {
   prepareData(data);
