@@ -182,7 +182,7 @@ legend.onAdd = function (map) {
   var container = L.DomUtil.create('div', 'legend info');
 
   container.innerHTML = "<div class='range' style='background: linear-gradient(90deg, " + startColor + "," + endColor + ");'>" +
-    "<span class='min'>0</span><span class='max'>" +
+    "<span class='min'>1</span><span class='max'>" +
     shutdowns.maxCount +
     "</span> </div>";
 
