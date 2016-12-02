@@ -1,4 +1,4 @@
-html, body {
+html, body, #map-container {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -8,6 +8,14 @@ html, body {
 #map {
   width: auto;
   height: 100%;
+}
+
+.progress-container {
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  z-index: 10000;
 }
 
 .info {

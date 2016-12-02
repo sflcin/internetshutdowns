@@ -1,21 +1,31 @@
 {
   "name": "internet-shutdowns-tracker.in",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Interactive tracker of Internet Shutdowns in India.",
   "main": "Gruntfile.js",
   "dependencies": {
+    "body-parser": "^1.15.2",
+    "bower": "^1.8.0",
+    "compression": "^1.6.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
     "grunt": "^0.4.5",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-watch": "^1.0.0",
-    "load-grunt-tasks": "^3.3.0"
+    "jade": "^1.11.0",
+    "less-middleware": "^2.2.0",
+    "load-grunt-tasks": "^3.3.0",
+    "morgan": "^1.7.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "./node_modules/bower/bin/bower install",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/sflc.in/internetshutdowns.git"
+    "url": "git+ssh://git@gitlab.com/sflcin/internetshutdowns.git"
   },
   "keywords": [
     "leaflet",
@@ -25,7 +35,7 @@
   "author": "Sarath M S <sarath.ms@gmail.com>",
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://gitlab.com/sflc.in/internetshutdowns/issues"
+    "url": "https://gitlab.com/sflcin/internetshutdowns/issues"
   },
-  "homepage": "https://gitlab.com/sflc.in/internetshutdowns#README"
+  "homepage": "https://gitlab.com/sflcin/internetshutdowns#README"
 }

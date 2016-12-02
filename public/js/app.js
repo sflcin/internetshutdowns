@@ -1,3 +1,13 @@
+progressBar = {
+  set: function (progress) {
+    $('#data-load-progressbar').css('width', progress + '%');
+
+    if (progress === 100) {
+      $('.progress-container').hide();
+    }
+  }
+};
+
 var shutdowns = {}, states = [], colorScales = [];
 
 var defaultLat = 23;
@@ -9,6 +19,7 @@ var startColor = 'yellow';
 var endColor = 'red';
 
 $.getJSON("data/shutdowns.json", function (data) {
+  progressBar.set(30);
   prepareData(data);
   addLegend();
 });
@@ -169,6 +180,7 @@ var states = L.geoJson(null, {
 
 $.getJSON("data/india_states.geojson", function (data) {
   states.addData(data);
+  progressBar.set(100);
 });
 
 map.attributionControl.addAttribution('<span class="data-license"><strong>Data compiled by SFLC.in</strong></span>');

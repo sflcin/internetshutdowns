@@ -1,0 +1,25 @@
+{
+  "name": "internetshudowns.in",
+  "version": "1.0.0",
+  "authors": [
+    "Sarath M S <sarath@sflc.in>"
+  ],
+  "description": "Interactive tracker of Internet Shutdowns in India",
+  "license": "AGPL-3.0+",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "lodash": "~4.11.1",
+    "bootstrap": "~3.3.7",
+    "leaflet": "~0.7.7",
+    "fontawesome": "~4.6.3",
+    "chroma-js": "~1.1.1",
+    "moment": "~2.13.0"
+  }
+}
