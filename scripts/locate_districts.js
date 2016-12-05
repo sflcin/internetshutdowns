@@ -44,12 +44,13 @@ for (var s = 0; s < shutdowns.features.length; s++) {
     }
 }
 
-// collection = collection.map(function (feature) {
-//     feature.properties.count = collection.filter(function (f) {
-//         return feature.properties.locality ? (f.properties.locality === feature.properties.locality) : (f.properties.state === feature.properties.state);
-//     }).length;
-//     return feature;
-// });
+
+collection = collection.map(function (feature) {
+    feature.properties.count = collection.filter(function (f) {
+        return feature.properties.locality ? (f.properties.locality === feature.properties.locality) : (f.properties.state === feature.properties.state);
+    }).length;
+    return feature;
+});
 
 shutdowns.features = collection;
 console.log(JSON.stringify(shutdowns, null, 2));
