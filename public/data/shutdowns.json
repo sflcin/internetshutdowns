@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "state": "Jammu and Kashmir",
-        "locality": [""],
+        "locality": [],
         "date": "2013-02-09",
         "description": "TV News channels and mobile Internet banned immediately after Afzal Guru's execution on 9th February, 2013",
         "source": "http://www.ibtimes.com/curfew-continues-indias-kashmir-valley-following-afzal-gurus-hanging-internet-service-remains"
@@ -26,7 +26,7 @@
       "type": "Feature",
       "properties": {
         "state": "Jammu and Kashmir",
-        "locality": [""],
+        "locality": [],
         "date": "2014-03-17",
         "description": "Internet blocked in the parts of occupied Kashmir to stop pro-independence leaders from addressing a UNHRC event in Geneva via video link on 17th March, 2014",
         "source": "http://www.kmsnews.org/news/2014/03/18/india-shuts-down-internet-to-prevent-mirwaizs-address.html"
@@ -68,7 +68,7 @@
       "type": "Feature",
       "properties": {
         "state": "Nagaland",
-        "locality": [""],
+        "locality": [],
         "date": "2015-03-07",
         "description": "Internet blackout for 48 hours on 7th March, 2015, after lynching video of a rape accused goes viral",
         "source": "http://www.medianama.com/2015/03/223-mobile-and-internet-services-blocked-in-nagaland-following-lynching-videos/"
@@ -89,7 +89,7 @@
       "type": "Feature",
       "properties": {
         "state": "Gujarat",
-        "locality": [""],
+        "locality": [],
         "date": "2015-08-25",
         "description": "Mobile Internet services shut down in entire state of Gujarat from 25th August to 2nd September, 2015  after Hardik Patel's mega rally for seeking OBC status for Patel community. Mobile internet remained blocked in Ahmedabad & Surat, even post 2nd September, 2015",
         "source": "http://articles.economictimes.indiatimes.com/2015-09-02/news/66144045_1_statewide-ban-mobile-internet-social-media"
@@ -110,7 +110,7 @@
       "type": "Feature",
       "properties": {
         "state": "Manipur",
-        "locality": [""],
+        "locality": [],
         "date": "2015-09-02",
         "description": "Complete internet shut down (mobile and broadband, except for certain BSNL lines) starting 2nd September, 2015 after violence in Churachandpur district",
         "source": "http://scroll.in/article/753108/why-a-blanket-ban-on-the-internet-in-troubled-manipur-is-not-a-good-idea"
@@ -194,7 +194,7 @@
       "type": "Feature",
       "properties": {
         "state": "Jammu and Kashmir",
-        "locality": [""],
+        "locality": [],
         "date": "2015-09-25",
         "description": "Internet shut down during Eid on 25th September, 2015, apprehending violence against the  prohibition on cow slaughter and selling of beef in the State.",
         "source": "http://indianexpress.com/article/india/india-others/to-avoid-tension-during-eid-ul-zuha-govt-ban-internet-in-jk-for-two-days-from-tomorrow/"
@@ -236,7 +236,7 @@
       "type": "Feature",
       "properties": {
         "state": "Rajasthan",
-        "locality": [""],
+        "locality": [],
         "date": "2015-12-19",
         "description": "After reports of caste & communal clashes in the area, the police has permission from the state home department to ban mobile Internet services as per the needto combat inflammatory messages posted through social media networks, starting 19th December, 2015",
         "source": "http://timesofindia.indiatimes.com/india/Rajasthan-police-to-ban-internet-usage-as-per-needs-to-maintain-communal-harmony/articleshow/50258271.cms"
@@ -278,7 +278,7 @@
       "type": "Feature",
       "properties": {
         "state": "Gujarat",
-        "locality": [""],
+        "locality": [],
         "date": "2016-02-28",
         "description": "Mobile Internet services were suspended for 4 hours to prevent cheating on the Revenue Accountants Recruitment Exam on 28th February, 2016",
         "source": "http://zeenews.india.com/news/india/mobile-internet-services-blocked-in-gujarat-know-why_1860264.html"
@@ -299,7 +299,7 @@
       "type": "Feature",
       "properties": {
         "state": "Jammu and Kashmir",
-        "locality": [""],
+        "locality": [],
         "date": "2016-04-14",
         "description": "To check rumor mongering about an incident that led to death of 4 people in a firing by security forces,  mobile internet services were suspended in the area on 14th April, 2016.",
         "source": "http://www.hindustantimes.com/india/handwara-firing-mobile-internet-services-suspended-in-kashmir/story-iPQHs3vdmiWx7w0uCGK8NJ.html"
