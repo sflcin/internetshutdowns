@@ -1,5 +1,5 @@
 'use strict';
-var DATADIR = __dirname + '/../data';
+var DATADIR = __dirname + '/../public/data';
 var districts = require(DATADIR + '/india_district.json');
 var shutdowns = require(DATADIR + '/shutdowns.json');
 
