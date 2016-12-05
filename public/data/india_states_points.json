@@ -1,0 +1,509 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.99656920767207,
+          11.16709112961025
+        ]
+      },
+      "properties": {
+        "name": "Andaman and Nicobar Island",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.32862975363014,
+          15.949920107462196
+        ]
+      },
+      "properties": {
+        "name": "Andhra Pradesh",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.91431017331853,
+          27.890595836374338
+        ]
+      },
+      "properties": {
+        "name": "Arunachal Pradesh",
+        "shutdowns": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.64472704844043,
+          26.09472690102027
+        ]
+      },
+      "properties": {
+        "name": "Assam",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.60065811537227,
+          25.7508455938916
+        ]
+      },
+      "properties": {
+        "name": "Bihar",
+        "shutdowns": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7770472512697,
+          30.73844215268325
+        ]
+      },
+      "properties": {
+        "name": "Chandigarh",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.05436490558144,
+          21.216626160245823
+        ]
+      },
+      "properties": {
+        "name": "Chhattisgarh",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0785752943307,
+          20.208748680070375
+        ]
+      },
+      "properties": {
+        "name": "Dadra and Nagar Haveli",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.84250235261818,
+          20.579740847229036
+        ]
+      },
+      "properties": {
+        "name": "Daman and Diu",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.01710045319463,
+          15.380998560276623
+        ]
+      },
+      "properties": {
+        "name": "Goa",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.39564771221761,
+          22.52586760777349
+        ]
+      },
+      "properties": {
+        "name": "Gujarat",
+        "shutdowns": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.37631522596752,
+          29.15161157030545
+        ]
+      },
+      "properties": {
+        "name": "Haryana",
+        "shutdowns": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.36214263673031,
+          31.820601646047663
+        ]
+      },
+      "properties": {
+        "name": "Himachal Pradesh",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.24206976195877,
+          34.49762197524187
+        ]
+      },
+      "properties": {
+        "name": "Jammu and Kashmir",
+        "shutdowns": 19
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.83723966632157,
+          23.64631666312061
+        ]
+      },
+      "properties": {
+        "name": "Jharkhand",
+        "shutdowns": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.38888842653034,
+          14.912032489666926
+        ]
+      },
+      "properties": {
+        "name": "Karnataka",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.34113629750522,
+          10.790314032813532
+        ]
+      },
+      "properties": {
+        "name": "Kerala",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.62187838187275,
+          11.019717903667463
+        ]
+      },
+      "properties": {
+        "name": "Lakshadweep",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.31669253686735,
+          24.09501788800063
+        ]
+      },
+      "properties": {
+        "name": "Madhya Pradesh",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.29630120188695,
+          19.28889233347893
+        ]
+      },
+      "properties": {
+        "name": "Maharashtra",
+        "shutdowns": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.79396486912002,
+          24.7528026697781
+        ]
+      },
+      "properties": {
+        "name": "Manipur",
+        "shutdowns": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.4455455199512,
+          25.5944439521294
+        ]
+      },
+      "properties": {
+        "name": "Meghalaya",
+        "shutdowns": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.83194952690853,
+          23.25853882170357
+        ]
+      },
+      "properties": {
+        "name": "Mizoram",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.34990705125581,
+          26.016005827789975
+        ]
+      },
+      "properties": {
+        "name": "Nagaland",
+        "shutdowns": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.11691455490657,
+          28.64588755358886
+        ]
+      },
+      "properties": {
+        "name": "Delhi",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.60053361537338,
+          12.006190971108914
+        ]
+      },
+      "properties": {
+        "name": "Puducherry",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.5306953320424,
+          30.87140653228358
+        ]
+      },
+      "properties": {
+        "name": "Punjab",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1603803296751,
+          26.009499764894112
+        ]
+      },
+      "properties": {
+        "name": "Rajasthan",
+        "shutdowns": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.48834234616578,
+          27.57327069122104
+        ]
+      },
+      "properties": {
+        "name": "Sikkim",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.44901342726853,
+          11.184626190856294
+        ]
+      },
+      "properties": {
+        "name": "Tamil Nadu",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.0634613791745,
+          17.83686703182211
+        ]
+      },
+      "properties": {
+        "name": "Telangana",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.73173423496398,
+          23.711884308299467
+        ]
+      },
+      "properties": {
+        "name": "Tripura",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.17911121595056,
+          26.4138305305635
+        ]
+      },
+      "properties": {
+        "name": "Uttar Pradesh",
+        "shutdowns": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.13255903718031,
+          30.08351179258033
+        ]
+      },
+      "properties": {
+        "name": "Uttarakhand",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.38758479653039,
+          23.474237958941192
+        ]
+      },
+      "properties": {
+        "name": "West Bengal",
+        "shutdowns": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.11374867247085,
+          20.26809517233498
+        ]
+      },
+      "properties": {
+        "name": "Odisha",
+        "shutdowns": 0
+      }
+    }
+  ]
+}
