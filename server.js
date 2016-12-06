@@ -25,7 +25,7 @@ if (app.get('env') === 'development') {
 
 // Routes
 app.get('/', function (req, res) {
-  res.sendfile('index.html');
+  res.sendfile('public/index.html');
 });
 
 app.listen(app.get('port'), function() {
