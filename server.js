@@ -12,9 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.set('views', path.join(__dirname, 'views'));
 app.use(less(path.join(__dirname, 'public')));
-app.set('view engine', 'jade');
 app.set('port', process.env.PORT || 3000);
 
 app.use(compression());
@@ -27,7 +25,7 @@ if (app.get('env') === 'development') {
 
 // Routes
 app.get('/', function (req, res) {
-  res.render('index');
+  res.sendfile('index.html');
 });
 
 app.listen(app.get('port'), function() {
