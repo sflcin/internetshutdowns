@@ -10,3 +10,17 @@ footer {
   left: 0;
   background-color: rgba(255, 255, 255, 0.5);
 }
+
+#tracker {
+  position: relative;
+}
+
+#features {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  overflow: auto;
+  background: rgba(255, 255, 255, 1.0);
+}
