@@ -23,10 +23,18 @@ map.on('mousemove', function (e) {
             properties: features[0].properties,
             geometry: features[0].geometry
         };
+        //Thicken one state when the user is hovering over the state
         map.setFilter('india-states', ['==', 'name', feature.properties.name]);
         map.setFilter('india-states-below-4', ['==', 'name', feature.properties.name]);
+        map.setPaintProperty('india-states', 'line-width', 5);
+        map.setPaintProperty('india-states-below-4', 'line-width', 5);
         document.getElementById('features').innerHTML = features[0].properties.name + ' ' + features[0].properties.shutdowns + JSON.stringify(feature);
     } else {
+        //restore map to original state when the user is not hovering over a state
         document.getElementById('features').innerHTML = '';
+        map.setFilter('india-states', ['has', 'name']);
+        map.setFilter('india-states-below-4', ['has', 'name']);
+        map.setPaintProperty('india-states', 'line-width', 2);
+        map.setPaintProperty('india-states-below-4', 'line-width', 2);
     }
 });
