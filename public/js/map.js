@@ -12,3 +12,10 @@ var ne = new mapboxgl.LngLat(99.756, 37.335);
 var llb = new mapboxgl.LngLatBounds(sw, ne);
 	map.fitBounds(llb);
 });
+
+map.on('mousemove', function (e) {
+  var features = map.queryRenderedFeatures(e.point, {
+    layers: ['india-states']
+  });
+  document.getElementById('features').innerHTML = JSON.stringify(features, null, 2);
+});
