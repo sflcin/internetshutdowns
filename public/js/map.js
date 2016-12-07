@@ -12,9 +12,21 @@ map.on('load', function() {
     map.fitBounds(llb);
 });
 
+
 map.on('mousemove', function (e) {
-  var features = map.queryRenderedFeatures(e.point, {
-    layers: ['india-states']
-  });
-  document.getElementById('features').innerHTML = JSON.stringify(features, null, 2);
+    var features = map.queryRenderedFeatures(e.point, {
+        layers: ['india-states', 'india-states-fill', 'india-states-fill-below-4', 'india-states-below-4']
+    });
+    if (features[0]) {
+        var feature = {
+            type: features[0].type,
+            properties: features[0].properties,
+            geometry: features[0].geometry
+        };
+        map.setFilter('india-states', ['==', 'name', feature.properties.name]);
+        map.setFilter('india-states-below-4', ['==', 'name', feature.properties.name]);
+        document.getElementById('features').innerHTML = features[0].properties.name + ' ' + features[0].properties.shutdowns + JSON.stringify(feature);
+    } else {
+        document.getElementById('features').innerHTML = '';
+    }
 });
