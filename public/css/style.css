@@ -37,17 +37,14 @@ footer .keepiton {
 }
 
 #tracker {
-  position: relative;
 }
 
-#features {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 300px;
+#sidebar {
   overflow: auto;
-  background: rgba(255, 255, 255, 0.8);
+  background: #999;
+  height: 600px;
+  width: 100%;
+  background-color: #ebebeb;
 }
 
 .btn-round {
