@@ -8,12 +8,9 @@
     <link href='https://www.mapbox.com/base/latest/base.css' rel='stylesheet' />
     <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
     <link href='vendor/bootstrap/dist/css/bootstrap.css' rel='stylesheet' />
+    <link href='css/bootstrap-theme-cosmos.css' rel='stylesheet' />
     <link href='css/style.css' rel='stylesheet' />
-
-    <style>
-        body { margin:0; padding:0; }
-        #map { height: 600px; }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-default">
@@ -41,14 +38,14 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-  <section id="about">
+  <section id="intro">
     <div class="container">
       <div class="row">
-        <div class="col-md-5 col-md-offset-4">
-        <h5><strong>The number of Internet blackouts in India is on a rise.</strong></h5>
-        <p>Over the past few years, the number of instances in which Internet access was blocked for entire regions by the Indian Government has been steadily climbing.
-          Over the past few years, the number of instances in which Internet access was blocked for entire regions by the Indian Government has been steadily climbing.
-        </p>
+        <div class="col col-lg-10">
+          <strong class="lead">Keep track of Internet Shutdowns near you.</strong>
+        </div>
+        <div class="col col-lg-2">
+          <a class="btn btn-default btn-danger btn-sm btn-round" href="#">Report Shutdown</a>
         </div>
       </div>
     </div>
@@ -60,7 +57,10 @@
   </section>
 
   <footer class="footer text-center">
-    A project by <a href="http://sflc.in" target="_blank">SFLC.in</a>
+    Project by <a href="http://sflc.in" target="_blank" title="SFLC.in">
+      <img src="img/sflc-logo.png" height="30px" />
+    </a>
+    <a class="keepiton" href="https://www.accessnow.org/keepiton/" target="_blank">#KeepItOn</a>
   </footer>
 </body>
 <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>

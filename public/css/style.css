@@ -2,13 +2,33 @@
  * CSS overrides to bootstrap styles
  */
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+  padding:0;
+}
+
+section, .navbar {
+  margin-bottom: 15px;
+}
+
+#map {
+  height: 600px;
+}
+
 footer {
   position: fixed;
-  height: 20px;
+  height: 40px;
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #222222;
+  color: #fff;
+  line-height: 40px;
+}
+
+footer .keepiton {
+  color: green;
 }
 
 #tracker {
@@ -22,5 +42,9 @@ footer {
   bottom: 0;
   width: 300px;
   overflow: auto;
-  background: rgba(255, 255, 255, 1.0);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.btn-round {
+  border-radius: 25px;
 }
