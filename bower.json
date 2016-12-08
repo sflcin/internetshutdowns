@@ -20,6 +20,7 @@
     "leaflet": "~0.7.7",
     "fontawesome": "~4.6.3",
     "chroma-js": "~1.1.1",
-    "moment": "~2.13.0"
+    "moment": "~2.13.0",
+    "ractive": "^0.8.7"
   }
 }
