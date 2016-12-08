@@ -12,6 +12,11 @@ section, .navbar {
   margin-bottom: 15px;
 }
 
+.navbar-brand > img {
+  display: inline-block;
+  margin-right: 5px;
+}
+
 #map {
   height: 600px;
 }
