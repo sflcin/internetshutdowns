@@ -62,6 +62,29 @@
         </div>
         <div class="col col-lg-4">
           <div id="sidebar"></div>
+          <script id="sidebar-template" type="text/ractive">
+            <div class="header row">
+              <div class="col col-md-3">
+              </div>
+              <div class="col col-md-9">
+                <span class="title text-center"><strong>{{title}}</strong></span>
+              </div>
+            </div>
+            <div class="highlight row">
+              <div class="col col-md-6">
+                <div class="count text-center">
+                  {{count}}
+                </div>
+              </div>
+              <div class="col col-md-6">
+                <span class="lead"> Shutdowns <br>so far<br>since 2013 </span>
+              </div>
+            </div>
+            <div class="well">
+              <strong>Internet shutdowns have been on the rise in India.</strong>
+              This rise in frequency and broadening of reasons behind shutdowns even in the face of strong international condemnation of the practice are causes for concern as they not only threaten the democratic working of nations, but also point to the gradual normalization of the mindset that permits such blanket restriction on Internet access.
+            </div>
+          </script>
         </div>
       </div>
     </div>
@@ -77,5 +100,6 @@
 <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.25.1/mapbox-gl.js'></script>
 <script src='vendor/bootstrap/dist/js/bootstrap.js'> </script>
+<script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
 <script src='js/build.js'></script>
 </html>

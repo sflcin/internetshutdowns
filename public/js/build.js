@@ -40,4 +40,13 @@ map.on('mousemove', function (e) {
     }
 });
 
+var ractive = new Ractive({
+  el: "#sidebar",
+  template: "#sidebar-template",
+  data: {
+    title: "India",
+    count: ".."
+  }
+});
+
 },{}]},{},[1]);

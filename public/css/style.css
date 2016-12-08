@@ -41,10 +41,24 @@ footer .keepiton {
 
 #sidebar {
   overflow: auto;
-  background: #999;
   height: 600px;
   width: 100%;
-  background-color: #ebebeb;
+  background-color: #fafafa;
+}
+
+#sidebar .name {
+  height: 30px;
+  font-size: 20px;
+}
+
+#sidebar .highlight .count {
+  font-size: 120px;
+}
+
+#sidebar .highlight {
+  font-size: 40px;
+  color: #fff;
+  background-color: #222;
 }
 
 .btn-round {
