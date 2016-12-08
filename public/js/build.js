@@ -60,6 +60,28 @@ map.on('mousemove', function (e) {
     }
 });
 
+
+map.on('click', function (e) {
+  // Fly to the state
+  var features = map.queryRenderedFeatures(e.point, {
+    layers: ['india-states', 'india-states-fill', 'india-states-fill-below-4', 'india-states-below-4']
+  });
+  if (features[0]) {
+    var feature = {
+      type: features[0].type,
+      properties: features[0].properties,
+      geometry: features[0].geometry
+    };
+  }
+  var stateCenter = turf.center(feature.geometry);
+
+  map.flyTo({
+    center: stateCenter.geometry.coordinates,
+    zoom: 5,
+    speed: 0.8
+  });
+});
+
 function setPopupContent(options) {
   var popupHTML = "<div class='statePopup'>";
   popupHTML += "<strong class='header text-center'>" + options.name + "</strong><br>";
