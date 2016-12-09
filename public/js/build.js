@@ -14,6 +14,7 @@ var popup = new mapboxgl.Popup({
 });
 
 map.on('load', function() {
+  mapboxgl.addClaimedBoundaries(map, 'IN');
   var sw = new mapboxgl.LngLat(60.073, 11.953);
   var ne = new mapboxgl.LngLat(99.756, 37.335);
   var llb = new mapboxgl.LngLatBounds(sw, ne);
