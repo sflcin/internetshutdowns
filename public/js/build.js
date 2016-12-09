@@ -178,7 +178,7 @@ var sidebar = {
   reset: function () {
     ractive.set({
       title: "India",
-      count: 42,
+      count: 46,
       shutdowns: undefined
     });
   },
