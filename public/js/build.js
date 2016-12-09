@@ -96,6 +96,16 @@ map.on('click', function (e) {
       count: feature.properties.shutdowns,
       shutdowns: stateShutdowns
     });
+
+    //*****************************************************************
+    // make districts in a clicked state visible
+    map.setFilter('shutdownsDistricts', ['==', 'state', features[0].properties.name]);
+    map.setFilter('india-states-below-4', ['==', 'name', features[0].properties.name]);
+    map.setFilter('india-states', ['==', 'name', features[0].properties.name]);
+    map.setPaintProperty('india-states', 'line-width', 5);
+    map.setPaintProperty('india-states-below-4', 'line-width', 5);
+    map.setPaintProperty('shutdownsDistricts', 'visibility', 'visible');
+    //*****************************************************************
   } else {
     map.reset();
     sidebar.reset();
@@ -110,8 +120,10 @@ map.reset = function() {
   });
   map.setFilter('india-states', ['has', 'name']);
   map.setFilter('india-states-below-4', ['has', 'name']);
+  map.setFilter('shutdownsDistricts', ['has', 'state']);
   map.setPaintProperty('india-states', 'line-width', 2);
   map.setPaintProperty('india-states-below-4', 'line-width', 2);
+  map.setPaintProperty('shutdownsDistricts', 'visibility', 'none');
 }
 
 function setPopupContent(options) {
