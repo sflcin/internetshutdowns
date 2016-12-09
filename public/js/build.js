@@ -14,11 +14,19 @@ var popup = new mapboxgl.Popup({
 });
 
 map.on('load', function() {
-    var sw = new mapboxgl.LngLat(60.073, 11.953);
-    var ne = new mapboxgl.LngLat(99.756, 37.335);
-    var llb = new mapboxgl.LngLatBounds(sw, ne);
-    map.fitBounds(llb);
-    sidebar.reset();
+  var sw = new mapboxgl.LngLat(60.073, 11.953);
+  var ne = new mapboxgl.LngLat(99.756, 37.335);
+  var llb = new mapboxgl.LngLatBounds(sw, ne);
+  map.fitBounds(llb);
+
+  // Get shutdowns data
+  $.get("shutdowns.json", function (data, status) {
+    map.addSource("shutdowns", {
+      "type": "geojson",
+      "data": data
+    });
+  });
+  sidebar.reset();
 });
 
 
@@ -55,7 +63,6 @@ map.on('mousemove', function (e) {
         map.setFilter('india-states-below-4', ['has', 'name']);
         map.setPaintProperty('india-states', 'line-width', 2);
         map.setPaintProperty('india-states-below-4', 'line-width', 2);
-        sidebar.reset();
         popup.remove();
     }
 });
@@ -72,15 +79,37 @@ map.on('click', function (e) {
       properties: features[0].properties,
       geometry: features[0].geometry
     };
-  }
-  var stateCenter = turf.center(feature.geometry);
+    var stateCenter = turf.center(feature.geometry);
+    map.flyTo({
+      center: stateCenter.geometry.coordinates,
+      zoom: 5,
+      speed: 0.8
+    });
 
-  map.flyTo({
-    center: stateCenter.geometry.coordinates,
-    zoom: 5,
-    speed: 0.8
-  });
+    var shutdowns = map.getSource('shutdowns')._data;
+    var stateShutdowns = shutdowns.features.filter(function(item) {
+      return item.properties.state == feature.properties.name
+    });
+
+    sidebar.setData({
+      state: feature.properties.name,
+      count: feature.properties.shutdowns,
+      shutdowns: stateShutdowns
+    });
+  } else {
+    map.reset();
+    sidebar.reset();
+  }
 });
+
+map.reset = function() {
+  map.setCenter([82.75, 21.82]);
+  map.setZoom(4);
+  map.setFilter('india-states', ['has', 'name']);
+  map.setFilter('india-states-below-4', ['has', 'name']);
+  map.setPaintProperty('india-states', 'line-width', 2);
+  map.setPaintProperty('india-states-below-4', 'line-width', 2);
+}
 
 function setPopupContent(options) {
   var popupHTML = "<div class='statePopup'>";
@@ -90,6 +119,11 @@ function setPopupContent(options) {
   popupHTML += "</div>"
   return popupHTML;
 }
+
+$('#resetBtn').on('click', function () {
+  map.reset();
+  sidebar.reset();
+});
 
 // Ractive Stuff
 
@@ -105,12 +139,20 @@ var sidebar = {
   reset: function () {
     ractive.set({
       title: "India",
-      count: 42
+      count: 42,
+      shutdowns: undefined
     });
   },
   setTitle: function (title) {
     ractive.set({
       title: title
+    });
+  },
+  setData: function (data) {
+    ractive.set({
+      title: data.state,
+      count: data.count,
+      shutdowns: data.shutdowns
     });
   }
 };

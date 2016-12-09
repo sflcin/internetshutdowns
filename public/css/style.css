@@ -40,15 +40,16 @@ footer .keepiton {
 }
 
 #sidebar {
-  overflow: auto;
+  overflow: hidden;
   height: 600px;
   width: 100%;
   background-color: #fafafa;
 }
 
 #sidebar .name {
-  height: 30px;
-  font-size: 20px;
+  height: 2.5em;
+  line-height: 2.5em;
+  font-size: 25px;
 }
 
 #sidebar .highlight .count {
@@ -59,6 +60,11 @@ footer .keepiton {
   font-size: 40px;
   color: #fff;
   background-color: #222;
+}
+
+#sidebar .shutdowns-list {
+  overflow-y: scroll;
+  height: 100%;
 }
 
 .btn-round {

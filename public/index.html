@@ -65,9 +65,10 @@
           <script id="sidebar-template" type="text/ractive">
             <div class="header row">
               <div class="col col-md-3">
+                <button title="Reset" type="button" id="backBtn" class="btn btn-primary btn-lg"> <span class="glyphicon glyphicon-repeat"/> </button>
               </div>
               <div class="col col-md-9">
-                <span class="title text-center"><strong>{{title}}</strong></span>
+                <div class="name text-center"><strong>{{title}}</strong></div>
               </div>
             </div>
             <div class="highlight row">
@@ -80,10 +81,28 @@
                 <span class="lead"> Shutdowns <br>so far<br>since 2013 </span>
               </div>
             </div>
-            <div class="well">
-              <strong>Internet shutdowns have been on the rise in India.</strong>
-              This rise in frequency and broadening of reasons behind shutdowns even in the face of strong international condemnation of the practice are causes for concern as they not only threaten the democratic working of nations, but also point to the gradual normalization of the mindset that permits such blanket restriction on Internet access.
+            {{#if shutdowns}}
+            <div class="shutdowns-list">
+              <div class="well">
+                {{#each shutdowns as shutdown}}
+                  <div class="panel panel-default">
+                    <div class="panel-heading">{{shutdown.properties.date}}</div>
+                    <div class="panel-body">
+                      {{shutdown.properties.description}}
+                    </div>
+                    <div class="panel-footer">
+                      <a href="{{shutdown.properties.source}}" target="_blank">Source</a>
+                    </div>
+                  </div>
+                {{/each}}
+              </div>
             </div>
+            {{else}}
+              <div class="well">
+                <strong>Internet shutdowns have been on the rise in India.</strong>
+                This rise in frequency and broadening of reasons behind shutdowns even in the face of strong international condemnation of the practice are causes for concern as they not only threaten the democratic working of nations, but also point to the gradual normalization of the mindset that permits such blanket restriction on Internet access.
+              </div>
+            {{/if}}
           </script>
         </div>
       </div>
