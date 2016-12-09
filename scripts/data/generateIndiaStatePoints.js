@@ -1,6 +1,6 @@
 'use strict';
 
-var DATADIR = __dirname + '/../public/data';
+var DATADIR = __dirname + '/../../public/data';
 var states  = require(DATADIR + '/india_states.json');
 var turfCentroid = require('turf-centroid');
 states.features = states.features.map(function (state) {
