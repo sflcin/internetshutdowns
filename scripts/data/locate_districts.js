@@ -14,23 +14,24 @@ for (var s = 0; s < shutdowns.features.length; s++) {
         for (var l = 0; l < shutdown.properties.locality.length; l++) {
             newFeature = JSON.parse(JSON.stringify(shutdown));
             var locality = shutdown.properties.locality[l];
-            for (d = 0; d < districts.features.length; d++) {
-                district = districts.features[d];
-                if ((locality.indexOf(district.properties.NAME_2) > -1 || district.properties.NAME_2.indexOf(locality) > -1) ||
-                (district.properties.VARNAME_2 && (locality.indexOf(district.properties.VARNAME_2) > -1 || district.properties.VARNAME_2.indexOf(locality) > -1)) &&
-                (shutdown.properties.state.indexOf(district.properties.NAME_1) > -1 || district.properties.NAME_1.indexOf(shutdown.properties.state) > -1)) {
-                    newFeature.geometry = district.geometry;
-                    newFeature.properties.locality = locality;
-                    collection.push(newFeature);
-                    break;
-                } else if (locality === 'all') {
-                    var matchingState = states.features.filter(function (st) {
-                        return st.properties.name === district.properties.NAME_1;
-                    });
-                    newFeature.geometry = matchingState.geometry;
-                    newFeature.properties.locality = locality;
-                    collection.push(newFeature);
-                    break;
+            if (locality === 'all') {
+                var matchingState = states.features.filter(function (st) {
+                    return (st.properties.name === shutdown.properties.state);
+                });
+                newFeature.geometry = matchingState[0].geometry;
+                newFeature.properties.locality = locality;
+                collection.push(newFeature);
+            } else {
+                for (d = 0; d < districts.features.length; d++) {
+                    district = districts.features[d];
+                    if ((locality.indexOf(district.properties.NAME_2) > -1 || district.properties.NAME_2.indexOf(locality) > -1) ||
+                    (district.properties.VARNAME_2 && (locality.indexOf(district.properties.VARNAME_2) > -1 || district.properties.VARNAME_2.indexOf(locality) > -1)) &&
+                    (shutdown.properties.state.indexOf(district.properties.NAME_1) > -1 || district.properties.NAME_1.indexOf(shutdown.properties.state) > -1)) {
+                        newFeature.geometry = district.geometry;
+                        newFeature.properties.locality = locality;
+                        collection.push(newFeature);
+                        break;
+                    }
                 }
             }
         }
