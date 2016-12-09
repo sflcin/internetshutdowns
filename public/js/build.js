@@ -106,6 +106,17 @@ map.on('click', function (e) {
     map.setPaintProperty('india-states', 'line-width', 5);
     map.setPaintProperty('india-states-below-4', 'line-width', 5);
     map.setPaintProperty('shutdownsDistricts', 'visibility', 'visible');
+
+    map.setPaintProperty('shutdowns-1', 'visibility', 'none');
+    map.setPaintProperty('shutdowns-3', 'visibility', 'none');
+    map.setPaintProperty('shutdowns-5', 'visibility', 'none');
+    map.setPaintProperty('shutdowns-7', 'visibility', 'none');
+    map.setPaintProperty('shutdowns-19', 'visibility', 'none');
+    map.setPaintProperty('shutdowns-1-outer', 'visibility', 'none');
+    map.setPaintProperty('shutdowns-3-outer', 'visibility', 'none');
+    map.setPaintProperty('shutdowns-5-outer', 'visibility', 'none');
+    map.setPaintProperty('shutdowns-7-outer', 'visibility', 'none');
+    map.setPaintProperty('shutdowns-19-outer', 'visibility', 'none');
     //*****************************************************************
   } else {
     map.reset();
@@ -125,6 +136,16 @@ map.reset = function() {
   map.setPaintProperty('india-states', 'line-width', 2);
   map.setPaintProperty('india-states-below-4', 'line-width', 2);
   map.setPaintProperty('shutdownsDistricts', 'visibility', 'none');
+  map.setPaintProperty('shutdowns-1', 'visibility', 'visible');
+  map.setPaintProperty('shutdowns-3', 'visibility', 'visible');
+  map.setPaintProperty('shutdowns-5', 'visibility', 'visible');
+  map.setPaintProperty('shutdowns-7', 'visibility', 'visible');
+  map.setPaintProperty('shutdowns-19', 'visibility', 'visible');
+  map.setPaintProperty('shutdowns-1-outer', 'visibility', 'visible');
+  map.setPaintProperty('shutdowns-3-outer', 'visibility', 'visible');
+  map.setPaintProperty('shutdowns-5-outer', 'visibility', 'visible');
+  map.setPaintProperty('shutdowns-7-outer', 'visibility', 'visible');
+  map.setPaintProperty('shutdowns-19-outer', 'visibility', 'visible');
 }
 
 function setPopupContent(options) {
