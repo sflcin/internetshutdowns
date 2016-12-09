@@ -48,8 +48,5 @@ for (var s = 0; s < shutdowns.features.length; s++) {
         }
     }
 }
-console.log('{\n"type": "FeatureCollection",\n"features": [');
-collection.forEach(function (coll, index) {
-    console.log((index) ? ',' + JSON.stringify(coll) : JSON.stringify(coll));
-});
-console.log(']\n}');
+shutdowns.features = collection;
+console.log(JSON.stringify(shutdowns, null, 2));
