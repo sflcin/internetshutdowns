@@ -28,6 +28,10 @@ app.get('/', function (req, res) {
   res.sendfile('public/index.html');
 });
 
+app.get('/shutdowns.json', function (req, res) {
+  res.sendfile('public/data/shutdowns.json');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Express server listening on port ' + app.get('port'));
 });
