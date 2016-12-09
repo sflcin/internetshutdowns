@@ -99,23 +99,22 @@ map.on('click', function (e) {
 
     //*****************************************************************
     // make districts in a clicked state visible
-    map.setFilter('shutdownsDistricts', ['==', 'state', features[0].properties.name]);
+    map.setLayoutProperty('shutdownsdistricts', 'visibility', 'visible');
+    map.setFilter('shutdownsdistricts', ['==', 'state', features[0].properties.name]);
     map.setFilter('india-states-below-4', ['==', 'name', features[0].properties.name]);
     map.setFilter('india-states', ['==', 'name', features[0].properties.name]);
     map.setPaintProperty('india-states', 'line-width', 5);
     map.setPaintProperty('india-states-below-4', 'line-width', 5);
-    map.setPaintProperty('shutdownsDistricts', 'visibility', 'visible');
-
-    map.setPaintProperty('shutdowns-1', 'visibility', 'none');
-    map.setPaintProperty('shutdowns-3', 'visibility', 'none');
-    map.setPaintProperty('shutdowns-5', 'visibility', 'none');
-    map.setPaintProperty('shutdowns-7', 'visibility', 'none');
-    map.setPaintProperty('shutdowns-19', 'visibility', 'none');
-    map.setPaintProperty('shutdowns-1-outer', 'visibility', 'none');
-    map.setPaintProperty('shutdowns-3-outer', 'visibility', 'none');
-    map.setPaintProperty('shutdowns-5-outer', 'visibility', 'none');
-    map.setPaintProperty('shutdowns-7-outer', 'visibility', 'none');
-    map.setPaintProperty('shutdowns-19-outer', 'visibility', 'none');
+    map.setLayoutProperty('shutdowns-1', 'visibility', 'none');
+    map.setLayoutProperty('shutdowns-3', 'visibility', 'none');
+    map.setLayoutProperty('shutdowns-5', 'visibility', 'none');
+    map.setLayoutProperty('shutdowns-7', 'visibility', 'none');
+    map.setLayoutProperty('shutdowns-19', 'visibility', 'none');
+    map.setLayoutProperty('shutdowns-1-outer', 'visibility', 'none');
+    map.setLayoutProperty('shutdowns-3-outer', 'visibility', 'none');
+    map.setLayoutProperty('shutdowns-5-outer', 'visibility', 'none');
+    map.setLayoutProperty('shutdowns-7-outer', 'visibility', 'none');
+    map.setLayoutProperty('shutdowns-19-outer', 'visibility', 'none');
     //*****************************************************************
   } else {
     map.reset();
@@ -131,20 +130,20 @@ map.reset = function() {
   });
   map.setFilter('india-states', ['has', 'name']);
   map.setFilter('india-states-below-4', ['has', 'name']);
-  map.setFilter('shutdownsDistricts', ['has', 'state']);
+  map.setFilter('shutdownsdistricts', ['has', 'state']);
   map.setPaintProperty('india-states', 'line-width', 2);
   map.setPaintProperty('india-states-below-4', 'line-width', 2);
-  map.setPaintProperty('shutdownsDistricts', 'visibility', 'none');
-  map.setPaintProperty('shutdowns-1', 'visibility', 'visible');
-  map.setPaintProperty('shutdowns-3', 'visibility', 'visible');
-  map.setPaintProperty('shutdowns-5', 'visibility', 'visible');
-  map.setPaintProperty('shutdowns-7', 'visibility', 'visible');
-  map.setPaintProperty('shutdowns-19', 'visibility', 'visible');
-  map.setPaintProperty('shutdowns-1-outer', 'visibility', 'visible');
-  map.setPaintProperty('shutdowns-3-outer', 'visibility', 'visible');
-  map.setPaintProperty('shutdowns-5-outer', 'visibility', 'visible');
-  map.setPaintProperty('shutdowns-7-outer', 'visibility', 'visible');
-  map.setPaintProperty('shutdowns-19-outer', 'visibility', 'visible');
+  map.setLayoutProperty('shutdownsdistricts', 'visibility', 'none');
+  map.setLayoutProperty('shutdowns-1', 'visibility', 'visible');
+  map.setLayoutProperty('shutdowns-3', 'visibility', 'visible');
+  map.setLayoutProperty('shutdowns-5', 'visibility', 'visible');
+  map.setLayoutProperty('shutdowns-7', 'visibility', 'visible');
+  map.setLayoutProperty('shutdowns-19', 'visibility', 'visible');
+  map.setLayoutProperty('shutdowns-1-outer', 'visibility', 'visible');
+  map.setLayoutProperty('shutdowns-3-outer', 'visibility', 'visible');
+  map.setLayoutProperty('shutdowns-5-outer', 'visibility', 'visible');
+  map.setLayoutProperty('shutdowns-7-outer', 'visibility', 'visible');
+  map.setLayoutProperty('shutdowns-19-outer', 'visibility', 'visible');
 }
 
 function setPopupContent(options) {
@@ -162,7 +161,6 @@ $('#resetBtn').on('click', function () {
 });
 
 // Ractive Stuff
-
 var ractive = new Ractive({
   el: "#sidebar",
   template: "#sidebar-template",
