@@ -30,9 +30,13 @@ footer {
   background-color: #222222;
   color: #fff;
   line-height: 40px;
+  padding-left: 20px;
+  z-index: 100;
 }
 
 footer .keepiton {
+  text-align: right;
+  margin-right: 20px;
   color: green;
 }
 
