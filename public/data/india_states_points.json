@@ -68,7 +68,7 @@
       },
       "properties": {
         "name": "Bihar",
-        "shutdowns": 4
+        "shutdowns": 2
       }
     },
     {
@@ -166,7 +166,7 @@
       },
       "properties": {
         "name": "Haryana",
-        "shutdowns": 11
+        "shutdowns": 4
       }
     },
     {
@@ -390,7 +390,7 @@
       },
       "properties": {
         "name": "Rajasthan",
-        "shutdowns": 6
+        "shutdowns": 5
       }
     },
     {
