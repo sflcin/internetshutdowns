@@ -65,7 +65,9 @@
           <script id="sidebar-template" type="text/ractive">
             <div class="header row">
               <div class="col col-md-3">
-                <button title="Reset" type="button" id="resetBtn" class="btn btn-primary btn-lg"> <span class="glyphicon glyphicon-repeat"/> </button>
+                <button title="Reset" type="button" id="resetBtn" class="btn btn-primary btn-lg" on-click="resetMapAndSidebar">
+                  <span class="glyphicon glyphicon-repeat"/>
+                </button>
               </div>
               <div class="col col-md-9">
                 <div class="name text-center"><strong>{{title}}</strong></div>

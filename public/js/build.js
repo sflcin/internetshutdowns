@@ -103,8 +103,11 @@ map.on('click', function (e) {
 });
 
 map.reset = function() {
-  map.setCenter([82.75, 21.82]);
-  map.setZoom(4);
+  map.flyTo({
+    center: [82.75, 21.82],
+    zoom: 4,
+    speed: 0.9
+  });
   map.setFilter('india-states', ['has', 'name']);
   map.setFilter('india-states-below-4', ['has', 'name']);
   map.setPaintProperty('india-states', 'line-width', 2);
@@ -133,6 +136,11 @@ var ractive = new Ractive({
   data: {
     count: ".."
   }
+});
+
+ractive.on('resetMapAndSidebar', function () {
+  map.reset();
+  sidebar.reset();
 });
 
 var sidebar = {
