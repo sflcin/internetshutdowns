@@ -4,8 +4,7 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/arunasank/ciwbud66o004b2pockn08tjkq',
     center: [82.75, 21.82],
-    zoom: 4,
-    hash: true
+    zoom: 4
 });
 
 var popup = new mapboxgl.Popup({
