@@ -20,7 +20,7 @@ map.on('load', function() {
   map.fitBounds(llb);
 
   // Get shutdowns data
-  $.get("shutdowns.json", function (data, status) {
+  $.get("../data/shutdowns.json", function (data, status) {
     map.addSource("shutdowns", {
       "type": "geojson",
       "data": data
