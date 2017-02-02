@@ -107,6 +107,10 @@ section, .navbar {
   height: 100%;
 }
 
+#trends {
+  height: 50vh;
+}
+
 .btn-round {
   border-radius: 25px;
 }
