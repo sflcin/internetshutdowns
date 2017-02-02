@@ -108,9 +108,10 @@ section, .navbar {
 }
 
 #trends {
-  height: 50vh;
+  height: 70vh;
 }
 
-.btn-round {
-  border-radius: 25px;
+footer {
+  color: #ffffff;
+  background-color: #1586C9;
 }
