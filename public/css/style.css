@@ -13,6 +13,9 @@ body {
 .navbar {
   background-color: #114ACB;
   color: white;
+  height: 8vh;
+  border: 0px solid transparent;
+  border-radius: 0px;
 }
 
 .navbar-brand.sflc-logo, .navbar-brand.sflc-logo:hover, .navbar-brand.sflc-logo:focus {
@@ -41,10 +44,6 @@ body {
 
 
 section, .navbar {
-  margin-bottom: 1px;
-}
-
-section:last-of-type {
   margin-bottom: 0px;
 }
 
@@ -53,16 +52,20 @@ section:last-of-type {
   margin-right: 5px;
 }
 
+#intro {
+  height: 2vh;
+}
+
 #map {
-  height: 600px;
+  height: 80vh;
 }
 
 #trends-header {
-  height: 40px;
+  height: 8vh;
   width: 100%;
   background-color: #222222;
   color: #fff;
-  line-height: 40px;
+  line-height: 8vh;
   padding-left: 20px;
   z-index: 100;
 }
@@ -73,11 +76,12 @@ section:last-of-type {
 }
 
 #tracker {
+  height: 82vh;
 }
 
 #sidebar {
   overflow: hidden;
-  height: 600px;
+  height: 80vh;
   width: 100%;
   background-color: #fafafa;
 }
