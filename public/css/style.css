@@ -8,6 +8,38 @@ body {
   padding:0;
 }
 
+/* Navbar styles */
+
+.navbar {
+  background-color: #114ACB;
+  color: white;
+}
+
+.navbar-brand.sflc-logo, .navbar-brand.sflc-logo:hover, .navbar-brand.sflc-logo:focus {
+  background-color: #1586C9;
+}
+
+.navbar-brand.logo, .navbar-brand.logo:hover, .navbar-brand.logo:focus {
+  background-color: #222222;
+  color: white;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  background-color: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: #222222;
+}
+
+
 section, .navbar {
   margin-bottom: 15px;
 }
