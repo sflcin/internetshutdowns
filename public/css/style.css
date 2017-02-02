@@ -57,12 +57,9 @@ section:last-of-type {
   height: 600px;
 }
 
-footer {
-  position: fixed;
+#trends-header {
   height: 40px;
   width: 100%;
-  bottom: 0;
-  left: 0;
   background-color: #222222;
   color: #fff;
   line-height: 40px;
@@ -70,10 +67,9 @@ footer {
   z-index: 100;
 }
 
-footer .keepiton {
-  text-align: right;
-  margin-right: 20px;
-  color: #FE2644;
+#trends-header a, #trends-header a:hover, #trends-header a:focus {
+  color: unset;
+  text-decoration: none;
 }
 
 #tracker {
