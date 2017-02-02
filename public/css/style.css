@@ -41,7 +41,11 @@ body {
 
 
 section, .navbar {
-  margin-bottom: 15px;
+  margin-bottom: 1px;
+}
+
+section:last-of-type {
+  margin-bottom: 0px;
 }
 
 .navbar-brand > img {
