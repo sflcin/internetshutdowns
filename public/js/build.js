@@ -1,10 +1,15 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 mapboxgl.accessToken = 'pk.eyJ1IjoiYXJ1bmFzYW5rIiwiYSI6ImRKNlNQa3MifQ.SIx-g-J1oWWlP4grTXopcg';
+
+var defaultMapCenter = [82.32, 23.69];
+var defaultMapZoom = 3.45;
+
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/arunasank/ciwbud66o004b2pockn08tjkq',
-    center: [82.75, 21.82],
-    zoom: 4
+    center: defaultMapCenter,
+    zoom: defaultMapZoom,
+    interactive: false,
 });
 
 var popup = new mapboxgl.Popup({
@@ -14,10 +19,6 @@ var popup = new mapboxgl.Popup({
 
 map.on('load', function() {
   mapboxgl.addClaimedBoundaries(map, 'IN');
-  var sw = new mapboxgl.LngLat(60.073, 11.953);
-  var ne = new mapboxgl.LngLat(99.756, 37.335);
-  var llb = new mapboxgl.LngLatBounds(sw, ne);
-  map.fitBounds(llb);
 
   // Get shutdowns data
   $.get("../data/shutdowns.json", function (data, status) {
@@ -124,8 +125,8 @@ map.on('click', function (e) {
 
 map.reset = function() {
   map.flyTo({
-    center: [82.75, 21.82],
-    zoom: 4,
+    center: defaultMapCenter,
+    zoom: defaultMapZoom,
     speed: 0.9
   });
   map.setFilter('india-states', ['has', 'name']);
