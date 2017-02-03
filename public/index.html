@@ -57,21 +57,19 @@
           <div id="sidebar"></div>
           <script id="sidebar-template" type="text/ractive">
             <div class="actions row">
-              <div class="col-md-3">
-                <button title="Back" type="button" id="backBtn" class="btn btn-primary btn-sm" on-click="resetMapAndSidebar">
-                  <span class="glyphicon glyphicon-arrow-left"/> BACK
-                </button>
-              </div>
-              <div class="col-md-6 col-md-offset-3">
               <button title="Report a Shutdown" type="button" id="reportBtn" class="btn btn-danger btn-sm btn-block" on-click="">
-                  <span class="glyphicon glyphicon-bullhorn"/> REPORT A SHUTDOWN
-                </button>
-              </div>
+                <span class="glyphicon glyphicon-bullhorn"/> REPORT A SHUTDOWN
+              </button>
             </div>
             <div class="header row">
               <div class="col-md-9">
                 <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-md-2">
+                    <button title="Back" type="button" id="backBtn" class="btn btn-link btn-default" on-click="resetMapAndSidebar">
+                      <span class="glyphicon glyphicon-arrow-left"/>
+                    </button>
+                  </div>
+                  <div class="col-md-10">
                     <div class="name"><strong>{{title}}</strong></div>
                   </div>
                 </div>

@@ -126,3 +126,13 @@ footer {
   color: #ffffff;
   background-color: #1586C9;
 }
+
+/* Button Styles */
+
+.btn-link {
+  color: #ffffff;
+}
+
+.btn-link:hover, .btn-link:focus {
+  color: #ffffff;
+}
