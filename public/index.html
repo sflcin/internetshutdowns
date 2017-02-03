@@ -81,12 +81,11 @@
               <div class="well">
                 {{#each shutdowns as shutdown}}
                   <div class="panel panel-default">
-                    <div class="panel-heading">{{formatDate(shutdown.properties.date)}}</div>
                     <div class="panel-body">
                       {{shutdown.properties.description}}
                     </div>
                     <div class="panel-footer">
-                      <a href="{{shutdown.properties.source}}" target="_blank">Source</a>
+                      {{formatDate(shutdown.properties.date)}} &nbsp;&nbsp;&nbsp; <a href="{{shutdown.properties.source}}" target="_blank">Source</a>
                     </div>
                   </div>
                 {{/each}}
