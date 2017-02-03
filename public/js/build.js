@@ -165,7 +165,10 @@ var ractive = new Ractive({
   el: "#sidebar",
   template: "#sidebar-template",
   data: {
-    count: ".."
+    count: "..",
+    formatDate: function (date) {
+      return moment(date).format('DD-MM-YYYY');
+    }
   }
 });
 
