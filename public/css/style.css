@@ -13,7 +13,7 @@ body {
 .navbar {
   background-color: #114ACB;
   color: white;
-  height: 8vh;
+  max-height: 8vh;
   border: 0px solid transparent;
   border-radius: 0px;
 }
