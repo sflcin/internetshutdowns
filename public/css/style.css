@@ -86,20 +86,31 @@ section, .navbar {
   background-color: #fafafa;
 }
 
-#sidebar .name {
-  height: 2.5em;
-  line-height: 2.5em;
-  font-size: 25px;
-}
-
-#sidebar .highlight .count {
-  font-size: 120px;
-}
-
-#sidebar .highlight {
-  font-size: 40px;
+#sidebar .header {
   color: #fff;
-  background-color: #222;
+  background-color: #232323;
+  padding: 15px 20px;
+}
+
+#sidebar .header .name {
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+#sidebar .count {
+  color: #ffd42a;
+  font-size: 44px;
+  font-weight: bolder;
+}
+
+#sidebar .count-secondary {
+  font-size: 150%;
+  color: #ffdd55;
+}
+
+#sidebar .year {
+  font-size: 70%;
 }
 
 #sidebar .shutdowns-list {

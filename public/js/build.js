@@ -156,7 +156,7 @@ function setPopupContent(options) {
   return popupHTML;
 }
 
-$('#resetBtn').on('click', function () {
+$('#backBtn').on('click', function () {
   map.reset();
   sidebar.reset();
 });
