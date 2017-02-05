@@ -98,31 +98,31 @@
     <section id="tracker">
         <div class="container-fluid">
             <div class="header mobile-header row hidden-md hidden-lg">
-                    <div class="col-xs-1 col-md-2">
-                        <!--<button title="Back" type="button" id="backBtn" class="btn btn-link btn-default" on-click="resetMapAndSidebar">-->
-                        <span on-click="resetMapAndSidebar" class="glyphicon glyphicon-arrow-left"/>
-                        <!--</button>-->
-                    </div>
-                    <div class="col-xs-7 col-md-6">
-                        <div class="row">
-                            <div class="col-md-6 text-center">
-                                <div class="name"><strong>{{title}}</strong></div>
-                            </div>
-                            <div class="col-md-6 text-center report-mobile">
-                                <div class="count-label text-center">REPORT A SHUTDOWN</div>
-                            </div>
+                <div class="col-xs-1 col-md-2">
+                    <!--<button title="Back" type="button" id="backBtn" class="btn btn-link btn-default" on-click="resetMapAndSidebar">-->
+                    <span on-click="resetMapAndSidebar" class="glyphicon glyphicon-arrow-left"/>
+                    <!--</button>-->
+                </div>
+                <div class="col-xs-7 col-md-6">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <div class="name"><strong>{{title}}</strong></div>
+                        </div>
+                        <div class="col-md-6 text-center report-mobile">
+                            <div class="count-label text-center">REPORT A SHUTDOWN</div>
                         </div>
                     </div>
-                    <div class="col-xs-4 col-md-4">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="count text-center">{{count}}</div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="count-label text-center">TOTAL</div>
-                            </div>
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="count text-center">{{count}}</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="count-label text-center">TOTAL</div>
                         </div>
                     </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-md-8 map-container">
@@ -217,70 +217,138 @@
         </div>
     </section>
 
-  <section id="trends-header" class="trends-header hidden-sm hidden-xs">
-      <div class="container-fluid">
-          <a href="#trends"> <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span> TRENDS IN SHUTDOWNS </a>
-          <span class="pull-right">
-              Help us fight Internet Shutdowns.
-              <a class="btn btn-sm btn-warning btn-link" role="button" href="#" target="_blank">SIGN THE PETITION</a>
-          </span>
-      </div>
-  </section>
-  
-  <section id="trends">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="panel panel-default">
-            <!-- <div class="panel-heading"> </div> -->
-            <div class="panel-body">
-              <img class="img-responsive" src="img/1-types-of-shutdowns.jpg" />
-            </div>
-            <div class="panel-footer">
-              <h4> Types of Shutdowns </h4>
-              <p> Most shutdowns are targetted at mobile networks and very few
-                have affected the fixed line networks. </p>
-            </div>
-          </div>
+    <section id="trends-header" class="trends-header hidden-sm hidden-xs">
+        <div class="container-fluid">
+            <a href="#trends"> <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span> TRENDS IN SHUTDOWNS </a>
+            <span class="pull-right">
+                Help us fight Internet Shutdowns.
+                <a class="btn btn-sm btn-warning btn-link" role="button" href="#" target="_blank">SIGN THE PETITION</a>
+            </span>
         </div>
-        <div class="col-lg-4">
-          <div class="panel panel-default">
-            <!-- <div class="panel-heading"> </div> -->
-            <div class="panel-body">
-              <img class="img-responsive" src="img/2-durations-of-shutdowns.jpg" />
-            </div>
-            <div class="panel-footer">
-              <h4> Duration of Shutdowns </h4>
-              <p> Most shutdowns are targetted at mobile networks and very few
-                have affected the fixed line networks. </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="panel panel-default">
-            <!-- <div class="panel-heading"></div> -->
-            <div class="panel-body">
-              <img class="img-responsive" src="img/3-nature-of-shutdowns.jpg" />
-            </div>
-            <div class="panel-footer">
-              <h4> Nature of Shutdowns </h4>
-              <p> Most shutdowns are targetted at mobile networks and very few
-                have affected the fixed line networks. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
+    <section id="trends">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="panel panel-default">
+                        <!-- <div class="panel-heading"> </div> -->
+                        <div class="panel-body">
+                            <img class="img-responsive" src="img/1-types-of-shutdowns.jpg" />
+                        </div>
+                        <div class="panel-footer">
+                            <h4> Types of Shutdowns </h4>
+                            <p> Most shutdowns are targetted at mobile networks and very few
+                                have affected the fixed line networks. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="panel panel-default">
+                            <!-- <div class="panel-heading"> </div> -->
+                            <div class="panel-body">
+                                <img class="img-responsive" src="img/2-durations-of-shutdowns.jpg" />
+                            </div>
+                            <div class="panel-footer">
+                                <h4> Duration of Shutdowns </h4>
+                                <p> Most shutdowns are targetted at mobile networks and very few
+                                    have affected the fixed line networks. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="panel panel-default">
+                                <!-- <div class="panel-heading"></div> -->
+                                <div class="panel-body">
+                                    <img class="img-responsive" src="img/3-nature-of-shutdowns.jpg" />
+                                </div>
+                                <div class="panel-footer">
+                                    <h4> Nature of Shutdowns </h4>
+                                    <p> Most shutdowns are targetted at mobile networks and very few
+                                        have affected the fixed line networks. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <h3> Contact Us </h3>
+                                <address>
+                                    <strong>Software Freedom Law Centre, India</strong><br>
+                                    K-9, Second Floor,<br>
+                                    Jangpura Extension,<br>
+                                    New Delhi - 110014, India.
+                                </address>
+                                <span class="glyphicon glyphicon-phone-alt"></span> +91-11-43587126
+                                <br>
+                                <span class="glyphicon glyphicon-envelope"></span> mail@sflc.in
 
-</body>
-<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.25.1/mapbox-gl.js'></script>
-<script src='vendor/bootstrap/dist/js/bootstrap.js'> </script>
-<script src='vendor/ractive/ractive.js'></script>
-<script src='vendor/moment/moment.js'></script>
-<script src='js/turf-intrntshtdns.min.js'></script>
-<script src='js/mapbox-gl-boundaries.js'></script>
-<script src='js/build.js'></script>
-</html>
+                            </div>
+                            <div class="col-lg-4">
+                                <h3> Resources </h3>
+                                <ul>
+                                    <li> One </li>
+                                    <li> Two </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <h3> Content Policy </h3>
+                                <p> Quaerat blanditiis voluptas et quos enim itaque libero. Eius maxime eos inventore hic atque error et sunt. Voluptatum et quasi id amet numquam. Quod fugiat et sunt.</p>
+                                <p>Provident fuga eveniet iure. Dolorem rem error omnis ut architecto. Ut ducimus alias repellendus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Modals -->
+                <div class="modal fade" id="reportShutdownModal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="exampleModalLabel">Report an Internet Shutdown</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="state" class="control-label">State:</label>
+                                        <input type="text" class="form-control" id="state">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="locality" class="control-label">Locality:</label>
+                                        <input type="text" class="form-control" id="locality">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="date" class="control-label">Date:</label>
+                                        <input type="text" class="form-control" id="date" type="date">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="description" class="control-label">Description:</label>
+                                        <textarea class="form-control" id="description"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="source" class="control-label">Source:</label>
+                                        <input type="text" class="form-control" id="source" type="url">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary btn-success">Report</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </body>
+            <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+            <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.25.1/mapbox-gl.js'></script>
+            <script src='vendor/bootstrap/dist/js/bootstrap.js'> </script>
+            <script src='vendor/ractive/ractive.js'></script>
+            <script src='vendor/moment/moment.js'></script>
+            <script src='js/turf-intrntshtdns.min.js'></script>
+            <script src='js/mapbox-gl-boundaries.js'></script>
+            <script src='js/build.js'></script>
+            </html>

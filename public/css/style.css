@@ -120,7 +120,15 @@ section, .navbar {
 
 #trends {
   height: 70vh;
-  margin-top: 120vh;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        margin-top: 120vh;
+    }
+    #trends {
+        margin-top: 120vh;
+    }
 }
 
 footer {
