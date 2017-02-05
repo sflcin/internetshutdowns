@@ -122,15 +122,6 @@ section, .navbar {
   height: 70vh;
 }
 
-@media screen and (max-width: 768px) {
-    .footer {
-        margin-top: 120vh;
-    }
-    #trends {
-        margin-top: 120vh;
-    }
-}
-
 footer {
   color: #ffffff;
   background-color: #1586C9;
