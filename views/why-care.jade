@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  .container
+    script#faqs-template(type="text/ractive")
+      h1 Frequently Asked Questions
+      //- Load and parse ./template.jade here.
+      include ./includes/faq-template.jade
+      
+      // Bootstrap panels + jQuery Accordion
+      
+      #accordion.panel-group
+        each item, idx in faqList
+          +faq(idx, item.q, item.a)
+    
+    #faqs
+
+      //- Ractive initialization script.
+    script.
+      var faqs = new Ractive({
+        el: "#faqs",
+        template: "#faqs-template",
+        data: {}
+      });

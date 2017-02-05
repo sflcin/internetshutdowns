@@ -38,6 +38,13 @@ app.get('/about', function (req, res) {
   res.render('about');
 });
 
+var faqList = require('./public/data/faqs.json');
+app.get('/why-care', function (req, res) {
+  res.render('why-care', {
+    faqList: faqList
+  });
+});
+
 app.listen(app.get('port'), function() {
   console.log('Express server listening on port ' + app.get('port'));
 });

@@ -1,0 +1,9 @@
+mixin faq(idx, question, answer)
+  .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapse' + idx)= question
+      |         
+      div.panel-collapse.collapse(id='collapse' + idx)
+        .panel-body
+          p !{answer}
