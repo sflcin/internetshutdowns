@@ -148,3 +148,60 @@ footer {
     height: 80vh;
   }
 }
+
+@media screen and (max-width: 768px) {
+    #sidebar {
+        margin-top: 20px;
+    }
+}
+
+.year-wise-report {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mobile-header {
+    color: #fff;
+    background-color: #232323;
+    padding: 15px 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .map-container {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.count {
+    color: #ffd42a;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.count-secondary {
+    font-size: 150%;
+    color: #ffdd55;
+}
+
+.name {
+    font-size: 18px;
+}
+
+.report-mobile {
+    //font-size: 12px;
+    color: #f00;
+}
+
+.trends {
+    font-size: 12px;
+}
+
+.navbar-default .navbar-offcanvas {
+    background-color: #232323;
+    text-align: right;
+}
