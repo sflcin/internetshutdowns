@@ -60,7 +60,7 @@ section, .navbar {
   height: 80vh;
 }
 
-#trends-header {
+.trends-header {
   height: 8vh;
   width: 100%;
   background-color: #222222;
@@ -70,7 +70,7 @@ section, .navbar {
   z-index: 100;
 }
 
-#trends-header a, #trends-header a:hover, #trends-header a:focus {
+.trends-header a, #trends-header a:hover, #trends-header a:focus {
   color: unset;
   text-decoration: none;
 }
@@ -120,6 +120,7 @@ section, .navbar {
 
 #trends {
   height: 70vh;
+  margin-top: 120vh;
 }
 
 footer {

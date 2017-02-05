@@ -57,6 +57,10 @@
         //font-size: 12px;
         color: #f00;
     }
+
+    .trends {
+        font-size: 12px;
+    }
     </style>
 </head>
 
@@ -123,6 +127,20 @@
             <div class="row">
                 <div class="col-lg-8 col-md-8 map-container">
                     <div id='map'></div>
+                    <section id="what-is-this-header" class="trends-header hidden-md hidden-lg">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4">
+                                    <a href="#trends" class="trends"> <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span> WHAT IS THIS? </a>
+                                </div>
+                                <div class="col-xs-8 col-sm-8">
+                                    <span class="pull-right trends">
+                                        <a class="btn btn-sm btn-warning btn-link" role="button" href="#" target="_blank">SIGN THE PETITION</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div id="sidebar"></div>
@@ -180,11 +198,81 @@
                     </div>
                     {{/if}}
                     </script>
-
                 </div>
+                <section id="what-is-this-header" class="trends-header hidden-md hidden-lg">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                <a href="#trends" class="trends"> <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span> Trends </a>
+                            </div>
+                            <div class="col-xs-8 col-sm-8">
+                                <span class="pull-right trends">
+                                    <a class="btn btn-sm btn-warning btn-link" role="button" href="#" target="_blank">SIGN THE PETITION</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </section>
+
+  <section id="trends-header" class="trends-header hidden-sm hidden-xs">
+      <div class="container-fluid">
+          <a href="#trends"> <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span> TRENDS IN SHUTDOWNS </a>
+          <span class="pull-right">
+              Help us fight Internet Shutdowns.
+              <a class="btn btn-sm btn-warning btn-link" role="button" href="#" target="_blank">SIGN THE PETITION</a>
+          </span>
+      </div>
+  </section>
+  
+  <section id="trends">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="panel panel-default">
+            <!-- <div class="panel-heading"> </div> -->
+            <div class="panel-body">
+              <img class="img-responsive" src="img/1-types-of-shutdowns.jpg" />
+            </div>
+            <div class="panel-footer">
+              <h4> Types of Shutdowns </h4>
+              <p> Most shutdowns are targetted at mobile networks and very few
+                have affected the fixed line networks. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="panel panel-default">
+            <!-- <div class="panel-heading"> </div> -->
+            <div class="panel-body">
+              <img class="img-responsive" src="img/2-durations-of-shutdowns.jpg" />
+            </div>
+            <div class="panel-footer">
+              <h4> Duration of Shutdowns </h4>
+              <p> Most shutdowns are targetted at mobile networks and very few
+                have affected the fixed line networks. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="panel panel-default">
+            <!-- <div class="panel-heading"></div> -->
+            <div class="panel-body">
+              <img class="img-responsive" src="img/3-nature-of-shutdowns.jpg" />
+            </div>
+            <div class="panel-footer">
+              <h4> Nature of Shutdowns </h4>
+              <p> Most shutdowns are targetted at mobile networks and very few
+                have affected the fixed line networks. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
 </body>
 <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
