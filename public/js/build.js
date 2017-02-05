@@ -1,127 +1,319 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-mapboxgl.accessToken = 'pk.eyJ1IjoiYXJ1bmFzYW5rIiwiYSI6ImRKNlNQa3MifQ.SIx-g-J1oWWlP4grTXopcg';
+mapboxgl.accessToken = "pk.eyJ1Ijoic2ZsY2luIiwiYSI6ImNpd2xxb3UweTAwNXgyeXF4MjFzZG91dDMifQ.UZ43ek7Vo4lhabuxdlt4jg";
 
 var defaultMapCenter = [82.32, 23.69];
 var defaultMapZoom = 3.45;
 
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/arunasank/ciwbud66o004b2pockn08tjkq',
+    style: 'mapbox://styles/sflcin/ciys0k3oy00082sppcs5ouh6l',
     center: defaultMapCenter,
     zoom: defaultMapZoom,
+    minZoom: 3.45,
+    maxZoom: 6,
     interactive: false,
 });
 
+var navigation = new mapboxgl.NavigationControl();
+map.addControl(navigation, "top-right");
+
 var popup = new mapboxgl.Popup({
-    closeButton: false,
+    closeButton: true,
     closeOnClick: false
 });
 
-map.on('load', function() {
+var shutdowns = {};
+
+map.once('load', function() {
   mapboxgl.addClaimedBoundaries(map, 'IN');
 
   // Get shutdowns data
-  $.get("../data/shutdowns.json", function (data, status) {
-    map.addSource("shutdowns", {
-      "type": "geojson",
-      "data": data
-    });
+  $.get("../data/shutdowns.json", function (data) {
+    shutdowns.byState = getShutdownsByState(data);
+    shutdowns.byDistrict = getShutdownsByDistrict(data);
+    shutdowns.byYear = getShutdownsByYear(data);
+
+    setupLayers();
   });
   sidebar.reset();
 });
 
+function setupLayers() {
+  // State boundaries and fill
 
-map.on('mousemove', function (e) {
-    var features = map.queryRenderedFeatures(e.point, {
-        layers: ['india-states', 'india-states-fill', 'india-states-fill-below-4', 'india-states-below-4']
+  map.addLayer({
+    "id": "selected-state-boundary",
+    "type": "line",
+    "source": "composite",
+    "source-layer": "india_states_ajith-b2de3t",
+    "paint": {
+      "line-width": 1.5,
+      "line-color": "#dc322f",
+      "line-opacity": 0.9,
+    },
+    "filter": ["==", "state:name", ""],
+  });
+
+  map.addLayer({
+    "id": "selected-state-fill",
+    "type": "fill",
+    "source": "composite",
+    "source-layer": "india_states_ajith-b2de3t",
+    "paint": {
+      "fill-color": "#dc322f",
+      "fill-opacity": 0.4,
+    },
+    "filter": ["==", "state:name", ""],
+  });
+
+  // District fills
+
+  function fillColor(numShutdowns) {
+    // From: http://ethanschoonover.com/solarized
+    //  $yellow : #b58900;
+    //  $orange : #cb4b16;
+    //  $red    : #dc322f;
+    if (numShutdowns > 3)
+      return "#dc322f";
+    if (numShutdowns > 2)
+      return "#cb4b16";
+    if (numShutdowns > 0)
+      return "#b58900";
+  }
+
+  var colorStops = [];
+
+  Object.keys(shutdowns.byDistrict).forEach(function(districtName) {
+    var numShutdowns = shutdowns.byDistrict[districtName].length;
+    colorStops.push([districtName, fillColor(numShutdowns)]);
+  });
+
+  map.addLayer({
+    "id": "district-fill",
+    "type": "fill",
+    "source": "composite",
+    "source-layer": "india_districts_ajith-a77oxw",
+    "paint": {
+      "fill-color": {
+        "property": "district:name",
+        "type": "categorical",
+        "stops": colorStops,
+      },
+      "fill-opacity": 0.4,
+    },
+    "filter": ["==", "state:name", ""],
+  });
+
+  // Clusters (circles with a label)
+
+  var clusterCircleLayerIds = [], clusterLabelLayerIds = [];
+
+  Object.keys(shutdowns.byState).forEach(function(stateName, i) {
+    var numShutdowns = shutdowns.byState[stateName].length;
+
+    function circleColor(numShutdowns) {
+      // From: http://ethanschoonover.com/solarized
+      //  $yellow : #b58900;
+      //  $orange : #cb4b16;
+      //  $red    : #dc322f;
+      if (numShutdowns > 10)
+        return "#dc322f";
+      if (numShutdowns > 3)
+        return "#cb4b16";
+      if (numShutdowns > 0)
+        return "#b58900";
+    }
+
+    map.addLayer({
+      "id": "cluster-circle-" + stateName,
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "india_states_points_ajith-03v3oj",
+      "paint": {
+        "circle-radius": {
+          "base": 1,
+          "stops": [
+            [4, 18],
+            [6, 14],
+          ],
+        },
+        "circle-color": circleColor(numShutdowns),
+        "circle-opacity": 0.7,
+      },
+      "filter": ["==", "state:name", stateName],
     });
-    map.getCanvas().style.cursor = features.length ? 'pointer' : '';
-    if (features[0]) {
-        var feature = {
-            type: features[0].type,
-            properties: features[0].properties,
-            geometry: features[0].geometry
-        };
-        //Thicken one state when the user is hovering over the state
-        map.setFilter('india-states', ['==', 'name', feature.properties.name]);
-        map.setFilter('india-states-below-4', ['==', 'name', feature.properties.name]);
-        map.setPaintProperty('india-states', 'line-width', 5);
-        map.setPaintProperty('india-states-below-4', 'line-width', 5);
-        // document.getElementById('features').innerHTML = features[0].properties.name + ' ' + features[0].properties.shutdowns + JSON.stringify(feature);
 
-        var popupContent = setPopupContent({
-          name: feature.properties.name,
-          shutdowns: feature.properties.shutdowns
-        });
+    map.addLayer({
+      "id": "cluster-label-" + stateName,
+      "type": "symbol",
+      "source": "composite",
+      "mapzoom": 6,
+      "source-layer": "india_states_points_ajith-03v3oj",
+      "layout": {
+        "text-field": "" + numShutdowns,
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Bold"
+        ],
+        "text-size": 14,
+        "text-allow-overlap": true,
+      },
+      "paint": {
+        "text-color": "white",
+      },
+      "filter": ["==", "state:name", stateName],
+    });
 
-        popup.setLngLat(e.lngLat)
+    clusterCircleLayerIds.push("cluster-circle-" + stateName);
+    clusterLabelLayerIds.push("cluster-label-" + stateName);
+  });
+
+  map.addLayer({
+    "id": "cluster-circle-highlight",
+    "type": "circle",
+    "source": "composite",
+    "source-layer": "india_states_points_ajith-03v3oj",
+    "paint": {
+      "circle-radius": {
+        "base": 1,
+        "stops": [
+          [4, 23],
+          [6, 19],
+        ],
+      },
+      "circle-color": "#fdf6e3",
+      "circle-opacity": 1,
+    },
+    "filter": ["==", "state:name", ""],
+  }, clusterCircleLayerIds[0]);
+
+  function highlightOnHover(e) {
+    var hoveredStatePoints = map.queryRenderedFeatures([
+      [e.point.x - 5, e.point.y - 5],
+      [e.point.x + 5, e.point.y + 5]
+    ], { layers: clusterCircleLayerIds });
+
+    map.getCanvas().style.cursor = hoveredStatePoints.length ? 'pointer' : '';
+
+    if (hoveredStatePoints.length) {
+      var stateName = hoveredStatePoints[0].properties['state:name'];
+      var lngLat = hoveredStatePoints[0].geometry.coordinates;
+      var numShutdowns = shutdowns.byState[stateName].length;
+
+      map.setFilter("cluster-circle-highlight", ["==", "state:name", stateName]);
+
+      var popupContent = setPopupContent({
+        name: stateName,
+        shutdowns: numShutdowns,
+      });
+
+      popup.setLngLat([lngLat[0], lngLat[1] + 0.3])
         .setHTML(popupContent)
         .addTo(map);
     } else {
-        //restore map to original state when the user is not hovering over a state
-        // document.getElementById('features').innerHTML = '';
-        map.setFilter('india-states', ['has', 'name']);
-        map.setFilter('india-states-below-4', ['has', 'name']);
-        map.setPaintProperty('india-states', 'line-width', 2);
-        map.setPaintProperty('india-states-below-4', 'line-width', 2);
-        popup.remove();
+      popup.remove();
     }
-});
-
-
-map.on('click', function (e) {
-  // Fly to the state
-  var features = map.queryRenderedFeatures(e.point, {
-    layers: ['india-states', 'india-states-fill', 'india-states-fill-below-4', 'india-states-below-4']
-  });
-  if (features[0]) {
-    var feature = {
-      type: features[0].type,
-      properties: features[0].properties,
-      geometry: features[0].geometry
-    };
-    var stateCenter = turf.center(feature.geometry);
-    map.flyTo({
-      center: stateCenter.geometry.coordinates,
-      zoom: 5,
-      speed: 0.8
-    });
-
-    var shutdowns = map.getSource('shutdowns')._data;
-    var stateShutdowns = shutdowns.features.filter(function(item) {
-      return item.properties.state == feature.properties.name
-    });
-
-    sidebar.setData({
-      state: feature.properties.name,
-      count: feature.properties.shutdowns,
-      shutdowns: stateShutdowns
-    });
-
-    //*****************************************************************
-    // make districts in a clicked state visible
-    map.setLayoutProperty('shutdownsdistricts', 'visibility', 'visible');
-    map.setFilter('shutdownsdistricts', ['==', 'state', features[0].properties.name]);
-    map.setFilter('india-states-below-4', ['==', 'name', features[0].properties.name]);
-    map.setFilter('india-states', ['==', 'name', features[0].properties.name]);
-    map.setPaintProperty('india-states', 'line-width', 5);
-    map.setPaintProperty('india-states-below-4', 'line-width', 5);
-    map.setLayoutProperty('shutdowns-1', 'visibility', 'none');
-    map.setLayoutProperty('shutdowns-3', 'visibility', 'none');
-    map.setLayoutProperty('shutdowns-5', 'visibility', 'none');
-    map.setLayoutProperty('shutdowns-7', 'visibility', 'none');
-    map.setLayoutProperty('shutdowns-19', 'visibility', 'none');
-    map.setLayoutProperty('shutdowns-1-outer', 'visibility', 'none');
-    map.setLayoutProperty('shutdowns-3-outer', 'visibility', 'none');
-    map.setLayoutProperty('shutdowns-5-outer', 'visibility', 'none');
-    map.setLayoutProperty('shutdowns-7-outer', 'visibility', 'none');
-    map.setLayoutProperty('shutdowns-19-outer', 'visibility', 'none');
-    //*****************************************************************
-  } else {
-    map.reset();
-    sidebar.reset();
   }
-});
+
+  function selectOnClick(e) {
+    var clickedStatePoints = map.queryRenderedFeatures([
+      [e.point.x - 5, e.point.y - 5],
+      [e.point.x + 5, e.point.y + 5]
+    ], { layers: clusterCircleLayerIds });
+
+    if (clickedStatePoints.length) {
+      var stateName = clickedStatePoints[0].properties['state:name'];
+      var stateCenter = clickedStatePoints[0].geometry.coordinates;
+
+      map.setFilter("selected-state-boundary", ["==", "state:name", stateName]);
+      map.setFilter("selected-state-fill", ["==", "state:name", stateName]);
+      map.setFilter("district-fill", ["==", "state:name", stateName]);
+
+      map.flyTo({
+        center: stateCenter,
+        zoom: 5,
+        speed: 0.8,
+      });
+    } else {
+      map.setFilter("selected-state-boundary", ["==", "state:name", ""]);
+      map.setFilter("selected-state-fill", ["==", "state:name", ""]);
+      map.setFilter("district-fill", ["==", "state:name", ""]);
+
+      map.flyTo({
+        center: defaultMapCenter,
+        zoom: defaultMapZoom,
+        speed: 0.8,
+      });
+    }
+
+    popup.remove();
+  }
+
+  map.on("mousemove", throttle(highlightOnHover, 100));
+  map.on("click", selectOnClick);
+}
+
+
+// Utils
+
+// Throttle event listeners
+// Usage: map.on("event", throttle(listener, 200));
+function throttle(listener, ms) {
+  var last = 0;
+  return function(event) {
+    var now = performance.now();
+    if (last == 0 || (now - last) > ms) {
+        listener(event);
+        last = now;
+    }
+  }
+}
+
+// Stats
+
+function getShutdownsByState(shutdowns) {
+  var shutdownsByState = {};
+
+  shutdowns.forEach(function(shutdown) {
+    var stateName = shutdown["state:name"];
+    shutdownsByState[stateName] =
+      (stateName in shutdownsByState)
+        ? shutdownsByState[stateName].concat([shutdown])
+        : [shutdown];
+  });
+
+  return shutdownsByState;
+}
+
+function getShutdownsByDistrict(shutdowns) {
+  var shutdownsByDistrict = {};
+
+  shutdowns.forEach(function(shutdown) {
+    var districts = shutdown["districts"] || [];
+    districts.forEach(function(districtName) {
+      shutdownsByDistrict[districtName] =
+        (districtName in shutdownsByDistrict)
+          ? shutdownsByDistrict[districtName].concat([shutdown])
+          : [shutdown];
+    });
+  });
+
+  return shutdownsByDistrict;
+}
+
+function getShutdownsByYear(shutdowns) {
+  var shutdownsByYear = {};
+
+  shutdowns.forEach(function(shutdown) {
+    var year = shutdown["date"].substr(0, 4);
+    shutdownsByYear[year] =
+      (year in shutdownsByYear)
+        ? shutdownsByYear[year].concat([shutdown])
+        : [shutdown];
+  });
+
+  return shutdownsByYear;
+}
 
 map.reset = function() {
   map.flyTo({
@@ -129,22 +321,6 @@ map.reset = function() {
     zoom: defaultMapZoom,
     speed: 0.9
   });
-  map.setFilter('india-states', ['has', 'name']);
-  map.setFilter('india-states-below-4', ['has', 'name']);
-  map.setFilter('shutdownsdistricts', ['has', 'state']);
-  map.setPaintProperty('india-states', 'line-width', 2);
-  map.setPaintProperty('india-states-below-4', 'line-width', 2);
-  map.setLayoutProperty('shutdownsdistricts', 'visibility', 'none');
-  map.setLayoutProperty('shutdowns-1', 'visibility', 'visible');
-  map.setLayoutProperty('shutdowns-3', 'visibility', 'visible');
-  map.setLayoutProperty('shutdowns-5', 'visibility', 'visible');
-  map.setLayoutProperty('shutdowns-7', 'visibility', 'visible');
-  map.setLayoutProperty('shutdowns-19', 'visibility', 'visible');
-  map.setLayoutProperty('shutdowns-1-outer', 'visibility', 'visible');
-  map.setLayoutProperty('shutdowns-3-outer', 'visibility', 'visible');
-  map.setLayoutProperty('shutdowns-5-outer', 'visibility', 'visible');
-  map.setLayoutProperty('shutdowns-7-outer', 'visibility', 'visible');
-  map.setLayoutProperty('shutdowns-19-outer', 'visibility', 'visible');
 }
 
 function setPopupContent(options) {
