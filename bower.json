@@ -17,6 +17,7 @@
     "jquery": "~2.1.1",
     "lodash": "~4.11.1",
     "bootstrap": "~3.3.7",
+    "bootstrap-offcanvas": "~2.4.0",
     "leaflet": "~0.7.7",
     "fontawesome": "~4.6.3",
     "chroma-js": "~1.1.1",
