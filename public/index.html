@@ -9,234 +9,183 @@
     <link href='vendor/bootstrap/dist/css/bootstrap.css' rel='stylesheet' />
     <link href='css/style.css' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <style>
+    @media screen and (max-width: 768px) {
+        #sidebar {
+            margin-top: 20px;
+        }
+    }
+
+    .year-wise-report {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mobile-header {
+        color: #fff;
+        background-color: #232323;
+        padding: 15px 5px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .map-container {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .count {
+        color: #ffd42a;
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    .count-secondary {
+        font-size: 150%;
+        color: #ffdd55;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .report-mobile {
+        //font-size: 12px;
+        color: #f00;
+    }
+    </style>
 </head>
+
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand sflc-logo" href="http://sflc.in">
-          <img src="img/sflc-logo-white.png" height="25px" />
-        </a>
-        <a class="navbar-brand logo" href="/">
-          <img src="img/logo.png" height="25px" />
-          <strong>Internet</strong>Shutdown Tracker
-        </a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Why you should care</a></li>
-          <li><a href="#">Take Action</a></li>
-          <li><a href="#">Resources</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-
-  <section id="intro">
-    <div class="container">
-    </div>
-  </section>
-
-  <section id="tracker">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col col-lg-8 col-md-8">
-          <div id='map'></div>
-        </div>
-        <div class="col col-lg-4 col-md-4">
-          <div id="sidebar"></div>
-          <script id="sidebar-template" type="text/ractive">
-            <div class="actions row">
-              <button title="Report a Shutdown" type="button" id="reportBtn" class="btn btn-danger btn-sm btn-block" on-click="">
-                <span class="glyphicon glyphicon-bullhorn"/> REPORT A SHUTDOWN
-              </button>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand sflc-logo" href="http://sflc.in">
+                    <img src="img/sflc-logo-white.png" height="25px" />
+                </a>
+                <a class="navbar-brand logo" href="/">
+                    <img src="img/logo.png" height="25px" />
+                </a>
             </div>
-            <div class="header row">
-              <div class="col-md-9">
-                <div class="row">
-                  <div class="col-md-2">
-                    <button title="Back" type="button" id="backBtn" class="btn btn-link btn-default" on-click="resetMapAndSidebar">
-                      <span class="glyphicon glyphicon-arrow-left"/>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Why you should care</a></li>
+                    <li><a href="#">Take Action</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <section id="tracker">
+        <div class="container-fluid">
+            <div class="header mobile-header row hidden-md hidden-lg">
+                    <div class="col-xs-1 col-md-2">
+                        <!--<button title="Back" type="button" id="backBtn" class="btn btn-link btn-default" on-click="resetMapAndSidebar">-->
+                        <span on-click="resetMapAndSidebar" class="glyphicon glyphicon-arrow-left"/>
+                        <!--</button>-->
+                    </div>
+                    <div class="col-xs-7 col-md-6">
+                        <div class="row">
+                            <div class="col-md-6 text-center">
+                                <div class="name"><strong>{{title}}</strong></div>
+                            </div>
+                            <div class="col-md-6 text-center report-mobile">
+                                <div class="count-label text-center">REPORT A SHUTDOWN</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-md-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="count text-center">{{count}}</div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="count-label text-center">TOTAL</div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-8 map-container">
+                    <div id='map'></div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div id="sidebar"></div>
+                    <script id="sidebar-template" type="text/ractive">
+                    <div class="actions row hidden-xs hidden-sm">
+                    <button title="Report a Shutdown" type="button" id="reportBtn" class="btn btn-danger btn-sm btn-block" on-click="">
+                    <span class="glyphicon glyphicon-bullhorn"/> REPORT A SHUTDOWN
                     </button>
-                  </div>
-                  <div class="col-md-10">
+                    </div>
+                    <div class="header row hidden-xs hidden-sm">
+                    <div class="col-md-9">
+                    <div class="row">
+                    <div class="col-xs-2 col-md-2">
+                    <button title="Back" type="button" id="backBtn" class="btn btn-link btn-default" on-click="resetMapAndSidebar">
+                    <span class="glyphicon glyphicon-arrow-left"/>
+                    </button>
+                    </div>
+                    <div class="col-xs-9 col-md-10">
                     <div class="name"><strong>{{title}}</strong></div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-2 col-md-2"><div class="count-secondary">0</div><div class="year">2013</div></div>
-                  <div class="col-lg-2 col-md-2"><div class="count-secondary">0</div><div class="year">2014</div></div>
-                  <div class="col-lg-2 col-md-2"><div class="count-secondary">0</div><div class="year">2015</div></div>
-                  <div class="col-lg-2 col-md-2"><div class="count-secondary">0</div><div class="year">2016</div></div>
-                  <div class="col-lg-2 col-md-2"><div class="count-secondary">0</div><div class="year">2017</div></div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="count text-center">{{count}}</div>
-                <div class="count-label text-center">TOTAL</div>
-              </div>
-            </div>
-            {{#if shutdowns}}
-            <div class="shutdowns-list">
-              <div class="well">
-                {{#each shutdowns as shutdown}}
-                  <div class="panel panel-default">
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-xs-2 col-lg-2 col-md-2"><div class="count-secondary">0</div><div class="year">2012</div></div>
+                    <div class="col-xs-2 col-lg-2 col-md-2"><div class="count-secondary">0</div><div class="year">2013</div></div>
+                    <div class="col-xs-2 col-lg-2 col-md-2"><div class="count-secondary">0</div><div class="year">2014</div></div>
+                    <div class="col-xs-2 col-lg-2 col-md-2"><div class="count-secondary">0</div><div class="year">2015</div></div>
+                    <div class="col-xs-2 col-lg-2 col-md-2"><div class="count-secondary">0</div><div class="year">2016</div></div>
+                    <div class="col-xs-2 col-lg-2 col-md-2"><div class="count-secondary">0</div><div class="year">2017</div></div>
+                    </div>
+                    </div>
+                    <div class="col-md-3">
+                    <div class="count text-center">{{count}}</div>
+                    <div class="count-label text-center">TOTAL</div>
+                    </div>
+                    </div>
+                    {{#if shutdowns}}
+                    <div class="shutdowns-list">
+                    <div class="well">
+                    {{#each shutdowns as shutdown}}
+                    <div class="panel panel-default">
                     <div class="panel-body">
-                      {{shutdown.properties.description}}
+                    {{shutdown.properties.description}}
                     </div>
                     <div class="panel-footer">
-                      {{formatDate(shutdown.properties.date)}} &nbsp;&nbsp;&nbsp; <a href="{{shutdown.properties.source}}" target="_blank">Source</a>
+                    {{formatDate(shutdown.properties.date)}} &nbsp;&nbsp;&nbsp; <a href="{{shutdown.properties.source}}" target="_blank">Source</a>
                     </div>
-                  </div>
-                {{/each}}
-              </div>
-            </div>
-            {{else}}
-              <div class="well">
-                <strong>Internet shutdowns have been on the rise in India.</strong>
-                This rise in frequency and broadening of reasons behind shutdowns even in the face of strong international condemnation of the practice are causes for concern as they not only threaten the democratic working of nations, but also point to the gradual normalization of the mindset that permits such blanket restriction on Internet access.
-              </div>
-            {{/if}}
-          </script>
-        </div>
-      </div>
-    </div>
-  </section>
+                    </div>
+                    {{/each}}
+                    </div>
+                    </div>
+                    {{else}}
+                    <div class="well">
+                    <strong>Internet shutdowns have been on the rise in India.</strong>
+                    This rise in frequency and broadening of reasons behind shutdowns even in the face of strong international condemnation of the practice are causes for concern as they not only threaten the democratic working of nations, but also point to the gradual normalization of the mindset that permits such blanket restriction on Internet access.
+                    </div>
+                    {{/if}}
+                    </script>
 
-  <section id="trends-header" class="trends-header">
-    <a href="#trends"> <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span> TRENDS IN SHUTDOWNS </a>
-    <span class="pull-right">
-      Help us fight Internet Shutdowns.
-      <a class="btn btn-sm btn-warning" role="button" href="#" target="_blank">SIGN THE PETITION</a>
-    </span>
-  </section>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="trends">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="panel panel-default">
-            <!-- <div class="panel-heading"> </div> -->
-            <div class="panel-body">
-              <img class="img-responsive" src="img/1-types-of-shutdowns.jpg" />
-            </div>
-            <div class="panel-footer">
-              <h4> Types of Shutdowns </h4>
-              <p> Most shutdowns are targetted at mobile networks and very few
-                have affected the fixed line networks. </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="panel panel-default">
-            <!-- <div class="panel-heading"> </div> -->
-            <div class="panel-body">
-              <img class="img-responsive" src="img/2-durations-of-shutdowns.jpg" />
-            </div>
-            <div class="panel-footer">
-              <h4> Duration of Shutdowns </h4>
-              <p> Most shutdowns are targetted at mobile networks and very few
-                have affected the fixed line networks. </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="panel panel-default">
-            <!-- <div class="panel-heading"></div> -->
-            <div class="panel-body">
-              <img class="img-responsive" src="img/3-nature-of-shutdowns.jpg" />
-            </div>
-            <div class="panel-footer">
-              <h4> Nature of Shutdowns </h4>
-              <p> Most shutdowns are targetted at mobile networks and very few
-                have affected the fixed line networks. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <h3> Contact Us </h3>
-          <address>
-            <strong>Software Freedom Law Centre, India</strong><br>
-            K-9, Second Floor,<br>
-            Jangpura Extension,<br>
-            New Delhi - 110014, India.
-          </address>
-          <span class="glyphicon glyphicon-phone-alt"></span> +91-11-43587126
-          <br>
-          <span class="glyphicon glyphicon-envelope"></span> mail@sflc.in
-
-        </div>
-        <div class="col-lg-4">
-          <h3> Resources </h3>
-            <ul>
-              <li> One </li>
-              <li> Two </li>
-            </ul>
-        </div>
-        <div class="col-lg-4">
-          <h3> Content Policy </h3>
-          <p> Quaerat blanditiis voluptas et quos enim itaque libero. Eius maxime eos inventore hic atque error et sunt. Voluptatum et quasi id amet numquam. Quod fugiat et sunt.</p>
-          <p>Provident fuga eveniet iure. Dolorem rem error omnis ut architecto. Ut ducimus alias repellendus.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- Modals -->
-  <div class="modal fade" id="reportShutdownModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="exampleModalLabel">Report an Internet Shutdown</h4>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="state" class="control-label">State:</label>
-              <input type="text" class="form-control" id="state">
-            </div>
-            <div class="form-group">
-              <label for="locality" class="control-label">Locality:</label>
-              <input type="text" class="form-control" id="locality">
-            </div>
-            <div class="form-group">
-              <label for="date" class="control-label">Date:</label>
-              <input type="text" class="form-control" id="date" type="date">
-            </div>
-            <div class="form-group">
-              <label for="description" class="control-label">Description:</label>
-              <textarea class="form-control" id="description"></textarea>
-            </div>
-            <div class="form-group">
-              <label for="source" class="control-label">Source:</label>
-              <input type="text" class="form-control" id="source" type="url">
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary btn-success">Report</button>
-        </div>
-      </div>
-    </div>
-  </div>
 </body>
 <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.25.1/mapbox-gl.js'></script>
