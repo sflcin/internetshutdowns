@@ -29,14 +29,16 @@ map.once('load', function() {
 
   // Get shutdowns data
   $.get("../data/shutdowns.json", function (data) {
+    shutdowns.count = data.length;
+    shutdowns.data = data;
     shutdowns.byState = getShutdownsByState(data);
     shutdowns.byDistrict = getShutdownsByDistrict(data);
     shutdowns.byYear = getShutdownsByYear(data);
 
     setupLayers();
+    sidebar.reset();
+    mobileHeader.reset();
   });
-  sidebar.reset();
-  mobileHeader.reset();
 });
 
 function setupLayers() {
@@ -382,8 +384,9 @@ var sidebar = {
   reset: function () {
     ractive.set({
       title: "India",
-      count: 46,
-      shutdowns: undefined
+      count: shutdowns.count,
+      shutdowns: undefined,
+      shutdownsByYear: shutdowns.byYear
     });
   },
   setTitle: function (title) {
@@ -417,8 +420,9 @@ var mobileHeader = {
   reset: function () {
     mobileHeaderRactive.set({
       title: "India",
-      count: 46,
-      shutdowns: undefined
+      count: shutdowns.count,
+      shutdowns: undefined,
+      shutdownsByYear: shutdowns.byYear
     });
   },
   setTitle: function (title) {
