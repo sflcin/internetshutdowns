@@ -36,6 +36,7 @@ map.once('load', function() {
     setupLayers();
   });
   sidebar.reset();
+  mobileHeader.reset();
 });
 
 function setupLayers() {
@@ -241,6 +242,13 @@ function setupLayers() {
         shutdowns: shutdowns.byState[stateName],
         shutdownsByYear: getShutdownsByYear(shutdowns.byState[stateName])
       });
+      mobileHeader.setData({
+        state: stateName,
+        count: shutdowns.byState[stateName].length,
+        shutdowns: shutdowns.byState[stateName],
+        shutdownsByYear: getShutdownsByYear(shutdowns.byState[stateName])
+      });
+
 
     } else {
       map.setFilter("selected-state-boundary", ["==", "state:name", ""]);
@@ -252,6 +260,9 @@ function setupLayers() {
         zoom: defaultMapZoom,
         speed: 0.8,
       });
+
+      sidebar.reset();
+      mobileHeader.reset();
     }
 
     popup.remove();
@@ -347,6 +358,7 @@ function setPopupContent(options) {
 $('#backBtn').on('click', function () {
   map.reset();
   sidebar.reset();
+  mobileHeader.reset();
 });
 
 // Ractive Stuff
@@ -388,5 +400,45 @@ var sidebar = {
     });
   }
 };
+
+var mobileHeaderRactive = new Ractive({
+  el: "#mobile-header",
+  template: "#mobile-header-template",
+  data: {
+    count: "..",
+    // TODO Move this to a common function
+    formatDate: function (date) {
+      return moment(date).format('DD-MM-YYYY');
+    }
+  }
+});
+
+var mobileHeader = {
+  reset: function () {
+    mobileHeaderRactive.set({
+      title: "India",
+      count: 46,
+      shutdowns: undefined
+    });
+  },
+  setTitle: function (title) {
+    mobileHeaderRactive.set({
+      title: title
+    });
+  },
+  setData: function (data) {
+    mobileHeaderRactive.set({
+      title: data.state,
+      count: data.count,
+      shutdowns: data.shutdowns,
+      shutdownsByYear: data.shutdownsByYear
+    });
+  }
+};
+
+mobileHeaderRactive.on('resetMapAndSidebar', function () {
+  map.reset();
+  mobileHeader.reset();
+});
 
 },{}]},{},[1]);

@@ -15,7 +15,6 @@
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
         <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
@@ -32,25 +31,16 @@
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
       <div class="navbar-offcanvas navbar-offcanvas-right navbar-offcanvas-touch" id="js-bootstrap-offcanvas">
         <ul class="nav navbar-nav navbar-right">
-          <!--<div class="row">
-          <li>
-          <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
-          <span class="sr-only">Toggle navigation</span>
-          Close
-        </button>
-      </li>
-    </div>-->
-    <li><a href="#">About</a></li>
-    <li><a href="#">Why you should care</a></li>
-    <li><a href="#">Take Action</a></li>
-    <li><a href="#">Resources</a></li>
-  </ul>
-</div><!-- /.navbar-collapse -->
-</div><!-- /.container-fluid -->
-</nav>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Why you should care</a></li>
+          <li><a href="#">Take Action</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 
   <section id="intro">
     <div class="container">
@@ -59,23 +49,68 @@
 
   <section id="tracker">
     <div class="container-fluid">
+      <!-- A mobile-only header that appears over the map -->
+      <!-- TODO Need to avoid this duplication of functionality -->
+      <div id="mobile-header" class="row header mobile-header hidden-md hidden-lg">
+      </div> <!-- /.mobile-header -->
+      <!-- Template for mobile header -->
+      <script id="mobile-header-template" type="text/ractive">
+        <div class="col-xs-1 col-md-2">
+          <span on-click="resetMapAndSidebar" class="glyphicon glyphicon-arrow-left"/>
+        </div>
+        <div class="col-xs-7 col-md-6">
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <div class="name"><strong>{{title}}</strong></div>
+            </div>
+            <div class="col-md-6 text-center report-mobile">
+              <div class="count-label text-center">REPORT A SHUTDOWN</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-4 col-md-4">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="count text-center">{{count}}</div>
+            </div>
+            <div class="col-md-6">
+              <div class="count-label text-center">TOTAL</div>
+            </div>
+          </div>
+        </div>
+      </script>
+      <!-- End of mobile header template -->
       <div class="row">
-        <div class="col col-lg-8 col-md-8">
+        <div class="col col-lg-8 col-md-8 map-container">
           <div id='map'></div>
+          <section id="what-is-this-header" class="trends-header hidden-md hidden-lg">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xs-4 col-sm-4">
+                  <a href="#about" class="trends"> <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span> WHAT IS THIS? </a>
+                </div>
+                <div class="col-xs-8 col-sm-8">
+                  <span class="pull-right trends">
+                    <a class="btn btn-sm btn-warning btn-link" role="button" href="#" target="_blank">SIGN THE PETITION</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
         <div class="col col-lg-4 col-md-4">
           <div id="sidebar"></div>
           <script id="sidebar-template" type="text/ractive">
-            <div class="actions row">
+            <div class="actions row hidden-sm hidden-xs">
               <button title="Report a Shutdown" type="button" id="reportBtn" class="btn btn-danger btn-sm btn-block" on-click="">
                 <span class="glyphicon glyphicon-bullhorn"/> REPORT A SHUTDOWN
               </button>
             </div>
-            <div class="header row">
+            <div class="header row hidden-sm hidden-xs">
               <div class="col-md-9">
                 <div class="row">
                   <div class="col-md-2">
-                    <button title="Back" type="button" id="backBtn" class="btn btn-link btn-default" on-click="resetMapAndSidebar">
+                    <button title="Back" type="button" id="backBtn" class="btn btn-link" on-click="resetMapAndSidebar">
                       <span class="glyphicon glyphicon-arrow-left"/>
                     </button>
                   </div>
@@ -115,7 +150,7 @@
               </div>
             </div>
             {{else}}
-              <div class="well">
+              <div class="well" id="about">
                 <strong>Internet shutdowns have been on the rise in India.</strong>
                 This rise in frequency and broadening of reasons behind shutdowns even in the face of strong international condemnation of the practice are causes for concern as they not only threaten the democratic working of nations, but also point to the gradual normalization of the mindset that permits such blanket restriction on Internet access.
               </div>
@@ -254,6 +289,7 @@
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
 <script src='vendor/bootstrap/dist/js/bootstrap.js'> </script>
+<script src='vendor/bootstrap-offcanvas/dist/js/bootstrap.offcanvas.js'> </script>
 <script src='vendor/ractive/ractive.js'></script>
 <script src='vendor/moment/moment.js'></script>
 <script src='js/turf-intrntshtdns.min.js'></script>
