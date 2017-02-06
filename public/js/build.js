@@ -234,6 +234,14 @@ function setupLayers() {
         zoom: 5,
         speed: 0.8,
       });
+
+      sidebar.setData({
+        state: stateName,
+        count: shutdowns.byState[stateName].length,
+        shutdowns: shutdowns.byState[stateName],
+        shutdownsByYear: getShutdownsByYear(shutdowns.byState[stateName])
+      });
+
     } else {
       map.setFilter("selected-state-boundary", ["==", "state:name", ""]);
       map.setFilter("selected-state-fill", ["==", "state:name", ""]);
@@ -302,7 +310,7 @@ function getShutdownsByDistrict(shutdowns) {
 }
 
 function getShutdownsByYear(shutdowns) {
-  var shutdownsByYear = {};
+  var shutdownsByYear = {}, shutdownsByYearOrdered = {};
 
   shutdowns.forEach(function(shutdown) {
     var year = shutdown["date"].substr(0, 4);
@@ -312,7 +320,11 @@ function getShutdownsByYear(shutdowns) {
         : [shutdown];
   });
 
-  return shutdownsByYear;
+  Object.keys(shutdownsByYear).sort().forEach(function (key) {
+    shutdownsByYearOrdered[key] = shutdownsByYear[key];
+  })
+
+  return shutdownsByYearOrdered;
 }
 
 map.reset = function() {
@@ -371,7 +383,8 @@ var sidebar = {
     ractive.set({
       title: data.state,
       count: data.count,
-      shutdowns: data.shutdowns
+      shutdowns: data.shutdowns,
+      shutdownsByYear: data.shutdownsByYear
     });
   }
 };

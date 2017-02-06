@@ -74,11 +74,14 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-2 col-md-2"><div class="count-secondary">0</div><div class="year">2013</div></div>
-                  <div class="col-lg-2 col-md-2"><div class="count-secondary">0</div><div class="year">2014</div></div>
-                  <div class="col-lg-2 col-md-2"><div class="count-secondary">0</div><div class="year">2015</div></div>
-                  <div class="col-lg-2 col-md-2"><div class="count-secondary">0</div><div class="year">2016</div></div>
-                  <div class="col-lg-2 col-md-2"><div class="count-secondary">0</div><div class="year">2017</div></div>
+                {{#if shutdownsByYear}}
+                  {{#shutdownsByYear:year}}
+                  <div class="col-lg-2 col-md-2">
+                    <div class="count-secondary">{{shutdownsByYear[year].length}}</div>
+                    <div class="year">{{year}}</div>
+                  </div>
+                  {{/#shutdownsByYear}}
+                {{/if}}
                 </div>
               </div>
               <div class="col-md-3">
@@ -92,10 +95,10 @@
                 {{#each shutdowns as shutdown}}
                   <div class="panel panel-default">
                     <div class="panel-body">
-                      {{shutdown.properties.description}}
+                      {{shutdown.description}}
                     </div>
                     <div class="panel-footer">
-                      {{formatDate(shutdown.properties.date)}} &nbsp;&nbsp;&nbsp; <a href="{{shutdown.properties.source}}" target="_blank">Source</a>
+                      {{formatDate(shutdown.date)}} &nbsp;&nbsp;&nbsp; <a href="{{shutdown.source}}" target="_blank">Source</a>
                     </div>
                   </div>
                 {{/each}}
