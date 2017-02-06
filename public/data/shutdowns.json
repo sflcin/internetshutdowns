@@ -4,9 +4,90 @@
     "districts": [
       "Kashmir"
     ],
+    "date": "2012-01-26",
+    "description": "Mobile Internet as a part of a larger mobile telephony ban was restricted on 26th January, 2012 as a standard security protocol.",
+    "source": "http://www.hindustantimes.com/india/mobile-phone-blackout-in-kashmir/story-UR9ES3PoX4jnASE5FuCZQN.html"
+  },
+  {
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Kashmir"
+    ],
+    "date": "2012-08-15",
+    "description": "Mobile services were suspended on 15th August, 2012 as a precautionary measure for an hour owing to Independence Day.",
+    "source": "http://kashmirmediawatch.com/kashmir/mobile-service-suspended-in-kashmir-for-security-reasons/13187"
+  },
+  {
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Kashmir"
+    ],
+    "date": "2012-09-21",
+    "description": "Mobile internet services were suspended on 21st September 2012 till 5:00 pm owing to the protests over the movie 'Innocence of Muslims'",
+    "source": "https://india.blogs.nytimes.com/2012/09/21/telecom-services-blocked-to-curb-protests-in-kashmir/?_r=0"
+  },
+  {
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Kashmir"
+    ],
+    "date": "2013-01-26",
+    "description": "On the occasion of Republic Day, as a part of a security drill, mobile phone and Internet services were suspended on 26th January, 2013",
+    "source": "http://www.deccanherald.com/content/307793/mobile-phone-services-suspended-kashmir.html"
+  },
+  {
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Kashmir"
+    ],
     "date": "2013-02-09",
-    "description": "TV News channels and mobile Internet banned immediately after Afzal Guru's execution on 9th February, 2013",
-    "source": "http://www.ibtimes.com/curfew-continues-indias-kashmir-valley-following-afzal-gurus-hanging-internet-service-remains"
+    "description": "TV News channels and mobile Internet banned immediately after Afzal Guru's execution on 9th February, 2013 and restored on 15th February, 2013",
+    "source": "http://economictimes.indiatimes.com/tech/internet/mobile-internet-services-restored-in-kashmir-valley/articleshow/18527772.cms?intenttarget=no"
+  },
+  {
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Kashmir"
+    ],
+    "date": "2013-07-18",
+    "description": "Disconnect of Internet services through mobiles & dongles in the Kashmir valley post the killing of four people in the Ramban district after clashes with the Border Security Forces (BSF)",
+    "source": "http://timesofindia.indiatimes.com/tech/tech-news/Internet-services-suspended-in-Kashmir-Valley/articleshow/21145412.cms"
+  },
+  {
+    "state:name": "Jammu and Kashmir",
+    "date": "2013-08-10",
+    "description": "The entire state experienced a blackout of mobile Internet services, lasting almost 5 days due to communal riots that spurred in the Kishtwar district of the state.",
+    "source": "http://thewire.in/2016/04/15/jammu-kashmir-has-lost-18-days-of-mobile-internet-access-over-last-four-years-29857/"
+  },
+  {
+    "state:name": "Jammu and Kashmir",
+    "date": "2013-08-15",
+    "description": "Mobile Internet and telephony services were suspended on 15th August, 2013 for security reasons on Independence Day.",
+    "source": "http://zeenews.india.com/news/jammu-and-kashmir/mobile-phone-services-suspended-in-kashmir_869121.html"
+  },
+  {
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Kashmir"
+    ],
+    "date": "2014-01-26",
+    "description": "As a precautionary measure on 26th January, 2014, mobile Internet, along with mobile telecommunication services was suspended for a few hours.",
+    "source": "http://economictimes.indiatimes.com/news/politics-and-nation/mobile-phone-services-hit-in-kashmir-valley/articleshow/29396681.cms?intenttarget=no"
+  },
+  {
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Kashmir"
+    ],
+    "date": "2014-02-09",
+    "description": "Due to organization of protests at the first death anniversary of Afzal Guru mobile Internet services, and internet through plugged in devices was blocked in most parts of the Kashmir valley as a precautionary measure against apprehended violence till around 5:30 pm on 10th February,2014",
+    "source": "http://www.livemint.com/Politics/rI4LLwxLZE8sgMGVHTse0M/Curfewlikerestrictions-in-Kashmir-Valley-mobile-Internet.html"
+  },
+  {
+    "state:name": "Jammu and Kashmir",
+    "date": "2014-03-14",
+    "description": "The Defence Ministry had asked the Department of Telecom to selectively ban mobile Internet in some places considered 'hot spots' in the state on 11th March, 2014. There is no information available about the restoration of services in the area. ",
+    "source": "http://www.business-standard.com/article/pti-stories/defence-ministry-seeks-selective-ban-on-mobile-internet-in-j-k-114031100760_1.html"
   },
   {
     "state:name": "Jammu and Kashmir",
@@ -14,8 +95,17 @@
       "Kashmir"
     ],
     "date": "2014-03-17",
-    "description": "Internet blocked in the parts of occupied Kashmir to stop pro-independence leaders from addressing a UNHRC event in Geneva via video link on 17th March, 2014",
+    "description": "Internet blocked in parts of Kashmir to stop political leaders from addressing a UNHRC event in Geneva via video link on 17th March, 2014",
     "source": "http://www.kmsnews.org/news/2014/03/18/india-shuts-down-internet-to-prevent-mirwaizs-address.html"
+  },
+  {
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Kashmir"
+    ],
+    "date": "2014-08-15",
+    "description": "Mobile Internet services were blocked as a part of a security protocol on the occasion of Independence Day on 15th August, 2014. The services were restored within a few hours after the official ceremony was completed.",
+    "source": "economictimes.indiatimes.com/news/politics-and-nation/mobile-services-temporarily-suspended-in-kashmir-valley/articleshow/40308174.cms?intenttarget=no"
   },
   {
     "state:name": "Gujarat",
@@ -29,8 +119,26 @@
   {
     "state:name": "Nagaland",
     "date": "2015-03-07",
-    "description": "Internet blackout for 48 hours on 7th March, 2015, after lynching video of a rape accused goes viral",
-    "source": "http://www.medianama.com/2015/03/223-mobile-and-internet-services-blocked-in-nagaland-following-lynching-videos/"
+    "description": "Mobile and broadband Internet services were suspended for 48 hours on 7th March, 2015, after lynching video of a rape accused goes viral",
+    "source": "http://timesofindia.indiatimes.com/india/Nagaland-blocks-internet-services-imposes-curfew-in-tense-Dimapur/articleshow/46497164.cms"
+  },
+  {
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Jammu"
+    ],
+    "date": "2015-06-05",
+    "description": "Both, mobile and broadband Internet services were temporarily blocked in Jammu due to the ongoing clashes between the Sikh groups and the state police of Jammu & Kashmir on 5th June, 2015. Although broadband services were restored on 6th June, 2015, there is no information available about the restoration of mobile Internet services.",
+    "source": "http://www.ndtv.com/india-news/authorities-reach-agreement-with-sikh-community-in-jammu-769205"
+  },
+  {
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Kashmir"
+    ],
+    "date": "2015-08-15",
+    "description": "Due to the sudden rise in militant activities in Kashmir, as a preventive measure, mobile Internet services were suspended from 8:30 am till 12:00 noon during the Independence Day celebrations in the area. Similar measures are adopted on both, Republic Day & Independence Day in the area every year.",
+    "source": "http://articles.economictimes.indiatimes.com/2015-08-15/news/65525213_1_mobile-internet-services-independence-day-bakshi-stadium"
   },
   {
     "state:name": "Gujarat",
@@ -41,7 +149,7 @@
   {
     "state:name": "Manipur",
     "date": "2015-09-02",
-    "description": "Complete internet shut down (mobile and broadband, except for certain BSNL lines) starting 2nd September, 2015 after violence in Churachandpur district",
+    "description": "Complete Internet shut down (mobile and broadband, except for certain BSNL lines) starting 2nd September, 2015 after violence in Churachandpur district",
     "source": "http://scroll.in/article/753108/why-a-blanket-ban-on-the-internet-in-troubled-manipur-is-not-a-good-idea"
   },
   {
@@ -50,8 +158,8 @@
       "Navsari"
     ],
     "date": "2015-09-12",
-    "description": "From 12th September to 13th September, 2015, internet services were cut off in the district of Navsari, Gujarat in lieu of a march organized by Hardik Patel & his  affiliated political organization.",
-    "source": "http://timesofindia.indiatimes.com/city/surat/Internet-banned-in-Navsari-from-midnight/articleshow/48935102.cms"
+    "description": "From 12th September to 13th September, 2015, Internet services were cut off in the district of Navsari, Gujarat in lieu of a march organized by Hardik Patel & his  affiliated political organization.",
+    "source": "http://www.dnaindia.com/india/report-hardik-patel-detained-gujarat-suspends-mobile-net-and-sms-again-2126736"
   },
   {
     "state:name": "Gujarat",
@@ -59,17 +167,8 @@
       "Surat"
     ],
     "date": "2015-09-19",
-    "description": "The city of Surat experienced suspension of mobile internet services on 19th September, 2015 as Hardik Patel was detained by the police for violating prohibitory orders against taking out a rally in the area.",
+    "description": "The city of Surat experienced suspension of mobile Internet services on 19th September, 2015 as Hardik Patel was detained by the police for violating prohibitory orders against taking out a rally in the area.",
     "source": "http://www.newindianexpress.com/nation/Hardik-Arrested-in-Surat-Mobile-Internet-Banned/2015/09/19/article3036722.ece"
-  },
-  {
-    "state:name": "Gujarat",
-    "districts": [
-      "Godhara"
-    ],
-    "date": "2015-09-25",
-    "description": "Mobile internet services were shut down as a precautionary measure in Godhara for 24 hours on the occasion of Ganesh Visarjans, when derogatory messages against Islam started making rounds on  Whatsapp on 28th September, 2015",
-    "source": "http://indianexpress.com/article/india/gujarat/gujarat-internet-services-in-godhra-suspended-for-24-hours/"
   },
   {
     "state:name": "Jammu and Kashmir",
@@ -77,72 +176,26 @@
       "Kashmir"
     ],
     "date": "2015-09-25",
-    "description": "Internet shut down during Eid on 25th September, 2015, apprehending violence against the  prohibition on cow slaughter and selling of beef in the State.",
-    "source": "http://indianexpress.com/article/india/india-others/to-avoid-tension-during-eid-ul-zuha-govt-ban-internet-in-jk-for-two-days-from-tomorrow/"
+    "description": "Mobile, and wireless Internet services were shut down during Eid celebrations on 25th September and 28th September, 2015, apprehending violence against the  prohibition on cow slaughter and selling of beef in the State.",
+    "source": "http://www.thehindu.com/news/national/internet-ban-on-eid-fuels-anger-in-kashmir/article7699176.ece"
   },
   {
     "state:name": "Gujarat",
     "districts": [
-      "Rajkot"
+      "Godhara"
     ],
-    "date": "2015-10-17",
-    "description": "On 17th October, 2015, mobile internet services were suspended for 2 days in Rajkot due to threats made by Hardik Patel to hold a protest in the stadium where a one day international cricket match was scheduled between the teams of India & South Africa. ",
-    "source": "http://indianexpress.com/article/india/india-news-india/mobile-internet-services-banned-in-rajkot-as-patidar-threat-looms/"
-  },
-  {
-    "state:name": "Rajasthan",
-    "date": "2015-12-19",
-    "description": "After reports of caste & communal clashes in the area, the police has permission from the state home department to ban mobile Internet services as per the needto combat inflammatory messages posted through social media networks, starting 19th December, 2015",
-    "source": "http://timesofindia.indiatimes.com/india/Rajasthan-police-to-ban-internet-usage-as-per-needs-to-maintain-communal-harmony/articleshow/50258271.cms"
-  },
-  {
-    "state:name": "Haryana",
-    "date": "2016-02-19",
-    "description": "Subsequent to the Jat reservation protest in Haryana, mobile Internet, and SMS services were blocked in many areas, including Rohtak, Sonepat, and Jhajjar, beginning 19th February, 2016. ",
-    "source": "http://indianexpress.com/article/india/india-news-india/rohtak-jat-reservation-mobile-internet-blocked-haryana/"
-  },
-  {
-    "state:name": "Gujarat",
-    "date": "2016-02-28",
-    "description": "Mobile Internet services were suspended for 4 hours to prevent cheating on the Revenue Accountants Recruitment Exam on 28th February, 2016",
-    "source": "http://zeenews.india.com/news/india/mobile-internet-services-blocked-in-gujarat-know-why_1860264.html"
+    "date": "2015-09-25",
+    "description": "Mobile Internet services were shut down as a precautionary measure in Godhara for 24 hours on the occasion of Ganesh Visarjans, when derogatory messages against Islam started making rounds on  Whatsapp on 28th September, 2015",
+    "source": "http://indianexpress.com/article/india/gujarat/gujarat-internet-services-in-godhra-suspended-for-24-hours/"
   },
   {
     "state:name": "Jammu and Kashmir",
     "districts": [
-      "Srinagar",
-      "Pulwama"
+      "Jammu"
     ],
-    "date": "2016-04-14",
-    "description": "To check rumor mongering about an incident that led to death of 4 people in a firing by security forces,  mobile internet services were suspended in the area on 14th April, 2016.",
-    "source": "http://www.hindustantimes.com/india/handwara-firing-mobile-internet-services-suspended-in-kashmir/story-iPQHs3vdmiWx7w0uCGK8NJ.html"
-  },
-  {
-    "state:name": "Jharkhand",
-    "districts": [
-      "Bokaro"
-    ],
-    "date": "2016-04-16",
-    "description": "Subsequent to the communal clashes in the town of Bokaro during the celebration of Ram Navami, internet services were cut off to prevent use of social media as a tool for spreading communal fear and hatred. ",
-    "source": "http://timesofindia.indiatimes.com/city/ranchi/Internet-services-blocked-in-Bokaro-after-communal-tension/articleshow/51856786.cms"
-  },
-  {
-    "state:name": "Gujarat",
-    "districts": [
-      "Ahmedabad"
-    ],
-    "date": "2016-04-17",
-    "description": "Pursuant to the Patel reservation agitation, mobile internet sevices were suspended in various parts of Gujarat on 17th April, 2016",
-    "source": "http://indianexpress.com/article/india/india-news-india/gujarat-curfew-imposed-in-mehsana-as-patels-rally-turns-violent-lalji-patel-injured-2757681/"
-  },
-  {
-    "state:name": "Uttar Pradesh",
-    "districts": [
-      "Azamgarh"
-    ],
-    "date": "2016-05-17",
-    "description": "In Azamgarh, local administration resorted to suspension of mobile & broadband services until 18th May, 2016 as a precautionary measure to check the outbreak of riots due to communal tension in the area. ",
-    "source": "http://timesofindia.indiatimes.com/city/lucknow/Internet-blocked-in-riot-hit-Azamgarh/articleshow/52300964.cms"
+    "date": "2015-10-08",
+    "description": "Jammu experienced suspension of mobile internet services on 8th October, 2015  for around 5 hours to prevent misuse of social media after three carcasses of slaughtered cows were found in the Udhampur area, and the organization of a beef party by an independent MLA",
+    "source": "http://indianexpress.com/article/india/india-news-india/mobile-internet-services-cut-in-jammu-after-recovery-of-cows-carcasses/"
   },
   {
     "state:name": "Meghalaya",
@@ -154,22 +207,79 @@
     "source": "http://www.theshillongtimes.com/2015/10/13/admin-justifies-blocking-internet/"
   },
   {
-    "state:name": "Haryana",
+    "state:name": "Gujarat",
     "districts": [
-      "Sonipat"
+      "Rajkot"
     ],
-    "date": "2016-06-04",
-    "description": "Mobile internet services were blocked in Sonipat, Haryana until further notice to prevent spread of misinformation prior to the agitation organized by the Jat community on 5th June, 2016",
-    "source": "http://indianexpress.com/article/india/india-news-india/haryana-jat-quota-agitation-sonipat-mobile-internet-service-banned-2835078/"
+    "date": "2015-10-17",
+    "description": "On 17th October, 2015, mobile Internet services were suspended for 2 days in Rajkot due to threats made by Hardik Patel to hold a protest in the stadium where a one day international cricket match was scheduled between the teams of India & South Africa. ",
+    "source": "http://indianexpress.com/article/india/india-news-india/mobile-internet-services-banned-in-rajkot-as-patidar-threat-looms/"
+  },
+  {
+    "state:name": "Rajasthan",
+    "districts": [
+      "Bhilwara"
+    ],
+    "date": "2015-10-24",
+    "description": "In an incident of communal tension over the alleged killing of a muslim youth, Internet services were suspended in both these areas for 24 hours on 24th October, 2015.",
+    "source": "http://www.thehindu.com/news/national/other-states/communal-tension-in-rajasthan-cities/article7800532.ece"
+  },
+  {
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Kashmir"
+    ],
+    "date": "2015-11-07",
+    "description": "On the visit of Prime Minister, Narendra Modi, the mobile Internet services were temporarily blocked in the Kashmir region as a precautionary measure for his high profile address at a public rally on 7th November, 2015. ",
+    "source": "http://www.firstpost.com/india/mobile-internet-services-blocked-in-kashmir-for-pm-modis-rally-in-srinagar-2498760.html"
+  },
+  {
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Kashmir"
+      ],
+    "date": "2016-01-26",
+    "description": "On the occasion of Republic Day, mobile Internet services were snapped for a few hours as a precautionary measure on 26th January, 2016",
+    "source": "http://indianexpress.com/article/india/india-news-india/republic-day-2016-celebrations-pass-off-peacefully-in-kashmir/"
   },
   {
     "state:name": "Haryana",
     "districts": [
-      "Rohtak"
+      "Jhajjar",
+      "Panipat",
+      "Sonipat",
+      "Hisar",
+      "Rohtak",
+      "Jind",
+      "Bhiwani"
+      ],
+    "date": "2016-02-19",
+    "description": "Subsequent to the Jat reservation protest in Haryana, mobile Internet, and SMS services were blocked in many areas, including Rohtak, Sonepat, and Jhajjar, beginning 19th February, 2016. ",
+    "source": "http://indianexpress.com/article/india/india-news-india/rohtak-jat-reservation-mobile-internet-blocked-haryana/"
+  },
+  {
+    "state:name": "Rajasthan",
+    "districts": [
+      "Bharatpur"
     ],
-    "date": "2016-06-05",
-    "description": "Mobile internet services and bulk SMS were blocked in Rohtak on 5th June, 2016 to curb the use of social media from instigating violence in the Jat agitation.",
-    "source": "http://indianexpress.com/article/india/india-news-india/jat-reservation-live-updates-protest-haryana-hisar-rohtak-jind-ambala-2835462/"
+    "date": "2016-02-22",
+    "description": "Due to the agitations of the Jat community for reservations as OBC, Internet services were shut down on 22nd February, 2016 and restored on the evening of 23rd February, 2016 in the Bharatpur district. ",
+    "source": "http://indianexpress.com/article/india/india-news-india/jat-quota-protests-in-rajasthan-districts-called-off/"
+  },
+  {
+    "state:name": "Gujarat",
+    "date": "2016-02-28",
+    "description": "Mobile Internet services were suspended for 4 hours to prevent cheating on the Revenue Accountants Recruitment Exam on 28th February, 2016",
+    "source": "http://zeenews.india.com/news/india/mobile-internet-services-blocked-in-gujarat-know-why_1860264.html"
+  },
+  {
+    "state:name": "Gujarat",
+    "date": "2016-02-28",
+    "districts":[
+      "Mehasana"
+      ],
+    "description": "Mobile Internet services were suspended in the district of Mehasana on 28th February, 2016 for 12 hours from 8 am to 8 pm as the Patidar Anamat Andolan Samiti (PAAS) decided to continue with their women's conference despite being officially refused permission by the district Government. ",
+    "source": "deshgujarat.com/2016/02/26/prohibitory-orders-and-mobile-internet-ban-in-mahesana-on-february-28/"
   },
   {
     "state:name": "Haryana",
@@ -178,113 +288,63 @@
       "Rohtak"
     ],
     "date": "2016-03-18",
-    "description": "Mobile internet services were suspended in various districts in Haryana as a prohibitory measure in light of the possible re-agitation of the Jat community for classification as Other Backward Classes (OBC)",
-    "source": "http://indianexpress.com/article/india/india-news-india/jat-reservation-agitation-mobile-internet-haryana/"
+    "description": "Mobile internet services were suspended in various districts in Haryana as a prohibitory measure in light of the possible re-agitation of the Jat community for classification as Other Backward Classes (OBC) on 18th March, 2016 and restored on the same day",
+    "source": "http://www.ndtv.com/india-news/jat-stir-mobile-internet-services-restored-in-haryana-1288663"
   },
   {
     "state:name": "Jammu and Kashmir",
     "districts": [
-      "Jammu"
+      "Srinagar",
+      "Pulwama"
     ],
-    "date": "2015-10-08",
-    "description": "Jammu experienced suspension of mobile internet services to prevent misuse of social media after three carcasses of slaughtered cows were found in the Udhampur area, and the organization of a beef party by an independent MLA",
-    "source": "http://www.dnaindia.com/india/report-beef-ban-mobile-internet-services-cut-in-jammu-after-tension-in-udhampur-2132781"
+    "date": "2016-04-14",
+    "description": "To check rumor mongering about an incident that led to death of 4 people in a firing by security forces,  mobile internet services were suspended in the area on 14th April, 2016 and restored on 18th April, 2016.",
+    "source": "http://www.ndtv.com/india-news/mobile-internet-services-restored-in-kashmir-valley-1396587"
   },
   {
-    "state:name": "Jammu and Kashmir",
+    "state:name": "Jharkhand",
     "districts": [
-      "Kashmir"
+      "Bokaro"
     ],
-    "date": "2015-08-15",
-    "description": "Due to the sudden rise in militant activities in Kashmir, as a preventive measure, mobile internet services were suspended from 8:30 am till 12:00 noon during the Independence Day celebrations in the area. Similar measures are adopted on both, Republic Day & Independence Day in the area every year.",
-    "source": "http://articles.economictimes.indiatimes.com/2015-08-15/news/65525213_1_mobile-internet-services-independence-day-bakshi-stadium"
+    "date": "2016-04-16",
+    "description": "Subsequent to the communal clashes in the town of Bokaro during the celebration of Ram Navami, internet services were cut off from 16th April, 2016 to 18th April, 2016 to prevent use of social media as a tool for spreading communal fear and hatred. ",
+    "source": "http://timesofindia.indiatimes.com/city/ranchi/Internet-services-blocked-in-Bokaro-after-communal-tension/articleshow/51856786.cms"
   },
   {
-    "state:name": "Jammu and Kashmir",
+    "state:name": "Gujarat",
     "districts": [
-      "Jammu"
+      "Ahmedabad"
     ],
-    "date": "2015-06-05",
-    "description": "Internet services were temporarily blocked in Jammu due to the ongoing clashes between the Sikh groups and the state police of Jammu & Kashmir",
-    "source": "http://zeenews.india.com/news/jammu-and-kashmir/internet-blocked-temporarily-due-to-sikh-police-clash-in-jammu_1607966.html"
+    "date": "2016-04-17",
+    "description": "Pursuant to the Patel reservation agitation, mobile internet sevices were suspended in various parts of Gujarat on 17th April, 2016 and restored on 19th April, 2016",
+    "source": "www.dnaindia.com/india/report-patidar-agitation-internet-services-restored-in-gujarat-2203678"
   },
   {
-    "state:name": "Jammu and Kashmir",
+    "state:name": "Uttar Pradesh",
     "districts": [
-      "Kashmir"
+      "Azamgarh"
     ],
-    "date": "2014-02-09",
-    "description": "Due to organization of protests at the first death anniversary of Afzal Guru mobile internet services, and internet through plugged in devices was blocked in most parts of the Kashmir valley as a precautionary measure against apprehended violence.",
-    "source": "http://www.livemint.com/Politics/rI4LLwxLZE8sgMGVHTse0M/Curfewlikerestrictions-in-Kashmir-Valley-mobile-Internet.html"
+    "date": "2016-05-17",
+    "description": "In Azamgarh, local administration resorted to suspension of mobile & broadband services from 16th May, 2016 18th May, 2016 as a precautionary measure to check the outbreak of riots due to communal tension in the area. ",
+    "source": "http://timesofindia.indiatimes.com/city/lucknow/Internet-blocked-in-riot-hit-Azamgarh/articleshow/52300964.cms"
   },
   {
-    "state:name": "Jammu and Kashmir",
-    "date": "2013-08-10",
-    "description": "The entire state experienced a blackout of mobile internet services, lasting almost 5 days due to communal riots that spurred in the Kishtwar district of the state.",
-    "source": "http://thewire.in/2016/04/15/jammu-kashmir-has-lost-18-days-of-mobile-internet-access-over-last-four-years-29857/"
-  },
-  {
-    "state:name": "Jammu and Kashmir",
+    "state:name": "Haryana",
     "districts": [
-      "Kashmir"
+      "Sonipat"
     ],
-    "date": "2013-07-18",
-    "description": "Disconnect of internet services through mobiles & dongles in the Kashmir valley post the killing of four people in the Ramban district after clashes with the Border Security Forces (BSF)",
-    "source": "http://timesofindia.indiatimes.com/tech/tech-news/Internet-services-suspended-in-Kashmir-Valley/articleshow/21145412.cms"
+    "date": "2016-06-04",
+    "description": "Mobile internet services were blocked in Sonipat, Haryana on 4th June, 2016 until further notice to prevent spread of misinformation prior to the agitation organized by the Jat community on 5th June, 2016",
+    "source": "http://indianexpress.com/article/india/india-news-india/haryana-jat-quota-agitation-sonipat-mobile-internet-service-banned-2835078/"
   },
   {
-    "state:name": "Jammu and Kashmir",
+    "state:name": "Haryana",
     "districts": [
-      "Kashmir"
+      "Rohtak"
     ],
-    "date": "2015-11-07",
-    "description": "On the visit of Prime Minister, Narendra Modi, the mobile internet services were temporarily blocked in the Kashmir region as a precautionary measure for his high profile address at a public rally. ",
-    "source": "http://www.firstpost.com/india/mobile-internet-services-blocked-in-kashmir-for-pm-modis-rally-in-srinagar-2498760.html"
-  },
-  {
-    "state:name": "Jammu and Kashmir",
-    "districts": [
-      "Jammu"
-    ],
-    "date": "2016-06-22",
-    "description": "Mobile internet services were suspended in Jammu region ahead of a wrestling match, the venue for which is disputed between two communities, and experienced violence in 2014 as well.",
-    "source": "http://www.thehindu.com/news/national/other-states/article8756852.ece"
-  },
-  {
-    "state:name": "Jammu and Kashmir",
-    "districts": [
-      "Kashmir"
-    ],
-    "date": "2016-07-09",
-    "description": "Following the killing of Burhan Wani, Kashmir valley experienced a suspension of mobile internet services to check the spread of rumors by anti-social elements.",
-    "source": "http://indianexpress.com/article/india/india-news-india/mobile-internet-services-suspended-in-kashmir-2902579/"
-  },
-  {
-    "state:name": "Arunachal Pradesh",
-    "districts": [
-      "Itanagar"
-    ],
-    "date": "2016-08-10",
-    "description": "Mobile internet services were disrupted for two days in Itanagar, Arunachal Pradesh on 10th August, 2016 following the death of former Chief Minister of Arunachal Pradesh, Kalikho Pul.",
-    "source": "http://www.telegraphindia.com/1160812/jsp/frontpage/story_101982.jsp#.V7aGI9GY7rd"
-  },
-  {
-    "state:name": "Jammu and Kashmir",
-    "districts": [
-      "Jammu"
-    ],
-    "date": "2016-08-05",
-    "description": "Due to bandhs being declared in the Chenab valley to show solidarity with protests being undertaken by Kashmiris, mobile internet services were suspended in Jammu region on 5th August, 2016.",
-    "source": "http://indianexpress.com/article/india/india-news-india/internet-services-suspended-in-jammu-amid-mounting-tension-in-chenab-valley-2954958/"
-  },
-  {
-    "state:name": "Jammu and Kashmir",
-    "districts": [
-      "Kashmir"
-    ],
-    "date": "2016-08-13",
-    "description": "After the disconnect from mobile internet services since 9th July, 2016, broadband internet services were also suspended in the Kashmir valley on 13th August, 2016 as a precautionary measure to prevent rumor mongering due to unrest between the protestors and the security forces. ",
-    "source": "http://www.ndtv.com/india-news/broadband-internet-services-suspended-across-kashmir-1443867"
+    "date": "2016-06-05",
+    "description": "Mobile internet services and bulk SMS were blocked in Rohtak on 5th June, 2016 to curb the use of social media from instigating violence in the Jat agitation, along with the prolonged shut down in Sonipat.",
+    "source": "http://indianexpress.com/article/india/india-news-india/jat-reservation-live-updates-protest-haryana-hisar-rohtak-jind-ambala-2835462/"
   },
   {
     "state:name": "Jammu and Kashmir",
@@ -298,8 +358,72 @@
       "Poonch"
     ],
     "date": "2016-06-22",
-    "description": "Over a controversial issue, mobile internet services were suspended in the Poonch district on 22nd June, 2016 on operational and security grounds and to prevent law and order situations.",
+    "description": "Over a controversial issue, mobile internet services were suspended in the Poonch district on 22nd June, 2016 on operational and security grounds and to prevent law and order situations and were restored on the same day.",
     "source": "http://www.greaterkashmir.com/news/pir-panjal/mobile-internet-services-snapped-in-poonch/221112.html?fromNewsdog=1"
+  },
+  {
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Jammu"
+    ],
+    "date": "2016-06-22",
+    "description": "Mobile internet services were suspended in Jammu region ahead of a wrestling match, the venue for which is disputed between two communities, and experienced violence in 2014 as well.",
+    "source": "http://www.thehindu.com/news/national/other-states/article8756852.ece"
+  },
+  {
+    "state:name": "Rajasthan",
+    "districts": [
+      "Barmer",
+      "Jaisalmer"
+    ],
+    "date": "2016-06-30",
+    "description": "After the death of a person in police firing, mobile Internet services were shut down in Barmer and Jaisalmer for 48 hours on 30th June, 2016 as calls for a Bandh was announced by the community members of the person who was killed. ",
+    "source": "http://economictimes.indiatimes.com/tech/internet/mobile-internet-blocked-in-jaisalmer-barmer/articleshow/52992932.cms"
+  },
+  {
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Kashmir"
+    ],
+    "date": "2016-07-09",
+    "description": "Following the killing of Burhan Wani, Kashmir valley and the Jammu region experienced a suspension of mobile internet services to check the spread of rumors by anti-social elements on 9th July, 2016.However, mobile internet services were restored in Jammu region on 26th July, 2016; after being suspended for 17 days. Reportedly, mobile internet services were restored in Kashmir valley on 19th November for post paid connections and on 27th January, 2017 for pre-paid connections.",
+    "source": "https://scroll.in/latest/827906/prepaid-mobile-internet-services-restored-in-kashmir-after-six-months"
+  },
+  {
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Jammu"
+    ],
+    "date": "2016-08-05",
+    "description": "Due to bandhs being declared in the Chenab valley to show solidarity with protests being undertaken by Kashmiris, mobile internet services were suspended in Jammu region on 5th August, 2016.",
+    "source": "http://indianexpress.com/article/india/india-news-india/internet-services-suspended-in-jammu-amid-mounting-tension-in-chenab-valley-2954958/"
+  },
+  {
+    "state:name": "Bihar",
+    "districts": [
+      "Saran"
+    ],
+    "date": "2016-08-06",
+    "description": "Due to communal clashes in the Saran district after a video of the desecration of hindu deities went viral on social media, all internet services were shut down in the district under Section 144 of CrPC on 6th August, 2016 till 8th August, 2016 to prevent spread of rumors.",
+    "source": "http://www.financialexpress.com/india-news/bihar-bans-internet-services-as-communal-violence-breaks-out/340517/"
+  },
+  {
+    "state:name": "Arunachal Pradesh",
+    "districts": [
+      "Itanagar"
+    ],
+    "date": "2016-08-10",
+    "description": "Mobile internet services were disrupted for two days in Itanagar, Arunachal Pradesh on 10th August, 2016 following the death of former Chief Minister of Arunachal Pradesh, Kalikho Pul.",
+    "source": "http://www.telegraphindia.com/1160812/jsp/frontpage/story_101982.jsp#.V7aGI9GY7rd"
+  },
+  {
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Kashmir"
+    ],
+    "date": "2016-08-13",
+    "description": "After the disconnect from mobile internet services since 9th July, 2016, broadband internet services were also suspended in the Kashmir valley on 13th August, 2016 for 5 days as a precautionary measure to prevent rumor mongering due to unrest between the protestors and the security forces. ",
+    "source": "http://www.greaterkashmir.com/news/kashmir/day-41-curfew-continues-in-kashmir-broadband-services-restored/226038.html"
   },
   {
     "state:name": "Jammu and Kashmir",
@@ -311,13 +435,13 @@
     "source": "http://www.ndtv.com/india-news/broadband-internet-services-resume-in-kashmir-valley-1459976"
   },
   {
-    "state:name": "Bihar",
+    "state:name": "Rajasthan",
     "districts": [
-      "Saran"
+      "Bhilwara"
     ],
-    "date": "2016-08-06",
-    "description": "Due to communal clashes in the Saran district after a video of the desecration of hindu deities went viral on social media, all internet services were shut down in the district under Section 144 of CrPC on 6th August, 2016 to prevent spread of rumors.",
-    "source": "http://timesofindia.indiatimes.com/city/patna/Section-144-imposed-internet-banned-in-Saran-after-deity-desecration-video-goes-viral/articleshow/53571544.cms"
+    "date": "2016-09-16",
+    "description": "Internet services were blocked for a day in Bhilwara on 16th September, 2016 after the stabbing of a 21 year old Vishwa Hindu Parishad activist as he was returning home from Ganpati Puja.",
+    "source": "http://timesofindia.indiatimes.com/city/jaipur/Internet-blocked-in-Bhilwara-to-curb-spread-of-rumours/articleshow/54369844.cms"
   },
   {
     "state:name": "Uttar Pradesh",
@@ -338,49 +462,6 @@
     "source": "http://www.hindustantimes.com/india-news/mobile-internet-services-suspended-in-protest-hit-nashik/story-chybNWRPW1j7mH0onDhJON.html"
   },
   {
-    "state:name": "Rajasthan",
-    "districts": [
-      "Bhilwara"
-    ],
-    "date": "2015-10-24",
-    "description": "In an incident of communal tension over the alleged killing of a muslim youth, internet services were suspended in both these areas for 24 hours on 24th October, 2015.",
-    "source": "http://www.thehindu.com/news/national/other-states/communal-tension-in-rajasthan-cities/article7800532.ece"
-  },
-  {
-    "state:name": "Rajasthan",
-    "districts": [
-      "Bhilwara"
-    ],
-    "date": "2016-09-16",
-    "description": "Internet services were blocked for a day in Bhilwara on 16th September, 2016 after the stabbing of a 21 year old Vishwa Hindu Parishad activist as he was returning home from Ganpati Puja.",
-    "source": "http://timesofindia.indiatimes.com/city/jaipur/Internet-blocked-in-Bhilwara-to-curb-spread-of-rumours/articleshow/54369844.cms"
-  },
-  {
-    "state:name": "Rajasthan",
-    "districts": [
-      "Bharatpur"
-    ],
-    "date": "2016-02-22",
-    "description": "Due to the agitations of the Jat community for reservations as OBC, internet services were shut down on 22nd February, 2016 and restored on the evening of 23rd February, 2016 in the Bharatpur district. ",
-    "source": "http://indianexpress.com/article/india/india-news-india/jat-quota-protests-in-rajasthan-districts-called-off/"
-  },
-  {
-    "state:name": "Rajasthan",
-    "districts": [
-      "Barmer",
-      "Jaisalmer"
-    ],
-    "date": "2016-06-30",
-    "description": "After the death of a person in police firing, mobile internet services were shut down in Barmer and Jaisalmer for 48 hours on 30th June, 2016 as calls for a Bandh was announced by the community members of the person who was killed. ",
-    "source": "http://economictimes.indiatimes.com/tech/internet/mobile-internet-blocked-in-jaisalmer-barmer/articleshow/52992932.cms"
-  },
-  {
-    "state:name": "Jammu and Kashmir",
-    "date": "2014-03-14",
-    "description": "The Defence Ministry had asked the Department of Telecom to selectively ban mobile Internet in some places considered 'hot spots' in the state on 11th March, 2014. There is no information available about the restoration of services in the area. ",
-    "source": "http://www.business-standard.com/article/pti-stories/defence-ministry-seeks-selective-ban-on-mobile-internet-in-j-k-114031100760_1.html"
-  },
-  {
     "state:name": "Bihar",
     "districts": [
       "Bhojpur",
@@ -389,6 +470,82 @@
     ],
     "date": "2016-10-15",
     "description": "Both, mobile and broadband internet services were disconnected from 15th October to prevent misuse of social media platforms due to violent communal clashes in the area. They were restored in Bhojpur on 18th October, 2016, whereas East Champaran was connected back to internet on 20th October, 2016.",
-    "source": "http://economictimes.indiatimes.com/news/politics-and-nation/communal-tension-grips-6-bihar-districts/articleshow/54867746.cms"
+    "source": "http://timesofindia.indiatimes.com/city/patna/Bhojpur-administration-restores-internet-services/articleshow/54923867.cms"
+  },
+  {
+    "state:name": "Rajasthan",
+    "districts": [
+      "Bhilwara"
+    ],
+    "date": "2016-12-13",
+    "description": "Internet services were suspended under Section 144 CrPC on 13th December, 2016 till 5:00 pm in Bhilwara district due to onslaught of communal tensions co-inciding with the preparations of a Muslim religious function, Barafwat",
+    "source": "rajasthanpatrika.patrika.com/story/bhilwara/section-144-imposed-in-bhilwara-ban-on-internet-2404590.html"
+  },
+  {
+    "state:name": "Manipur",
+    "districts": [
+      "East Imphal",
+      "West Imphal"
+    ],
+    "date": "2016-12-18",
+    "description": "Orders were issued by the District Magistrate to disconnect mobile Internet services in East and West Imphal from 18th December, 2016 due to law and order turmoil over economic blockade by the United Naga Council (UNC). Mobile Internet services were reportedly restored on 30th December, 2016 after a 12 day disruption.",
+    "source": "http://neitham.in/manipur/after-12-day-ban-internet-services-in-manipur-to-be-restored-from-today-inuth-com/"
+  },
+  {
+    "state:name": "Rajasthan",
+    "districts": [
+      "Bhilwara"
+    ],
+    "date": "2016-12-19",
+    "description": "Mobile Internet services were disrupted in the district of Bhilwara on 19th December, 2016 due to the ongoing communal tensions.",
+    "source": "www.samacharjagat.com/news/city/ban-on-mobile-internet-services-in-bhilwara-after-tension-police-force-deployed-115454"
+  },
+  {
+    "state:name": "Rajasthan",
+    "districts": [
+      "Bhilwara"
+    ],
+    "date": "2016-12-27",
+    "description": "Internet services were suspended in the district of Bhilwara to maintain law and order for reportedly 72 hours starting 27th December, 2016 as the Nagrik Suraksha Manch (a citizens' group) called for a city wide Bandh to protest lack of action taken against the accused in the ongoing communal riots.",
+    "source": "http://www.sabguru.com/internet-services-blocked-in-bhilwara-city-for-72-hours/"
+  },
+    {
+    "state:name": "Nagaland",
+    "districts": [
+      "Wokha",
+      "Phek"
+    ],
+    "date": "2017-01-19",
+    "description": "Mobile Internet services were suspended in Wokha and Phek districts starting 19th January, 2017 due to violence in the area on the issue of reservation in local body elections",
+    "source": "https://issuu.com/nagalandpost90/docs/january_22__2017"
+  },
+  {
+    "state:name": "Haryana",
+    "districts": [
+      "Jhajjar"
+    ],
+    "date": "2017-01-29",
+    "description": "Owing to the agitations being held by the Jat community, mobile Internet services were suspended in Jhajjar starting 29th January, 2017.",
+    "source": "http://indianexpress.com/article/india/jat-agitations-mobile-internet-services-blocked-in-jhajjar-4498224/"
+  },
+  {
+    "state:name": "Nagaland",
+    "date": "2017-01-30",
+    "description": "Mobile Internet services were disrupted in the entire state starting 30th January, 2017 as clashes ensued between the locals and police over the State government's decision to apply women reservation in civic body elections",
+    "source": "morungexpress.com/firm-tyranny-dnyf/"
+  },
+  {
+    "state:name": "Haryana",
+    "districts": [
+      "Rohtak",
+      "Bhiwani",
+      "Hisar",
+      "Sonipat",
+      "Panipat",
+      "Jassia"
+    ],
+    "date": "2017-01-31",
+    "description": "Mobile Internet was suspended in districts of Rohtak, Bhiwani, Hisar, Sonipat, and Panipat starting 31st January, 2017 due to the ongoing Jat agitations in various parts of the state. ",
+    "source": "http://www.ptinews.com/news/8352337_Jat-stir-enters-third-day--remains-peaceful.html"
   }
 ]
