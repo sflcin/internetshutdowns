@@ -5,6 +5,7 @@ var less = require('less-middleware');
 var compression = require('compression');
 var path = require('path');
 var logger = require('morgan');
+var nodemailer = require('nodemailer');
 
 var app = express();
 
@@ -24,6 +25,17 @@ app.use(logger('dev'));
 if (app.get('env') === 'development') {
   app.locals.pretty = true;
 }
+
+// Setup NodeMailer
+var smtpTransport = nodemailer.createTransport("SMTP",{
+  host: process.env.SMTP_HOST || undefined,
+  port: process.env.SMTP_PORT || undefined,
+  secure: true,
+  auth: {
+    user: process.env.SMTP_USER || undefined,
+    pass: process.env.SMTP_PASS || undefined
+  }
+});
 
 // Routes
 app.get('/', function (req, res) {
@@ -54,8 +66,21 @@ app.get('/resources', function (req, res) {
 });
 
 app.post('/shutdown', function (req, res) {
-  console.log(req.body);
-  res.sendStatus(200);
+  smtpTransport.sendMail({
+    from: process.env.EMAIL_FROM || 'internetshutdowns@sflc.in',
+    to: process.env.EMAIL_TO || ['sarath@sflc.in', 'nehmat@sflc.in'],
+    subject: 'New Submission from InternetShutdowns.in',
+    text: JSON.stringify(req.body),
+    //html: htmlify??
+  }, function (err, response) {
+    console.log(err);
+    console.log(response);
+    if (err) {
+      res.sendStatus(400);
+    } else {
+      res.sendStatus(200);
+    }
+  });
 });
 
 app.listen(app.get('port'), function() {

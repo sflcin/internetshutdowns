@@ -287,6 +287,33 @@
       </div>
     </div>
   </div>
+  <div class="modal fade" id = "successModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p>Thank you for notifying the incident!</p>
+          <p>We will verify this and update our tracker accordingly.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  <div class="modal fade" id = "failureModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p>Thank you for notifying the incident!</p>
+          <p>There was some trouble receiving your information. Please try again, or drop us an email with the details.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-failure" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
 </body>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>

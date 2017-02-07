@@ -16,6 +16,7 @@
     "less-middleware": "^2.2.0",
     "load-grunt-tasks": "^3.3.0",
     "morgan": "^1.7.0",
+    "nodemailer": "^0.7.1",
     "turf-centroid": "^3.0.12",
     "watchify": "^3.7.0"
   },

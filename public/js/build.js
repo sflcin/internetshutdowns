@@ -450,20 +450,22 @@ mobileHeaderRactive.on('resetMapAndSidebar', function () {
 
 $(function(){
   $('#report').on('click', function(e){
-    console.log($('#report-shutdown').serialize());
     e.preventDefault();
     $.ajax({
       url: '/shutdown',
       type: 'POST',
       data: $('#report-shutdown').serialize(),
       success: function(data){
-        alert('successfully submitted')
+        $('#reportShutdownModal').modal('hide');
+        $('#successModal').modal('show');
       },
       error: function(){
-        alert("failure");
+        $('#reportShutdownModal').modal('hide');
+        $('#failureModal').modal('show');
       }
     });
   });
+
 });
 
 },{}]},{},[1]);
