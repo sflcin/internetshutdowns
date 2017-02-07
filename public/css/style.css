@@ -165,6 +165,10 @@ footer a:hover, footer a:focus {
   .navbar-brand.logo {
     font-size: 14px;
   }
+
+  .site-name {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
