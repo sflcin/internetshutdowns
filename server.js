@@ -53,6 +53,11 @@ app.get('/resources', function (req, res) {
   res.render('resources');
 });
 
+app.post('/shutdown', function (req, res) {
+  console.log(req.body);
+  res.sendStatus(200);
+});
+
 app.listen(app.get('port'), function() {
   console.log('Express server listening on port ' + app.get('port'));
 });

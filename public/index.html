@@ -257,32 +257,32 @@
           <h4 class="modal-title" id="exampleModalLabel">Report an Internet Shutdown</h4>
         </div>
         <div class="modal-body">
-          <form>
+          <form id="report-shutdown">
             <div class="form-group">
               <label for="state" class="control-label">State:</label>
-              <input type="text" class="form-control" id="state">
+              <input type="text" class="form-control" name="state">
             </div>
             <div class="form-group">
               <label for="locality" class="control-label">Locality:</label>
-              <input type="text" class="form-control" id="locality">
+              <input type="text" class="form-control" name="locality">
             </div>
             <div class="form-group">
               <label for="date" class="control-label">Date:</label>
-              <input type="text" class="form-control" id="date" type="date">
+              <input type="text" class="form-control" name="date" type="date">
             </div>
             <div class="form-group">
               <label for="description" class="control-label">Description:</label>
-              <textarea class="form-control" id="description"></textarea>
+              <textarea class="form-control" name="description"></textarea>
             </div>
             <div class="form-group">
               <label for="source" class="control-label">Source:</label>
-              <input type="text" class="form-control" id="source" type="url">
+              <input type="text" class="form-control" name="source" type="url">
             </div>
           </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary btn-success">Report</button>
+          <input type="submit" id="report" value="Report" class="btn btn-primary btn-success"></input>
         </div>
       </div>
     </div>

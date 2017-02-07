@@ -445,4 +445,25 @@ mobileHeaderRactive.on('resetMapAndSidebar', function () {
   mobileHeader.reset();
 });
 
+// Report a shutdown
+// TODO: Captcha?
+
+$(function(){
+  $('#report').on('click', function(e){
+    console.log($('#report-shutdown').serialize());
+    e.preventDefault();
+    $.ajax({
+      url: '/shutdown',
+      type: 'POST',
+      data: $('#report-shutdown').serialize(),
+      success: function(data){
+        alert('successfully submitted')
+      },
+      error: function(){
+        alert("failure");
+      }
+    });
+  });
+});
+
 },{}]},{},[1]);
