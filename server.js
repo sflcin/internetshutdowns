@@ -34,15 +34,15 @@ app.get('/shutdowns.json', function (req, res) {
   res.sendfile('public/data/shutdowns.json');
 });
 
-app.get('/about', function (req, res) {
-  res.render('about');
-});
-
 var faqList = require('./public/data/faqs.json');
-app.get('/why-care', function (req, res) {
-  res.render('why-care', {
+app.get('/about', function (req, res) {
+  res.render('about', {
     faqList: faqList
   });
+});
+
+app.get('/why-care', function (req, res) {
+  res.render('why-care');
 });
 
 app.listen(app.get('port'), function() {
