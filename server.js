@@ -45,6 +45,10 @@ app.get('/why-care', function (req, res) {
   res.render('why-care');
 });
 
+app.get('/contribute', function (req, res) {
+  res.render('contribute');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Express server listening on port ' + app.get('port'));
 });
