@@ -127,6 +127,16 @@ footer {
   background-color: #1586C9;
 }
 
+footer a {
+  color: #ffffff;
+}
+
+footer a:hover, footer a:focus {
+  color: #232323;
+  text-decoration: none;
+}
+
+
 /* Button Styles */
 
 .btn-link {
