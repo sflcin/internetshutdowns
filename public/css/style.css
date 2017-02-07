@@ -188,8 +188,10 @@ footer {
   color: #ffdd55;
 }
 
-.name {
+#mobile-header .name {
   font-size: 18px;
+  text-transform: uppercase;
+  margin-left: 10px; // because the button below the header has a padding
 }
 
 .trends {
