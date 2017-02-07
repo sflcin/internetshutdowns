@@ -49,6 +49,10 @@ app.get('/contribute', function (req, res) {
   res.render('contribute');
 });
 
+app.get('/resources', function (req, res) {
+  res.render('resources');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Express server listening on port ' + app.get('port'));
 });
