@@ -1,37 +1,26 @@
 nav.navbar.navbar-default
-    .container-fluid
-        // Brand and toggle get grouped for better mobile display
-        .navbar-header
-          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
-            span.sr-only Toggle navigation
-            |         
-            span.icon-bar
-            |         
-            span.icon-bar
-            |         
-            span.icon-bar
-          |       
-          a.navbar-brand.sflc-logo(href='http://sflc.in')
-            img(src='img/sflc-logo-white.png', height='25px')
-          |       
-          a.navbar-brand.logo(href='/')
-            img(src='img/logo.png', height='25px')
-            |         
-            strong Internet
-            | Shutdown Tracker
-        // Collect the nav links, forms, and other content for toggling
-        #bs-example-navbar-collapse-1.collapse.navbar-collapse
-          ul.nav.navbar-nav.navbar-right
-            li
-              a(href='/about') About
-            |         
-            li
-              a(href='/why-care') Why should I care
-            |         
-            li
-              a(href='/contribute') What can I do
-            |         
-            li
-              a(href='/resources') Resources
-        // /.navbar-collapse
-      // /.container-fluid
+  .container-fluid
+    // Brand and toggle get grouped for better mobile display
+    .navbar-header
+      button.navbar-toggle.offcanvas-toggle(type='button', data-toggle='offcanvas', data-target='#js-bootstrap-offcanvas')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand.sflc-logo(href='http://sflc.in')
+        img(src='img/sflc-logo-white.png', height='25px')
+      a.navbar-brand.logo(href='/')
+        img(src='img/logo.png', height='25px')
+        strong Internet
+        | Shutdown Tracker
+    // Collect the nav links, forms, and other content for toggling
+    #js-bootstrap-offcanvas.navbar-offcanvas.navbar-offcanvas-right.navbar-offcanvas-touch
+      ul.nav.navbar-nav.navbar-right
+        li
+          a(href='/about') About
+        li
+          a(href='/why-care') Why should I care
+        li
+          a(href='/contribute') What can I do
+        li
+          a(href='/resources') Resources
