@@ -65,6 +65,10 @@ app.get('/resources', function (req, res) {
   res.render('resources');
 });
 
+app.get('/privacy-policy', function (req, res) {
+  res.render('privacy-policy');
+});
+
 app.post('/shutdown', function (req, res) {
   smtpTransport.sendMail({
     from: process.env.EMAIL_FROM || 'internetshutdowns@sflc.in',
