@@ -23,7 +23,7 @@ body {
 }
 
 .navbar-brand.logo, .navbar-brand.logo:hover, .navbar-brand.logo:focus {
-  background-color: #222222;
+  background-color: #2d2d2d;
   color: white;
 }
 
@@ -156,6 +156,14 @@ footer a:hover, footer a:focus {
 
   #map {
     height: 80vh;
+  }
+
+  .navbar, .navbar-brand.sflc-logo {
+    background-color: #2d2d2d;
+  }
+  
+  .navbar-brand.logo {
+    font-size: 14px;
   }
 }
 
