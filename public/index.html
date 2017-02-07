@@ -60,11 +60,13 @@
         </div>
         <div class="col-xs-7 col-md-6">
           <div class="row">
-            <div class="col-md-6 text-center">
+            <div class="col-md-6">
               <div class="name"><strong>{{title}}</strong></div>
             </div>
-            <div class="col-md-6 text-center report-mobile">
-              <div class="count-label text-center">REPORT A SHUTDOWN</div>
+            <div class="col-md-6 report-mobile">
+              <button title="Report a Shutdown" type="button" id="reportBtnMobile" class="btn btn-link btn-sm" data-toggle="modal" data-target="#reportShutdownModal">
+                REPORT A SHUTDOWN
+              </button>
             </div>
           </div>
         </div>
@@ -102,7 +104,7 @@
           <div id="sidebar"></div>
           <script id="sidebar-template" type="text/ractive">
             <div class="actions row hidden-sm hidden-xs">
-              <button title="Report a Shutdown" type="button" id="reportBtn" class="btn btn-danger btn-sm btn-block" on-click="">
+              <button title="Report a Shutdown" type="button" id="reportBtn" class="btn btn-danger btn-sm btn-block" data-toggle="modal" data-target="#reportShutdownModal">
                 <span class="glyphicon glyphicon-bullhorn"/> REPORT A SHUTDOWN
               </button>
             </div>
