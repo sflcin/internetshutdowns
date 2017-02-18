@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container" id="container">
+  <span class="logo">
+    <a id="site_button" href="https://internetshutdowns.in/" target="_blank"><img src="/img/logo.png" height="40px"/></a>
+  </span>
+  <span class="site">
+    <strong>Internet Shutdowns</strong> are a violation of our fundamental rights. You can help us prevent them.
+    <!-- Help us fight <a id="site_button" href="https://internetshutdowns.in/" target="_blank">Internet Shutdowns in India.</a> -->
+  </span>
+  <span class="petition-button">
+    <a id="petition_button" href="https://internetshutdowns.in/" target="_blank">Learn How</a>
+  </span>
+  <div class="close" id="close_btn">&times;</div>
+</div>
+
+<script type="text/javascript">
+  // Send message to parent window to remove the iframe holding this document
+  function closeBanner(e) {
+    window.parent.postMessage({action: "close"}, "*");
+  }
+  // Close banner on clicking close button or any of the links
+  // Using https://medium.com/@justintulk/how-to-write-a-jquery-each-loop-in-vanilla-javascript-80d746ff83e5#.obmpcqene
+  document.getElementById("close_btn").addEventListener("click", closeBanner);
+  var links = document.getElementsByTagName("a");
+  Array.prototype.forEach.call(links, function (el, index, array) {
+    el.addEventListener("click", closeBanner);
+  });
+
+  setTimeout(function () {
+    document.getElementById('container').style.opacity = 1;
+  }, 1000);
+</script>
+</body>
+</html>

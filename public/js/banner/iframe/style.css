@@ -1,0 +1,98 @@
+html, body {
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  height: 50px;
+  background-color: white;
+  border: 2px solid #ff4812;
+  opacity: 0;
+  -webkit-transition: opacity 2s;
+   -moz-transition: opacity 2s;
+    -ms-transition: opacity 2s;
+     -o-transition: opacity 2s;
+        transition: opacity 2s;
+
+}
+
+.close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  right: 7px;
+	top: calc(50% - 15px);
+	color: #ff4812;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+	cursor: pointer;
+	opacity: 0.8;
+	-webkit-transition: opacity 0.3s;
+	   -moz-transition: opacity 0.3s;
+	    -ms-transition: opacity 0.3s;
+	     -o-transition: opacity 0.3s;
+	        transition: opacity 0.3s;
+}
+.close:hover {
+	opacity: 1;
+}
+
+.site, .petition-button, .logo {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  color: #ff4812;
+  font-family: sans-serif;
+  /*font-weight: bolder;*/
+}
+
+.site a, .petition-button a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+.petition-button {
+  margin-left: 20px;
+  padding: 5px 10px;
+  background-color: #ff4812;
+  color: white;
+  text-transform: uppercase;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+.logo img {
+  margin: 4px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .site, .petition-button {
+    font-size: 60%;
+  }
+	.logo {
+    float: left;
+	}
+  .logo img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+  }
+  .site {
+    float: left;
+    text-align: left;
+    width: 50vw;
+    margin-top: 10px;
+    vertical-align: middle;
+  }
+  .petition-button {
+    float: left;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+}
