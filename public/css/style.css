@@ -11,20 +11,25 @@ body {
 /* Navbar styles */
 
 .navbar {
-  background-color: #114ACB;
-  color: white;
+  background-color: #ffffff;
+  color: #000000;
   max-height: 8vh;
   border: 0px solid transparent;
-  border-radius: 0px;
+  box-shadow: #000000 1px 0px 10px;
+}
+
+.navbar-brand {
+  padding: 0px;
 }
 
 .navbar-brand.sflc-logo, .navbar-brand.sflc-logo:hover, .navbar-brand.sflc-logo:focus {
-  background-color: #1586C9;
+  /*background-color: #1586C9;*/
 }
 
 .navbar-brand.logo, .navbar-brand.logo:hover, .navbar-brand.logo:focus {
-  background-color: #2d2d2d;
-  color: white;
+  background-color: #ffffff;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
@@ -32,24 +37,19 @@ body {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #ffffff;
+  color: #ff4812;
   text-transform: uppercase;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #ffffff;
+  color: #ff4812;
   background-color: #222222;
 }
 
 
 section, .navbar {
   margin-bottom: 0px;
-}
-
-.navbar-brand > img {
-  display: inline-block;
-  margin-right: 5px;
 }
 
 #intro {
@@ -159,9 +159,9 @@ footer a:hover, footer a:focus {
   }
 
   .navbar, .navbar-brand.sflc-logo {
-    background-color: #2d2d2d;
+    background-color: #ffffff;
   }
-  
+
   .navbar-brand.logo {
     font-size: 14px;
   }
