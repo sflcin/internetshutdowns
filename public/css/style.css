@@ -225,3 +225,33 @@ footer a:hover, footer a:focus {
   background-color: #ffffff;
   text-align: right;
 }
+
+#petitionModal .modal-content {
+  border-radius: 0px;
+  border: 2px solid #ff4812;
+}
+
+#petitionModal .row {
+  margin: 20px 0px;
+}
+
+/* Button Styles */
+.no-radius {
+  border-radius: 0px;
+}
+
+button.close {
+  opacity: 1;
+  font-size: 2em;
+}
+
+.btn-petition {
+	color: #ffffff;
+	background-color: #ff4812;
+  text-transform: uppercase;
+}
+
+.btn-petition:hover, .btn-petition:focus, .btn-petition:active {
+	color: #ffffff;
+	background-color: #ef3802;
+}
