@@ -471,9 +471,12 @@ $(function(){
 // Splash prompt to sign the petition
 $(function(){
   // Show the prompt after one minute of being on the site
-  var petitionPromptTimeout = setTimeout(function() {
-    $('#petitionModal').modal('show');
-  }, 60 * 1000);
+  if (localStorage && localStorage.getItem('promptShown') !== 'true') {
+    var petitionPromptTimeout = setTimeout(function() {
+      $('#petitionModal').modal('show');
+      localStorage.setItem('promptShown', true);
+    }, 60 * 1000);
+  }
 
   $('#signBtnOnModal').on('click', function (e) {
     $('#petitionModal').modal('hide');
