@@ -226,6 +226,9 @@ footer a:hover, footer a:focus {
   text-align: right;
 }
 
+#petitionModal {
+  top: 10%;
+}
 #petitionModal .modal-content {
   border-radius: 0px;
   border: 2px solid #ff4812;
