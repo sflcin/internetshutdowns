@@ -15,7 +15,8 @@ body {
   color: #000000;
   max-height: 8vh;
   border: 0px solid transparent;
-  box-shadow: #000000 1px 0px 10px;
+  border-radius: 0px;
+  box-shadow: #cccccc 0px 1px 10px;
 }
 
 .navbar-brand {
@@ -221,6 +222,6 @@ footer a:hover, footer a:focus {
 }
 
 .navbar-default .navbar-offcanvas {
-  background-color: #232323;
+  background-color: #ffffff;
   text-align: right;
 }
