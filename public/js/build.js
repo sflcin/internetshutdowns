@@ -483,4 +483,23 @@ $(function(){
   });
 });
 
+// Social Share Kit Initialization
+// Init Social Share Kit
+SocialShareKit.init({
+  url: 'https://internetshtudowns.in',
+  twitter: {
+    // title: "Say no to Internet Shutdowns! Learn more about what's going on."
+  },
+  onBeforeOpen: function(targetElement, network, paramsObj){
+    console.log(arguments);
+  },
+  onOpen: function(targetElement, network, url, popupWindow){
+    console.log(arguments);
+  },
+  onClose: function(targetElement, network, url, popupWindow){
+    console.log(arguments);
+  }
+});
+
+
 },{}]},{},[1]);
