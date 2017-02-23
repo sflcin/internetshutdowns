@@ -223,6 +223,14 @@ footer a:hover, footer a:focus {
   font-size: 12px;
 }
 
+#supporting-orgs .logos {
+  text-align: center;
+}
+
+#supporting-orgs .logos img {
+  margin-left: 50px;
+}
+
 .navbar-default .navbar-offcanvas {
   background-color: #ffffff;
   text-align: right;
