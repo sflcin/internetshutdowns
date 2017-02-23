@@ -174,9 +174,7 @@ footer a:hover, footer a:focus {
   .site-name {
     display: none;
   }
-}
 
-@media screen and (max-width: 768px) {
   #sidebar {
     margin-top: 20px;
   }
@@ -218,7 +216,7 @@ footer a:hover, footer a:focus {
 #mobile-header .name {
   font-size: 18px;
   text-transform: uppercase;
-  margin-left: 10px; // because the button below the header has a padding
+  margin-left: 10px; /* because the button below the header has a padding */
 }
 
 .trends {
