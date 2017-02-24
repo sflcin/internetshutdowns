@@ -547,5 +547,20 @@
     "date": "2017-01-31",
     "description": "Mobile Internet was suspended in districts of Rohtak, Bhiwani, Hisar, Sonipat, and Panipat starting 31st January, 2017 due to the ongoing Jat agitations in various parts of the state. ",
     "source": "http://www.ptinews.com/news/8352337_Jat-stir-enters-third-day--remains-peaceful.html"
+  },
+  {
+    "state:name": "Haryana",
+    "districts": [
+      "Jhajjar",
+      "Panipat",
+      "Sonipat",
+      "Hisar",
+      "Rohtak",
+      "Jind",
+      "Bhiwani"
+    ],
+    "date": "2017-02-17",
+    "description": "Mobile Internet services were suspended indefinitely on 17th February, 2017 in the districts of Jhajjar, Panipat, Sonipat, Hisar, Rohtak, Jind, and Bhiwani following violent protests during the ongoing Jat agitations.",
+    "source": "http://indianexpress.com/article/india/india-news-india/rohtak-jat-reservation-mobile-internet-blocked-haryana/"
   }
 ]
