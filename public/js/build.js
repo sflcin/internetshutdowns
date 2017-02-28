@@ -1,17 +1,19 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 mapboxgl.accessToken = "pk.eyJ1Ijoic2ZsY2luIiwiYSI6ImNpd2xxb3UweTAwNXgyeXF4MjFzZG91dDMifQ.UZ43ek7Vo4lhabuxdlt4jg";
 
-var defaultMapCenter = [82.32, 23.69];
+var defaultMapCenter = [80.181,27.161];
 var defaultMapZoom = 3.45;
+var defaultMaxBounds = [[50.3,5.45], [110,39]];
 
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/sflcin/ciys0k3oy00082sppcs5ouh6l',
     center: defaultMapCenter,
+    maxBounds: defaultMaxBounds,
     zoom: defaultMapZoom,
     minZoom: 3.45,
     maxZoom: 6,
-    interactive: false,
+    scrollZoom: false
 });
 
 var navigation = new mapboxgl.NavigationControl();
