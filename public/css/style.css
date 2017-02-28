@@ -44,6 +44,7 @@ p {
 .navbar-default .navbar-nav > li > a {
   color: #ff4812;
   text-transform: uppercase;
+  font-size: 95%; /* Hack for fixing navbar on tablet screens */
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -65,12 +66,10 @@ section, .navbar {
   height: 80vh;
 }
 
-.trends-header {
-  height: 8vh;
+.trends-header, .mobile-map-helper {
   width: 100%;
   background-color: #222222;
   color: #fff;
-  line-height: 8vh;
   padding-left: 20px;
   z-index: 100;
 }
@@ -78,6 +77,11 @@ section, .navbar {
 .trends-header a, #trends-header a:hover, #trends-header a:focus {
   color: unset;
   text-decoration: none;
+}
+
+.mobile-map-helper {
+  position: absolute;
+  bottom: 0px;
 }
 
 #tracker {

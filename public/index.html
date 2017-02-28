@@ -95,20 +95,16 @@
       <div class="row">
         <div class="col col-lg-8 col-md-8 map-container">
           <div id='map'></div>
-          <section id="what-is-this-header" class="trends-header hidden-md hidden-lg">
+          <div class="mobile-map-helper hidden-md hidden-lg">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-xs-4 col-sm-4">
-                  <a href="#about" class="trends"> <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span> WHAT IS THIS? </a>
-                </div>
-                <div class="col-xs-8 col-sm-8">
-                  <span class="pull-right trends">
-                    <a class="btn btn-sm btn-warning btn-link" role="button" href="https://www.change.org/p/hon-ble-prime-minister-of-india-stop-internet-shutdowns" target="_blank">SIGN THE PETITION</a>
-                  </span>
+                <div class="col-xs-12 col-sm-12">
+                  <!-- <a href="#about" class="trends"> <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span> WHAT IS THIS? </a> -->
+                  <small> Click on a state to see the details of shutdowns below. Click outside to zoom out.</small>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
         <div class="col col-lg-4 col-md-4">
           <div id="sidebar"></div>
@@ -174,11 +170,15 @@
 
   <section id="trends-header" class="trends-header">
     <div class="container-fluid">
-      <a href="#trends"> <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span> TRENDS IN SHUTDOWNS </a>
-      <span class="pull-right">
-        Help us fight Internet Shutdowns.
-        <a class="btn btn-petition no-radius" role="button" href="https://www.change.org/p/hon-ble-prime-minister-of-india-stop-internet-shutdowns" target="_blank">SIGN THE PETITION</a>
-      </span>
+      <div class="row">
+        <div class="col-xs-6">
+          <a href="#trends"> <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span> TRENDS IN SHUTDOWNS </a>
+        </div>
+        <div class="col-xs-6 col-offset-xs-6">
+          Help us fight Internet Shutdowns.
+          <a class="btn btn-petition no-radius" role="button" href="https://www.change.org/p/hon-ble-prime-minister-of-india-stop-internet-shutdowns" target="_blank">SIGN THE PETITION</a>
+        </div>
+      </div>
     </div>
   </section>
 
