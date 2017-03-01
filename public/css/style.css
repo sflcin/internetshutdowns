@@ -70,7 +70,7 @@ section, .navbar {
   width: 100%;
   background-color: #222222;
   color: #fff;
-  padding-left: 20px;
+  padding: 10px 0px;
   z-index: 100;
 }
 
