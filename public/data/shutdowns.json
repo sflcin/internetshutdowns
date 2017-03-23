@@ -221,7 +221,7 @@
       "Bhilwara"
     ],
     "date": "2015-10-24",
-    "description": "In an incident of communal tension over the alleged killing of a muslim youth, Internet services were suspended in both these areas for 24 hours on 24th October, 2015.",
+    "description": "In an incident of communal tension over the alleged killing of a muslim youth, Internet services were suspended in Bhilwara for 24 hours on 24th October, 2015.",
     "source": "http://www.thehindu.com/news/national/other-states/communal-tension-in-rajasthan-cities/article7800532.ece"
   },
   {
@@ -473,6 +473,15 @@
     "source": "http://timesofindia.indiatimes.com/city/patna/Bhojpur-administration-restores-internet-services/articleshow/54923867.cms"
   },
   {
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Anantnag"
+    ],
+    "date": "2016-12-08",
+    "description": "Mobile phone services were reportedly suspended in parts of Kashmir, including Anantnag on 8th December, 2016 as a gun-fight ensued between militants and the security forces.",
+    "source": "http://www.firstpost.com/india/kashmir-encounter-security-forces-engage-in-gunfight-in-anantnag-3145562.html"
+  },
+  {
     "state:name": "Rajasthan",
     "districts": [
       "Bhilwara"
@@ -560,7 +569,37 @@
       "Bhiwani"
     ],
     "date": "2017-02-17",
-    "description": "Mobile Internet services were suspended indefinitely on 17th February, 2017 in the districts of Jhajjar, Panipat, Sonipat, Hisar, Rohtak, Jind, and Bhiwani following violent protests during the ongoing Jat agitations.",
+    "description": "Mobile Internet services were suspended indefinitely on 17th February, 2017 in the districts of Jhajjar, Panipat, Sonipat, Hisar, Rohtak, Jind, and Bhiwani following violent protests during the ongoing Jat agitations, and were reportedly restored on  19th February, 2017.",
     "source": "http://indianexpress.com/article/india/india-news-india/rohtak-jat-reservation-mobile-internet-blocked-haryana/"
+  },
+  {
+    "state:name": "Haryana",
+    "districts": [
+      "Rohtak",
+      "Sonipat"
+    ],
+    "date": "2017-02-25",
+    "description": "Internet services were suspended in the districts of Rohtak and Sonepat for 24 hours – from 5 pm on 25th February to 26th February, 2017 while the Jats observed 'Black Day' in Haryana on February 26, 2017. ",
+    "source": "http://www.tribuneindia.com/news/haryana/internet-services-suspended-in-sonepat/369471.html"
+  },
+  {
+    "state:name": "Haryana",
+    "districts": [
+      "Rohtak",
+      "Sonipat",
+      "Jhajjar",
+      "Bhiwani",
+      "Panipat",
+      "Hisar",
+      "Kaithal",
+      "Charkhi Dadri",
+      "Fatehbad",
+      "Jind",
+      "Sirsa"
+    ],
+    "date": "2017-03-18",
+    "description": "Mobile Internet services were suspended in 'sensitive' districts including Rohtak, Sonipat, Jhajjar, Bhiwani, Panipat, Hisar, Kaithal, Charkhi Dadri, Fatehabad, Jind and Sirsa on 18th March, 2017 in the wake of Jat protests outside the Parliament. The services were restored on 19th March, 2017.",
+    "source": "http://www.financialexpress.com/india-news/jat-reservation-stir-internet-services-restored-in-haryana-after-jats-call-off-march/594555/"
   }
 ]
+
