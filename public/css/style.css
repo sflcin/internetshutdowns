@@ -272,3 +272,16 @@ button.close {
 	color: #ffffff;
 	background-color: #ef3802;
 }
+
+/* Slick Slide Styles */
+.quotes-slideshow {
+  margin-top: 50px;
+}
+
+.slick-slide > img {
+  margin: auto;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #ff4812;
+}

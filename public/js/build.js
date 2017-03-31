@@ -500,5 +500,14 @@ SocialShareKit.init({
   }
 });
 
+// Slick Slideshow init
+$(document).ready(function(){
+  $('.quotes-slideshow').slick({
+    autoplay: true,
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
+});
 
 },{}]},{},[1]);
