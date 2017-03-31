@@ -510,4 +510,7 @@ $(document).ready(function(){
   });
 });
 
+// Colorbox init
+baguetteBox.run('.trends-gallery');
+
 },{}]},{},[1]);
