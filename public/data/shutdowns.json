@@ -600,6 +600,15 @@
     "date": "2017-03-18",
     "description": "Mobile Internet services were suspended in 'sensitive' districts including Rohtak, Sonipat, Jhajjar, Bhiwani, Panipat, Hisar, Kaithal, Charkhi Dadri, Fatehabad, Jind and Sirsa on 18th March, 2017 in the wake of Jat protests outside the Parliament. The services were restored on 19th March, 2017.",
     "source": "http://www.financialexpress.com/india-news/jat-reservation-stir-internet-services-restored-in-haryana-after-jats-call-off-march/594555/"
+  },
+  {
+    "state:name": "Rajasthan",
+    "districts": [
+      "Sikar"
+    ],
+    "date": "2017-03-31",
+    "description": "Mobile Internet services were suspended in the Sikar district of Rajasthan on 31st March, 2017 after clashes amongst youngsters during a religious procession resulted in stone-pelting, injuring one policeman.",
+    "source": "http://indianexpress.com/article/india/rajasthan-sec-144-imposed-mobile-internet-suspended-after-clash-in-sikir-district-4593891/"
   }
-]
 
+]
