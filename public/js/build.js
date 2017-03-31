@@ -504,6 +504,7 @@ SocialShareKit.init({
 $(document).ready(function(){
   $('.quotes-slideshow').slick({
     autoplay: true,
+    autoplaySpeed: 10000,
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
