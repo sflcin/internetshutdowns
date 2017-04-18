@@ -285,3 +285,13 @@ button.close {
 .slick-prev:before, .slick-next:before {
   color: #ff4812;
 }
+
+/* News Section */
+#news .title {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#news ul li {
+  margin-bottom: 1em;
+}
