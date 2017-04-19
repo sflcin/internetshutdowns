@@ -624,5 +624,20 @@
     "date": "2017-04-09",
     "description": "As a preventive measure in the area that recently witnessed communal violence over derogatory remarks about Hindu deities, Internet services were reportedly suspended for 48 hours under Section 5 of the Telegraph Act on 9 th April, 2017.",
     "source": "http://www.newindianexpress.com/states/odisha/2017/apr/10/internet-shut-down-in-bhadrak-for-48-hours-post-communal-violence-1591981--1.html"
+  },
+  {
+    "state:name": "Jammu and Kashmir",
+    "date": "2017-04-13",
+    "districts": [
+      "Badgam"
+    ],
+    "description": "On 13 thApril, 2017, broadband services were suspended yet again in light of re-polling in 38 stations of Budgam district. Both, broadband services, as well as mobile Internet that was suspended since 9th April, 2017 was <a href='http://www.ndtv.com/india-news/jammu-and-kashmir-train-services-resumed-internet-restored-1681310' target='_blank'>restored in the evening</a> of 13th April, 2017.",
+    "source": "https://kashmirobserver.net/2017/local-news/internet-snapped-day-yet-again-16710"
+  },
+  {
+    "state:name": "Jammu and Kashmir",
+    "date": "2017-04-17",
+    "description": "Mobile Internet services were ordered to be suspended yet again on 17th April, 2017 as students across the Valley held protests against the recent clashes between students and police in Pulwama district. Moreover, social media websites were ordered to be restricted even on fixed line networks to restrict the spread of rumors and messages.",
+    "source": "http://www.tribuneindia.com/news/jammu-kashmir/mobile-internet-off-again-as-protests-grip-valley/393438.html"
   }
 ]
