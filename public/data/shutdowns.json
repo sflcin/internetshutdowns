@@ -639,5 +639,14 @@
     "date": "2017-04-17",
     "description": "Mobile Internet services were ordered to be suspended yet again on 17th April, 2017 as students across the Valley held protests against the recent clashes between students and police in Pulwama district. Moreover, social media websites were ordered to be restricted even on fixed line networks to restrict the spread of rumors and messages.",
     "source": "http://www.tribuneindia.com/news/jammu-kashmir/mobile-internet-off-again-as-protests-grip-valley/393438.html"
+  },
+  {
+    "state:name": "Rajasthan",
+    "date": "2017-04-18",
+    "districts": [
+      "Udaipur"
+    ],
+    "description": "As a precautionary measure, <a href='http://rajasthanpatrika.patrika.com/story/udaipur/video-police-filed-case-against-accused-of-objectionable-comments-on-facebook-at-fatehnagar-udaipur-2549399.html' target='_blank'>mobile Internet services were suspended</a> in Udaipur and Fatehnagar areas on late <a href='http://rajasthanpatrika.patrika.com/story/udaipur/internet-banned-at-udaipur-2548991.html' target='_blank'>18th April, 2017</a> to curb the escalation of tensions over a social media post saying, <a href='' target='_blank'>'Pakistan zindabad hai, aur zindabad rahega.'</a>. The service was reported to be restored on 19th April, 2017.",
+    "source": "http://udaipurtimes.com/internet-services-suspended-in-udaipur-after-objectionable-social-media-comment/"
   }
 ]
