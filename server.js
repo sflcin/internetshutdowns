@@ -6,8 +6,11 @@ var compression = require('compression');
 var path = require('path');
 var logger = require('morgan');
 var nodemailer = require('nodemailer');
+var helmet = require('helmet');
 
 var app = express();
+
+app.use(helmet());
 
 if (process.env.NODE_ENV === 'production') {
   // Enforce https on all requests
