@@ -13,6 +13,8 @@ var app = express();
 app.use(helmet());
 
 if (process.env.NODE_ENV === 'production') {
+  // Trust the proxies (e.g Heroku) and pick up actual IP addresses of clients
+  app.set('trust proxy', true);
   // Enforce https on all requests
   app.use( function (req, res, next) {
     if (req.headers['x-forwarded-proto'] === 'https') {
