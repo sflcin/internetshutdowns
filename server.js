@@ -9,6 +9,16 @@ var nodemailer = require('nodemailer');
 
 var app = express();
 
+if (process.env.NODE_ENV === 'production') {
+  // Enforce https on all requests
+  app.use( function (req, res, next) {
+    if (req.headers['x-forwarded-proto'] === 'https') {
+      return next()
+    };
+    res.redirect('https://' + req.headers.host + req.url);
+  });
+}
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
