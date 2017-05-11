@@ -11,6 +11,7 @@ var helmet = require('helmet');
 var app = express();
 
 app.use(helmet());
+app.use(compression());
 
 if (process.env.NODE_ENV === 'production') {
   // Trust the proxies (e.g Heroku) and pick up actual IP addresses of clients
@@ -33,7 +34,6 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.set('port', process.env.PORT || 3000);
 
-app.use(compression());
 app.use(logger('dev'));
 
 // Local variables for dev environment
