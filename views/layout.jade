@@ -28,11 +28,12 @@ html
     block content
     include includes/footer
 
-    script(src="vendor/jquery/dist/jquery.js")
-    script(src="vendor/bootstrap/dist/js/bootstrap.js")
-    script(src='vendor/bootstrap-offcanvas/dist/js/bootstrap.offcanvas.js')
-    script(src="vendor/lodash/dist/lodash.min.js")
-    script(src="vendor/leaflet/dist/leaflet.js")
-    script(src="vendor/chroma-js/chroma.min.js")
-    script(src="vendor/moment/min/moment.min.js")
+    block scripts
+      script(src="vendor/jquery/dist/jquery.js")
+      script(src="vendor/bootstrap/dist/js/bootstrap.js")
+      script(src='vendor/bootstrap-offcanvas/dist/js/bootstrap.offcanvas.js')
+      script(src="vendor/lodash/dist/lodash.min.js")
+      script(src="vendor/leaflet/dist/leaflet.js")
+      script(src="vendor/chroma-js/chroma.min.js")
+      script(src="vendor/moment/min/moment.min.js")
     //- script(src="/js/app.js")

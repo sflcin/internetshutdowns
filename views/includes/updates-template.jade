@@ -1,0 +1,16 @@
+h1 Updates
+|{{#if posts}}
+|  {{#posts:post }}
+|  <div class="update panel panel-default">
+|    <div class="panel-heading">
+|      <span class="panel-title "> {{title}} </span>
+|      <span class="date pull-right"> {{date}} </span>
+|    </div>
+|    <div class="panel-body"> 
+|      {{{body}}} 
+|    </div>
+|  </div>
+| {{/posts}}
+| {{else}}
+|   <div class="alert alert-warning" role="alert"> Loading... </div>
+| {{/if}}

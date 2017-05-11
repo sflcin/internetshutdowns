@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  .container
+    .row
+      .col-lg-8.col-lg-offset-2.col-md-8.col-md-offset-2
+        script#updates-template(type="text/ractive")
+          include ./includes/updates-template.jade
+        #updates
+
+block append scripts
+  script(src="/js/updates.js")

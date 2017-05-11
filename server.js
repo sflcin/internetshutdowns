@@ -84,6 +84,10 @@ app.get('/privacy-policy', function (req, res) {
   res.render('privacy-policy');
 });
 
+app.get('/updates', function (req, res) {
+  res.render('updates');
+});
+
 app.post('/shutdown', function (req, res) {
   smtpTransport.sendMail({
     from: process.env.EMAIL_FROM || 'internetshutdowns@sflc.in',
