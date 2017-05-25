@@ -657,5 +657,16 @@
     ],
     "description": "Internet services were reportedly suspended for 48 hours in Kendrapara on 19th April, 2017 to prevent rumor mongering over a social media post with objectionable content.",
     "source": "http://timesofindia.indiatimes.com/city/bhubaneswar/internet-service-suspended-in-odishas-kendrapara/articleshow/58263104.cms"
+  },
+  {
+    "date": "2017-05-24",
+    "state:name": "Uttar Pradesh",
+    "source": "http://www.timesnow.tv/india/article/mobile-internet-services-suspended-saharanpur-violent-clashes-dalit-rajput/61642",
+    "description": "<p>Mobile Internet services were suspended in Saharanpur on <a href=\"http://www.timesnow.tv/india/article/mobile-internet-services-suspended-saharanpur-violent-clashes-dalit-rajput/61642\" target=\"_blank\">24th April, 2017</a> to contain rumour mongering on social media amid violent caste based clashes between Dalit and Rajput community.</p>",
+    "networksAffected": "mobile",
+    "nature": "reactive",
+    "districts": [
+      "Saharanpur"
+    ]
   }
 ]
