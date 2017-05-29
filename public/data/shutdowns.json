@@ -668,5 +668,23 @@
     "districts": [
       "Saharanpur"
     ]
+  },
+  {
+    "date": "2017-05-27",
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Anantnag",
+      "Badgam",
+      "Bandipore",
+      "Baramula",
+      "Ganderbal",
+      "Kupwara",
+      "Pulwama",
+      "Srinagar"
+    ],
+    "source": "http://economictimes.indiatimes.com/news/politics-and-nation/mobile-internet-services-suspended-in-kashmir/articleshow/58871234.cms",
+    "description": "<p>Mobile Internet services were suspended yet again in the Kashmir Valley region as a precautionary measure on <a href=\"http://economictimes.indiatimes.com/news/politics-and-nation/mobile-internet-services-suspended-in-kashmir/articleshow/58871234.cms\" target=\"_blank\">27th May, 2017</a> in order to check rumour mongering following the encounter of a Hizbul terrorist.</p>",
+    "networksAffected": "mobile",
+    "nature": "preventive"
   }
 ]
