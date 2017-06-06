@@ -686,5 +686,17 @@
     "description": "<p>Mobile Internet services were suspended yet again in the Kashmir Valley region as a precautionary measure on <a href=\"http://economictimes.indiatimes.com/news/politics-and-nation/mobile-internet-services-suspended-in-kashmir/articleshow/58871234.cms\" target=\"_blank\">27th May, 2017</a> in order to check rumour mongering following the encounter of a Hizbul terrorist.</p>",
     "networksAffected": "mobile",
     "nature": "preventive"
+  },
+  {
+    "date": "2017-06-05",
+    "state:name": "Maharashtra",
+    "districts": [
+      "Nashik"
+    ],
+    "source": "http:\/\/www.tribuneindia.com\/news\/nation\/farmers-stir-z-category-security-for-milk-trucks-in-maharashtra\/417851.html",
+    "description": "<p>Mobile Internet services were suspended in Nashik for <a href=\"http:\/\/indianexpress.com\/article\/india\/maharashtra-farmers-strike-rural-areas-shut-down-cities-not-affected-much-4690816\/\" target=\"_blank\">a few hours<\/a> on <a href=\"http:\/\/www.tribuneindia.com\/news\/nation\/farmers-stir-z-category-security-for-milk-trucks-in-maharashtra\/417851.html\" target=\"_blank\">5th June, 2017<\/a> as the State-wide strike called by farmers turned violent in the former area.<\/p>",
+    "networksAffected": "mobile",
+    "nature": "reactive",
+    "duration": 3
   }
 ]
