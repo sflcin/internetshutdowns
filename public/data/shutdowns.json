@@ -714,5 +714,23 @@
     "description": "<p>Internet services were suspended in the districts of <a href=\"http://www.firstpost.com/india/mandsaur-farmers-protest-one-killed-four-injured-after-police-firing-in-madhya-pradesh-3523001.html\" target=\"_blank\">Mandsaur, Ratlam, Ujjain<\/a>, <a href=\"http:\/\/www.oneindia.com\/india\/farmer-killed-in-police-firing-in-madhya-pradesh-many-injured-2455854.html\" target=\"_blank\">Neemuch<\/a>, <a href=\"http:\/\/www.deccanchronicle.com\/nation\/current-affairs\/060617\/mp-2-killed-4-injured-as-police-opens-fire-at-farmers-protest.html\" target=\"_blank\">Indore, Dewas <\/a>on 6th June, 2017 following the farmers\u00e2\u20ac\u2122 protest in Madhya Pradesh demanding higher rates for their produce.<\/p>",
     "networksAffected": "",
     "nature": "preventive"
+  },
+  {
+    "date": "2017-06-07",
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Anantnag",
+      "Badgam",
+      "Bandipore",
+      "Baramula",
+      "Ganderbal",
+      "Kupwara",
+      "Pulwama",
+      "Srinagar"
+    ],
+    "source": "http://www.hindustantimes.com/india-news/mobile-internet-services-suspended-in-kashmir-after-civilian-s-death/story-2NkKH4w71aDWLIfmH2DUoK.html",
+    "description": "<p>Kashmir Valley witnessed another suspension of mobile Internet services on <a href=\"http://www.hindustantimes.com/india-news/mobile-internet-services-suspended-in-kashmir-after-civilian-s-death/story-2NkKH4w71aDWLIfmH2DUoK.html\" target=\"_blank\">7th June, 2017<\/a> after the death of a civilian in firing by security forces.<\/p>",
+    "networksAffected": "mobile",
+    "nature": "preventive"
   }
 ]
