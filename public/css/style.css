@@ -295,3 +295,12 @@ button.close {
 #news ul li {
   margin-bottom: 1em;
 }
+
+/* Resources Page */
+ul.resources-list li {
+  margin-top: 20px;
+}
+
+ul.resources-list li:last-child {
+  margin-bottom: 20px;
+}
