@@ -732,5 +732,17 @@
     "description": "<p>Kashmir Valley witnessed another suspension of mobile Internet services on <a href=\"http://www.hindustantimes.com/india-news/mobile-internet-services-suspended-in-kashmir-after-civilian-s-death/story-2NkKH4w71aDWLIfmH2DUoK.html\" target=\"_blank\">7th June, 2017<\/a> after the death of a civilian in firing by security forces.<\/p>",
     "networksAffected": "mobile",
     "nature": "preventive"
+  },
+  {
+    "date": "2017-06-08",
+    "state:name": "Uttar Pradesh",
+    "districts": [
+      "Saharanpur"
+    ],
+    "source": "http://www.financialexpress.com/india-news/saharanpur-violence-minutes-after-bhim-armys-chandrashekhar-arrested-authorities-suspend-internet-services/708019/",
+    "description": "<p>Internet services were suspended in Saharanpur district yet again on <a href=\"http://www.financialexpress.com/india-news/saharanpur-violence-minutes-after-bhim-armys-chandrashekhar-arrested-authorities-suspend-internet-services/708019/\" target=\"_blank\">8th June, 2017</a> following the arrest of the main accused in Saharanpur violence, for a period of two days, to prevent any unrest.</p>",
+    "lastUpdate": "Thu Jun 08 2017 12:26:47 GMT+0000 (UTC)",
+    "networksAffected": "",
+    "nature": "preventive"
   }
 ]
