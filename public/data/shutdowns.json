@@ -744,5 +744,26 @@
     "lastUpdate": "Thu Jun 08 2017 12:26:47 GMT+0000 (UTC)",
     "networksAffected": "",
     "nature": "preventive"
+  },
+  {
+    "date": "2017-06-16",
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Anantnag",
+      "Badgam",
+      "Bandipore",
+      "Baramula",
+      "Ganderbal",
+      "Kupwara",
+      "Pulwama",
+      "Srinagar"
+    ],
+    "source": "http://economictimes.indiatimes.com/news/politics-and-nation/mobile-internet-services-blocked-in-kashmir/articleshow/59174874.cms",
+    "description": "<p>Mobile Internet was shutdown again in Kashmir Valley on <a href=\"http://economictimes.indiatimes.com/news/politics-and-nation/mobile-internet-services-blocked-in-kashmir/articleshow/59174874.cms\" target=\"_blank\">16th June, 2017</a> as a precautionary measure after firing by the security forcesâ€™caused the death of a youth leading to escalated tensions in the region.</p>",
+    "networksAffected": "mobile",
+    "nature": "preventive",
+    "lastUpdate": "Fri Jun 16 2017 12:00:35 GMT+0000 (UTC)",
+    "active": false,
+    "verified": false
   }
 ]
