@@ -765,5 +765,19 @@
     "lastUpdate": "Fri Jun 16 2017 12:00:35 GMT+0000 (UTC)",
     "active": false,
     "verified": false
+  },
+  {
+    "date": "2017-06-18",
+    "state:name": "West Bengal",
+    "districts": [
+      "Darjiling"
+    ],
+    "source": "http://www.businesstoday.in/current/economy-politics/darjeeling-latest-updates-mobile-internet-blocked-economic-activity-halts-as-gorkhaland-agitation-intensifies/story/254639.html",
+    "description": "<p>Mobile Internet services were blocked in Darjeeling on <a href=\"http://www.businesstoday.in/current/economy-politics/darjeeling-latest-updates-mobile-internet-blocked-economic-activity-halts-as-gorkhaland-agitation-intensifies/story/254639.html\" target=\"_blank\">18th June, 2017</a> following deaths of party supporters in violent clashes between the Gorkha Janmukti Morcha and security forces after the former called for a complete strike in its agitation for a separate Gorkhalnd.</p>",
+    "lastUpdate": "Mon Jun 19 2017 07:15:50 GMT+0000 (UTC)",
+    "active": false,
+    "verified": false,
+    "networksAffected": "mobile",
+    "nature": "reactive"
   }
 ]
