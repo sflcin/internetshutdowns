@@ -31,6 +31,7 @@ map.once('load', function() {
 
   // Get shutdowns data
   $.get("../data/shutdowns.json", function (data) {
+    data = sortShutdownsByDate(data);
     shutdowns.count = data.length;
     shutdowns.data = data;
     shutdowns.byState = getShutdownsByState(data);
@@ -345,6 +346,12 @@ function getShutdownsByYear(shutdowns) {
   });
 
   return shutdownsByYear;
+}
+
+function sortShutdownsByDate (shutdownsToSort) {
+  return shutdownsToSort.sort(function (a, b) {
+    return new Date(b.date) - new Date(a.date);
+  });
 }
 
 map.reset = function() {
