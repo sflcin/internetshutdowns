@@ -325,21 +325,26 @@ function getShutdownsByDistrict(shutdowns) {
 }
 
 function getShutdownsByYear(shutdowns) {
-  var shutdownsByYear = {}, shutdownsByYearOrdered = {};
+  var shutdownsByYear = [];
 
   shutdowns.forEach(function(shutdown) {
     var year = shutdown["date"].substr(0, 4);
-    shutdownsByYear[year] =
-      (year in shutdownsByYear)
-        ? shutdownsByYear[year].concat([shutdown])
-        : [shutdown];
+
+    // Check if there is already an entry for this year in the array
+    var found = false;
+    for (var i = 0; i < shutdownsByYear.length; i++) {
+      if (shutdownsByYear[i].year === year) {
+        shutdownsByYear[i].shutdowns.push(shutdown);
+        found = true;
+      }
+    }
+    // If not, then add to the array
+    if (!found) {
+      shutdownsByYear.push({year: year, shutdowns: [shutdown]});
+    }
   });
 
-  Object.keys(shutdownsByYear).sort().forEach(function (key) {
-    shutdownsByYearOrdered[key] = shutdownsByYear[key];
-  })
-
-  return shutdownsByYearOrdered;
+  return shutdownsByYear;
 }
 
 map.reset = function() {
