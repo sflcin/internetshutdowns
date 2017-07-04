@@ -91,7 +91,7 @@ app.get('/updates', function (req, res) {
 app.post('/shutdown', function (req, res) {
   smtpTransport.sendMail({
     from: process.env.EMAIL_FROM || 'internetshutdowns@sflc.in',
-    to: process.env.EMAIL_TO || ['sarath@sflc.in', 'nehmat@sflc.in'],
+    to: process.env.EMAIL_TO || ['internetshutdowns@sflc.in'],
     subject: 'New Submission from InternetShutdowns.in',
     text: JSON.stringify(req.body),
     //html: htmlify??
