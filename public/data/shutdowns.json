@@ -779,5 +779,45 @@
     "verified": false,
     "networksAffected": "mobile",
     "nature": "reactive"
+  },
+  {
+    "date": "2017-06-20",
+    "state:name": "West Bengal",
+    "districts": [
+      "Darjiling"
+    ],
+    "source": "http://www.dnaindia.com/india/report-darjeeling-unrest-internet-services-face-complete-shutdown-2479227",
+    "description": "<p>Days after mobile Internet services were shutdown in Darjeeling, broadband services were also suspended in the area for a period of 7 days on <a href=\"http://www.dnaindia.com/india/report-darjeeling-unrest-internet-services-face-complete-shutdown-2479227\" target=\"_blank\">20th June, 2017</a> in the interest of public safety, following the indefinite strike by Gorkha Janmukti Morcha (GJM) for a separate Gorkhaland.</p>",
+    "networksAffected": "broadband",
+    "nature": "preventive",
+    "active": false,
+    "verified": false
+  },
+  {
+    "date": "2017-06-30",
+    "state:name": "Rajasthan",
+    "districts": [
+      "Churu",
+      "Nagaur"
+    ],
+    "source": "http://www.hindustantimes.com/jaipur/anandpal-encounter-court-orders-fresh-autopsy-rajasthan-bans-internet-in-churu-nagaur/story-1aVMWm7sNCwWqaxblIFNlK.html",
+    "description": "<p>Mobile Internet was suspended on <a href=\"http://www.hindustantimes.com/jaipur/anandpal-encounter-court-orders-fresh-autopsy-rajasthan-bans-internet-in-churu-nagaur/story-1aVMWm7sNCwWqaxblIFNlK.html\" target=\"_blank\">30th June, 2017</a> to prevent rumour mongering after the protests by the Rajput community over the encounter killing of gangster intensified.</p>",
+    "networksAffected": "mobile",
+    "nature": "preventive",
+    "active": false,
+    "verified": false
+  },
+  {
+    "date": "2017-07-01",
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Anantnag"
+    ],
+    "source": "http://www.greaterkashmir.com/news/kashmir/south-kashmir-encounter-mobile-internet-services-shut-in-anantnag/253564.html",
+    "description": "<p>Mobile Internet services were shutdown on <a href=\"http://www.greaterkashmir.com/news/kashmir/south-kashmir-encounter-mobile-internet-services-shut-in-anantnag/253564.html\" target=\"_blank\">1st July, 2017</a> to prevent rumour mongering on social media websites after violent clashes between militants and government forces in Brenthi Dialgam village.</p>",
+    "networksAffected": "mobile",
+    "nature": "reactive",
+    "active": false,
+    "verified": false
   }
 ]
