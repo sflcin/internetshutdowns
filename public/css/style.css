@@ -252,6 +252,11 @@ footer a:hover, footer a:focus {
   margin: 20px 0px;
 }
 
+.form-label-subtext {
+  font-size: 75%;
+  color: #808080;
+}
+
 /* Button Styles */
 .no-radius {
   border-radius: 0px;
