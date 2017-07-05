@@ -819,5 +819,18 @@
     "nature": "reactive",
     "active": false,
     "verified": false
+  },
+  {
+    "date": "2017-07-05",
+    "state:name": "West Bengal",
+    "source": "http://www.financialexpress.com/india-news/west-bengal-communal-violence-baduria-internet-services-disrupted-mamata-banerjee-facebook-post-north-24-parganas-protest/749676/",
+    "description": "<p>Baduria and Basirhat areas of North 24 Parganas district in West Bengal saw suspension of Internet services on <a href=\"http://www.financialexpress.com/india-news/west-bengal-communal-violence-baduria-internet-services-disrupted-mamata-banerjee-facebook-post-north-24-parganas-protest/749676/\" target=\"_blank\">5th July, 2017</a> after violent communal clashes broke out over an objectionable Facebook post by a 17 year old boy.</p>",
+    "active": false,
+    "verified": false,
+    "lastUpdate": "Wed Jul 05 2017 16:16:31 GMT+0000 (UTC)",
+    "districts": [
+      "North 24 Parganas"
+    ],
+    "nature": "reactive"
   }
 ]
