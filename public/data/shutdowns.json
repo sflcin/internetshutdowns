@@ -832,5 +832,26 @@
       "North 24 Parganas"
     ],
     "nature": "reactive"
+  },
+  {
+    "date": "2017-07-06",
+    "state": "Jammu and Kashmir",
+    "districts": [
+      "Anantnag",
+      "Badgam",
+      "Bandipore",
+      "Baramula",
+      "Ganderbal",
+      "Kupwara",
+      "Pulwama",
+      "Srinagar"
+    ],
+    "duration": 55,
+    "source": "http://www.ndtv.com/india-news/internet-suspended-in-kashmir-ahead-of-burhan-wanis-death-anniversary-1721598",
+    "description": "<p>Both mobile and broadband Internet services were suspended in the Kashmir Valley on <a href=\"http://www.ndtv.com/india-news/internet-suspended-in-kashmir-ahead-of-burhan-wanis-death-anniversary-1721598\" target=\"_blank\">6th July, 2017</a> as a precautionary measure in view of law and order situations on the first death anniversary of Hizbul Mujahideen 'commander' Burhan Wani. While the 2G mobile Internet services were restored on the night of 8th July, 2017, broadband services were restored in the morning of<a href=\"http://economictimes.indiatimes.com/news/politics-and-nation/mobile-internet-services-restored-in-kashmir-valley/articleshow/59511364.cms\" target=\"_blank\"> 9th July, 2017.</a></p>",
+    "networksAffected": "both",
+    "nature": "preventive",
+    "verified": true,
+    "active": false
   }
 ]
