@@ -853,5 +853,25 @@
     "nature": "preventive",
     "verified": true,
     "active": false
+  },
+  {
+    "date": "2017-07-10",
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Anantnag",
+      "Badgam",
+      "Bandipore",
+      "Baramula",
+      "Ganderbal",
+      "Kupwara",
+      "Pulwama",
+      "Srinagar"
+    ],
+    "source": "http://www.news18.com/news/india/internet-services-suspended-in-kashmir-1457457.html",
+    "description": "<p>Just a day after the Internet services were restored, both mobile and broadband Internet services were again suspended in the Kashmir Valley in the night of <a href=\"http://www.news18.com/news/india/internet-services-suspended-in-kashmir-1457457.html\" target=\"_blank\">10th July, 2017</a> as a precautionary measure after the appeal of separatists to people to launch a \"Kashmir awareness\" campaign on social media on 11th July.</p>",
+    "networksAffected": "both",
+    "nature": "preventive",
+    "active": false,
+    "verified": false
   }
 ]
