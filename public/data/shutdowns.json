@@ -873,5 +873,18 @@
     "nature": "preventive",
     "active": false,
     "verified": false
+  },
+  {
+    "date": "2017-07-10",
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Jammu"
+    ],
+    "source": "http://www.greaterkashmir.com/news/jammu/internet-services-suspended-in-jammu-after-killing-of-amarnath-yatris-in-kashmir/254426.html",
+    "description": "<p>Both Internet and broadband services were suspended in Jammu late at night on <a href=\"http://www.greaterkashmir.com/news/jammu/internet-services-suspended-in-jammu-after-killing-of-amarnath-yatris-in-kashmir/254426.html\" target=\"_blank\">10th July, 2017</a> as a precautionary measure following the killing of Amarnath pilgrims in a militant attack in the Kashmir Valley.</p>",
+    "networksAffected": "both",
+    "nature": "preventive",
+    "active": false,
+    "verified": false
   }
 ]
