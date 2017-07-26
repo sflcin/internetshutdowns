@@ -483,6 +483,7 @@ $(function(){
 });
 
 // Splash prompt to sign the petition
+/*
 $(function(){
   var petitionPromptTimeout = setTimeout(function() {
     $('#petitionModal').modal('show');
@@ -493,6 +494,7 @@ $(function(){
     $('#petitionModal').modal('hide');
   });
 });
+*/
 
 // Social Share Kit Initialization
 // Init Social Share Kit
