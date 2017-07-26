@@ -934,8 +934,26 @@
     "networksAffected": "mobile",
     "nature": "preventive",
     "active": false,
-    "verified": false,
-    "lastUpdate": "Mon Jul 24 2017 09:47:35 GMT+0000 (UTC)",
-    "id": "5d801b14125168f5"
+    "verified": false
+  },
+  {
+    "date": "2017-07-18",
+    "state": "Jammu and Kashmir",
+    "districts": [
+      "Anantnag",
+      "Badgam",
+      "Bandipore",
+      "Baramula",
+      "Ganderbal",
+      "Kupwara",
+      "Pulwama",
+      "Srinagar"
+    ],
+    "source": "http://www.greaterkashmir.com/news/kashmir/high-speed-mobile-internet-broadband-services-suspended-in-anantnag-in-south-kashmir/255150.html",
+    "description": "<p>While mobile Internet services were already shut, broadband services too were snapped in Kashmir Valley on <a href=\"http://www.greaterkashmir.com/news/kashmir/high-speed-mobile-internet-broadband-services-suspended-in-anantnag-in-south-kashmir/255150.html\" target=\"_blank\">18th July, 2017</a> as a precautionary measure after the killing of three terrorist in an encounter with the security forces.</p>",
+    "networksAffected": "broadband",
+    "nature": "preventive",
+    "active": false,
+    "verified": false
   }
 ]
