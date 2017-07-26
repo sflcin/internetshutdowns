@@ -886,5 +886,21 @@
     "nature": "preventive",
     "active": false,
     "verified": false
+  },
+  {
+    "date": "2017-07-11",
+    "state": "Rajasthan",
+    "districts": [
+      "Bikaner",
+      "Churu",
+      "Nagaur",
+      "Sikar"
+    ],
+    "duration": 35,
+    "source": "http://www.india.com/hindi-news/india-hindi/rajasthan-section-144-imposed-internet-services-suspended-till-tomorrow-in-nagaur-churu-sikar-and-bikaner/",
+    "description": "<p>Internet services were suspended in the evening of <a href=\"http://www.india.com/hindi-news/india-hindi/rajasthan-section-144-imposed-internet-services-suspended-till-tomorrow-in-nagaur-churu-sikar-and-bikaner/\" target=\"_blank\">11th July, 2017</a> in the districts of Nagaur, Bikaner, Churu and Sikar to prevent spread of rumours after the violence in Sanvrad with Rajput community demanding Central Bureau of Investigation (CBI) enquiry in the encounter of gangster Anand Pal Singh. The services reportedly resumed on <a href=\"http://www.huffingtonpost.in/2017/07/13/sec-144-imposed-in-4-districts-of-rajasthan-after-violent-protes_a_23027445/\" target=\"_blank\">14th July, 2017.</a></p>",
+    "nature": "preventive",
+    "verified": true,
+    "active": false
   }
 ]
