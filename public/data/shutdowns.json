@@ -915,5 +915,27 @@
     "nature": "preventive",
     "verified": true,
     "active": false
+  },
+  {
+    "date": "2017-07-16",
+    "state": "Jammu and Kashmir",
+    "districts": [
+      "Anantnag",
+      "Badgam",
+      "Bandipore",
+      "Baramula",
+      "Ganderbal",
+      "Kupwara",
+      "Pulwama",
+      "Srinagar"
+    ],
+    "source": "www.risingkashmir.com/news/thousands-attend-funeral-prayers-of-militants-in-pulwama",
+    "description": "<p>Mobile Internet services were shut down yet again as a precautionary measure in Kashmir Valley on <a href=\"http://www.risingkashmir.com/news/thousands-attend-funeral-prayers-of-militants-in-pulwama\" target=\"_blank\">16th July, 2017</a> following the killing of militants in gun-battle with forces on 15th July.</p>",
+    "networksAffected": "mobile",
+    "nature": "preventive",
+    "active": false,
+    "verified": false,
+    "lastUpdate": "Mon Jul 24 2017 09:47:35 GMT+0000 (UTC)",
+    "id": "5d801b14125168f5"
   }
 ]
