@@ -955,5 +955,21 @@
     "nature": "preventive",
     "active": false,
     "verified": false
+  },
+  {
+    "date": "2017-07-20",
+    "state": "Tripura",
+    "districts": [
+      "Dhalai",
+      "North Tripura",
+      "South Tripura",
+      "West Tripura"
+    ],
+    "source": "http://www.tripurainfoway.com/news-details/TN/87940/Union+Home+Ministry%27s+stern+warning%2C+BJP%27s+bold+stand%2C+lack+of+food%2Cshelter+force+IPFT+to+end+NH-8+blockade+on+Thursday+%3A+11+days+blockade+marks+Tripura+CM%27s+massive+failure.html",
+    "description": "<p>Internet services were suspended in Tripura on the morning of <a href=\"http://www.tripurainfoway.com/news-details/TN/87940/Union+Home+Ministry%27s+stern+warning%2C+BJP%27s+bold+stand%2C+lack+of+food%2Cshelter+force+IPFT+to+end+NH-8+blockade+on+Thursday+%3A+11+days+blockade+marks+Tripura+CM%27s+massive+failure.html\" target=\"_blank\">20th July, 2017</a> to prevent Indigenous Peoples Front of Tripura (IPFT) from spreading false propoganda following the eleven day blockade demanding a separate tribal State â€˜Tipralandâ€™.</p>",
+    "networksAffected": "",
+    "nature": "preventive",
+    "active": false,
+    "verified": false
   }
 ]
