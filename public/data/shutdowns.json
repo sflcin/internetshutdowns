@@ -902,5 +902,18 @@
     "nature": "preventive",
     "verified": true,
     "active": false
+  },
+  {
+    "date": "2017-07-14",
+    "state": "Gujarat",
+    "districts": [
+      "Surendranagar"
+    ],
+    "duration": 81,
+    "source": "http://www.firstpost.com/india/caste-based-violence-kills-two-in-gujarat-internet-services-snapped-in-morbi-surendranagar-districts-3812289.html",
+    "description": "<p>Internet services were suspended in Morbi and Surendranagar districts of Gujarat on <a href=\"http://www.firstpost.com/india/caste-based-violence-kills-two-in-gujarat-internet-services-snapped-in-morbi-surendranagar-districts-3812289.html\" target=\"_blank\">14th July, 2017</a> to prevent rumour mongering on social media following violent clashes between members of Bharwad and Rajput communities. The services were restored on <a href=\"http://indianexpress.com/article/india/ahmedabad/caste-violence-in-morbi-surendranagar-cop-transferred-mobile-net-restored/\" target=\"_blank\">18th July, 2017.</a></p>",
+    "nature": "preventive",
+    "verified": true,
+    "active": false
   }
 ]
