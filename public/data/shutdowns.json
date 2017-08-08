@@ -958,7 +958,7 @@
   },
   {
     "date": "2017-07-20",
-    "state": "Tripura",
+    "state:name": "Tripura",
     "districts": [
       "Dhalai",
       "North Tripura",
