@@ -889,7 +889,7 @@
   },
   {
     "date": "2017-07-11",
-    "state": "Rajasthan",
+    "state:name": "Rajasthan",
     "districts": [
       "Bikaner",
       "Churu",
@@ -905,7 +905,7 @@
   },
   {
     "date": "2017-07-14",
-    "state": "Gujarat",
+    "state:name": "Gujarat",
     "districts": [
       "Surendranagar"
     ],
@@ -918,7 +918,7 @@
   },
   {
     "date": "2017-07-16",
-    "state": "Jammu and Kashmir",
+    "state:name": "Jammu and Kashmir",
     "districts": [
       "Anantnag",
       "Badgam",
@@ -938,7 +938,7 @@
   },
   {
     "date": "2017-07-18",
-    "state": "Jammu and Kashmir",
+    "state:name": "Jammu and Kashmir",
     "districts": [
       "Anantnag",
       "Badgam",
