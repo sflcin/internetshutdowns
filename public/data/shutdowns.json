@@ -971,5 +971,66 @@
     "nature": "preventive",
     "active": false,
     "verified": false
+  },
+  {
+    "date": "2017-07-21",
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Badgam"
+    ],
+    "duration": 75,
+    "source": "http://www.greaterkashmir.com/news/kashmir/youth-clash-with-forces-in-beerwah-internet-suspended/255454.html",
+    "description": "<p>Mobile Internet services were suspended on <a href=\"http://www.greaterkashmir.com/news/kashmir/youth-clash-with-forces-in-beerwah-internet-suspended/255454.html\" target=\"_blank\">21st July, 2017</a> in Budgam district of Kashmir as a precautionary measure after a young tailor was killed in army firing in Beerwah town of the district. The services were reported to have been restored on <a href=\"http://www.greaterkashmir.com/news/kashmir/kashmir-high-speed-mobile-internet-restored-in-budgam-after-four-day-suspension/255727.html\" target=\"_blank\">25th July, 2017</a>, four days after they were suspended.</p>",
+    "networksAffected": "mobile",
+    "nature": "preventive",
+    "verified": true,
+    "active": false
+  },
+  {
+    "date": "2017-07-30",
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Pulwama"
+    ],
+    "source": "http://www.greaterkashmir.com/news/kashmir/tahab-gunfight-internet-services-shut-in-pulwama-clashes-erupt/256187.html",
+    "description": "<p>Mobile Internet services were suspended in Pulwama district of Kashmir on <a href=\"http://www.greaterkashmir.com/news/kashmir/tahab-gunfight-internet-services-shut-in-pulwama-clashes-erupt/256187.html\" target=\"_blank\">30th July, 2017</a> as a preventive measure to prevent spreading of rumours following the killing of two militants in a shootout in Tahab village.</p>",
+    "networksAffected": "mobile",
+    "nature": "preventive",
+    "active": false,
+    "verified": false
+  },
+  {
+    "date": "2017-08-01",
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Anantnag",
+      "Badgam",
+      "Bandipore",
+      "Baramula",
+      "Ganderbal",
+      "Kupwara",
+      "Pulwama",
+      "Srinagar"
+    ],
+    "source": "http://economictimes.indiatimes.com/news/politics-and-nation/mobile-internet-services-suspended-across-kashmir-valley/articleshow/59860448.cms",
+    "description": "<p>Mobile Internet services were suspended yet again across Kashmir on <a href=\"http://economictimes.indiatimes.com/news/politics-and-nation/mobile-internet-services-suspended-across-kashmir-valley/articleshow/59860448.cms\" target=\"_blank\">1st August, 2017</a> as a precautionary measure fearing clashes after the killing of Lashkar-e-Toiba commander Abu Dujana and his aide in an encounter with the security forces. The services were restored on <a href=\"http://www.greaterkashmir.com/news/kashmir/mobile-internet-services-restored-in-kashmir/256496.html\" target=\"_blank\">2nd August, 2017</a> after remaining suspended for over 24 hours.</p>",
+    "networksAffected": "mobile",
+    "nature": "preventive",
+    "active": false,
+    "verified": true,
+    "duration": 29
+  },
+  {
+    "date": "2017-08-05",
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Baramula"
+    ],
+    "source": "http://www.risingkashmir.com/news/amargrahencounter-cellular-mobile-internet-services--suspended--in-baramulla",
+    "description": "<p>Mobile Internet services were suspended in Baramulla district of Kashmir as a precautionary measure on <a href=\"http://www.risingkashmir.com/news/amargrahencounter-cellular-mobile-internet-services--suspended--in-baramulla\" target=\"_blank\">5th August, 2017</a> after three LeT militants were killed in an encounter with the security forces in the Sopore town of the district.</p>",
+    "networksAffected": "mobile",
+    "nature": "preventive",
+    "active": false,
+    "verified": false
   }
 ]
