@@ -1032,5 +1032,17 @@
     "nature": "preventive",
     "active": false,
     "verified": false
+  },
+  {
+    "date": "2017-08-09",
+    "state": "Jammu and Kashmir",
+    "districts": [
+      "Pulwama"
+    ],
+    "source": "http://kashmirlife.net/tral-gunfight-cellular-internet-services-suspended-in-pulwama-district-147819/",
+    "description": "<p>Internet services were suspended in Pulwama district of Kashmir on <a href=\"http://kashmirlife.net/tral-gunfight-cellular-internet-services-suspended-in-pulwama-district-147819/\" target=\"_blank\">9th August, 2017</a> as a precautionary measure after three militants were killed in a gunfight with the Government forces in the Tral township. However, the services on state-owned Bharat Sanchar Nigam Limited remained functional.</p>",
+    "nature": "preventive",
+    "active": false,
+    "verified": false
   }
 ]
