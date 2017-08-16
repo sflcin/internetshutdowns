@@ -1044,5 +1044,40 @@
     "nature": "preventive",
     "active": false,
     "verified": false
+  },
+  {
+    "date": "2017-08-13",
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Kulgam",
+      "Shupiyan"
+    ],
+    "source": "https://kashmirobserver.net/2017/local-news/3-militants-2-soldiers-killed-shopian-21849",
+    "description": "<p>Internet services were suspended in Shopian and Kulgam district of Kashmir on <a href=\"https://kashmirobserver.net/2017/local-news/3-militants-2-soldiers-killed-shopian-21849\" target=\"_blank\">13th August, 2017</a> to prevent the spreading of information after three Hizbul Mujahideen militants including the operations commander, and two army men were killed in an encounter.</p>",
+    "networksAffected": "",
+    "nature": "preventive",
+    "active": false,
+    "verified": false
+  },
+  {
+    "date": "2017-08-15",
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Anantnag",
+      "Badgam",
+      "Bandipore",
+      "Baramula",
+      "Ganderbal",
+      "Kupwara",
+      "Pulwama",
+      "Srinagar"
+    ],
+    "duration": 3,
+    "source": "http://www.greaterkashmir.com/news/kashmir/cellular-internet-services-snapped-in-kashmir-on-i-day/257702.html",
+    "description": "<p>Mobile and broadband Internet services were suspended in the Kashmir valley in the morning of <a href=\"http://www.greaterkashmir.com/news/kashmir/cellular-internet-services-snapped-in-kashmir-on-i-day/257702.html\" target=\"_blank\">15th August, 2017</a> as a precautionary measure on Independence Day. Services were reportedly restored later in the day.</p>",
+    "networksAffected": "both",
+    "nature": "preventive",
+    "verified": true,
+    "active": false
   }
 ]
