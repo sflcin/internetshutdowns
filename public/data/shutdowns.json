@@ -1079,5 +1079,19 @@
     "nature": "preventive",
     "verified": true,
     "active": false
+  },
+  {
+    "date": "2017-08-16",
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Pulwama"
+    ],
+    "duration": 0,
+    "source": "http://www.greaterkashmir.com/news/kashmir/internet-services-snapped-in-pulwama-after-killing-of-let-commander-ayub-lelhari/257804.html",
+    "description": "<p>Mobile Internet services were suspended yet again in Pulwama district of Kashmir on <a href=\"http://www.greaterkashmir.com/news/kashmir/internet-services-snapped-in-pulwama-after-killing-of-let-commander-ayub-lelhari/257804.html\" target=\"_blank\">16th August, 2017 </a>to prevent rumour mongering after a Lashkar commander was killed in a gunfight with the security forces.</p>",
+    "networksAffected": "mobile",
+    "nature": "preventive",
+    "active": false,
+    "verified": false
   }
 ]
