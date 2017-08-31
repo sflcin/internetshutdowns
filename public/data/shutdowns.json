@@ -1189,5 +1189,18 @@
     "nature": "reactive",
     "verified": true,
     "active": false
+  },
+  {
+    "date": "2017-08-26",
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Pulwama"
+    ],
+    "source": "http://www.greaterkashmir.com/news/kashmir/internet-services-suspended-in-pulwama-after-fidayeen-storm-district-police-lines/258693.html",
+    "description": "<p>After a 'Fidayeen' attack by the militants on District Police Lines, mobile Internet services were suspended in Pulwama district of Kashmir on <a href=\"http://www.greaterkashmir.com/news/kashmir/internet-services-suspended-in-pulwama-after-fidayeen-storm-district-police-lines/258693.html\" target=\"_blank\">26th August, 2017</a> as a precautionary measure to prevent law and order situation.</p>",
+    "networksAffected": "mobile",
+    "nature": "preventive",
+    "active": false,
+    "verified": false
   }
 ]
