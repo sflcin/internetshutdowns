@@ -1174,5 +1174,20 @@
     "nature": "preventive",
     "active": false,
     "verified": true
+  },
+  {
+    "date": "2017-08-25",
+    "state:name": "Rajasthan",
+    "districts": [
+      "Ganganagar",
+      "Hanumangarh"
+    ],
+    "duration": 48,
+    "source": "http://www.thehindu.com/news/national/other-states/ram-rahim-verdict-violence-in-sriganganagar-prohibitory-orders-imposed/article19562071.ece",
+    "description": "<p>Following the conviction of Dera Sacha Sauda chief Gurmeet Ram Rahim Singh in a rape case, mobile Internet services were suspended in the districts of Sriganganagar and Hanumangarh  on <a href=\"http://www.thehindu.com/news/national/other-states/ram-rahim-verdict-violence-in-sriganganagar-prohibitory-orders-imposed/article19562071.ece\" target=\"_blank\">25th August, 2017</a> for 48 hours in response to the violent backlash from the Dera followers.</p>",
+    "networksAffected": "mobile",
+    "nature": "reactive",
+    "verified": true,
+    "active": false
   }
 ]
