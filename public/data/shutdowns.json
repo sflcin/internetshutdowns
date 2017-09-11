@@ -1202,5 +1202,91 @@
     "nature": "preventive",
     "active": false,
     "verified": false
+  },
+  {
+    "date": "2017-09-02",
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Shupiyan",
+      "Kulgam"
+    ],
+    "source": "http://indiatoday.intoday.in/story/jammu-and-kashmir-terrorist-kulgam-behibagh-encounter/1/1039209.html",
+    "description": "<p>Mobile Internet services were suspended in Shopian and Kulgam districts in Jammu and Kashmir on <a href=\"http://indiatoday.intoday.in/story/jammu-and-kashmir-terrorist-kulgam-behibagh-encounter/1/1039209.html\" target=\"_blank\">2nd September, 2017</a> as a reactive measure after clashes broke out following the killing of a LeT terrorist in an encounter with the security forces.</p>",
+    "networksAffected": "mobile",
+    "nature": "reactive",
+    "active": false,
+    "verified": false
+  },
+  {
+    "date": "2017-09-04",
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Kupwara"
+    ],
+    "source": "http://brighterkashmir.com/internet-services-snapped-again-in-kashmirs-kupwara-district/",
+    "description": "<p>Mobile Internet services were suspended yet again in Kupwara district of Jammu and Kashmir on <a href=\"http://brighterkashmir.com/internet-services-snapped-again-in-kashmirs-kupwara-district/\" target=\"_blank\">4th September, 2017</a> as a precautionary measure after two Hizbul Mujahideen militants were killed in a gunfight in Sopore district of Kashmir.</p>",
+    "networksAffected": "mobile",
+    "nature": "preventive",
+    "active": false,
+    "verified": false
+  },
+  {
+    "date": "2017-09-05",
+    "state:name": "Bihar",
+    "districts": [
+      "Madhepura",
+      "Supaul",
+      "Saharsa",
+      "Purnia",
+      "Araria",
+      "Kishanganj",
+      "Katihar"
+    ],
+    "duration": 30,
+    "source": "http://www.hindustantimes.com/india-news/internet-services-suspended-in-7-districts-of-bihar-after-carcasses-found-floating-in-canal/story-QI1kptjbOc4fMA7gpeofwJ.html",
+    "description": "<p>Internet services were suspended in seven districts of Bihar on <a href=\"http://www.hindustantimes.com/india-news/internet-services-suspended-in-7-districts-of-bihar-after-carcasses-found-floating-in-canal/story-QI1kptjbOc4fMA7gpeofwJ.html\" target=\"_blank\">5th September, 2017</a> as a precautionary measure to prevent spread of rumours following communal tensions after dozens of slaughthered cattle carcasses were found floating in a canal in Bihar's Madhepura district.</p>",
+    "networksAffected": "",
+    "nature": "preventive",
+    "verified": false,
+    "active": false
+  },
+  {
+    "date": "2017-09-08",
+    "state:name": "Haryana",
+    "districts": [
+      "Sirsa"
+    ],
+    "duration": 34,
+    "source": "http://www.livemint.com/Politics/mg1CAv5kKUBkE8IBEBGBVI/Mobile-internet-services-suspended-in-Sirsa.html",
+    "description": "<p>Mobile Internet sevices were suspended in Sirsa district of Haryana on 8th September, 2017 till 10th September to prevent rumour mongering and disturbance of public order in view of the 'sanitisation' process being carried out at the Dera Sacha Sauda headquarters.</p>",
+    "networksAffected": "mobile",
+    "nature": "preventive",
+    "verified": true,
+    "active": false
+  },
+  {
+    "date": "2017-09-09",
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Baramula"
+    ],
+    "source": "http://www.greaterkashmir.com/news/kashmir/gunfight-rages-in-sopore-in-north-kashmir-internet-suspended-schools-closed/259772.html",
+    "description": "<p>Internet services were suspended on 9th September, 2017 in the Sopore town of Baramula district in Jammu and Kashmir as a preventive measure after a gunfight between militants and security forces broke out in the town.</p>",
+    "nature": "preventive",
+    "active": false,
+    "verified": false
+  },
+  {
+    "date": "2017-09-09",
+    "state:name": "Rajasthan",
+    "districts": [
+      "Jaipur"
+    ],
+    "source": "https://www.thequint.com/news/india/jaipur-ramganj-violence-curfew",
+    "description": "<p>Mobile Internet services were imposed in several parts of Jaipur city in Rajasthan on <a href=\"https://www.thequint.com/news/india/jaipur-ramganj-violence-curfew\" target=\"_blank\">9th September, 2017</a> as a reactive measure after one person was killed and 11 others were injured in a clash between locals and police personnels in the city.</p>",
+    "networksAffected": "mobile",
+    "nature": "reactive",
+    "active": false,
+    "verified": false
   }
 ]
