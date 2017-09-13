@@ -1288,5 +1288,32 @@
     "nature": "reactive",
     "active": false,
     "verified": false
+  },
+  {
+    "date": "2017-09-11",
+    "state:name": "Jammu and Kashmir",
+    "districts": [
+      "Kulgam",
+      "Anantnag"
+    ],
+    "source": "http://www.greaterkashmir.com/news/kashmir/khudwani-gunfight-internet-services-suspended-in-kulgam-anantnag-districts/259939.html",
+    "description": "<p><span style=\"font-family: Arial; font-size: 15px;\">Mobile Internet services were suspended in Kulgam and Anantnag districts of Jammu and Kashmir on </span><a href=\"http://www.greaterkashmir.com/news/kashmir/khudwani-gunfight-internet-services-suspended-in-kulgam-anantnag-districts/259939.html\" target=\"_blank\" style=\"font-family: Arial; font-size: 15px;\">11th September, 2017</a><span style=\"font-family: Arial; font-size: 15px;\"> to prevent spreading of rumours after two militants were killed in a gunfight with government forces.</span></p>",
+    "networksAffected": "mobile",
+    "nature": "preventive",
+    "active": false,
+    "verified": false
+  },
+  {
+    "date": "2017-09-11",
+    "state:name": "Rajasthan",
+    "districts": [
+      "Sikar"
+    ],
+    "source": "http://www.news18.com/news/india/sikar-standoff-farmers-lay-siege-to-collectorate-internet-services-shut-1515473.html",
+    "description": "<p>Mobile and broadband Internet services were suspended in Sikar district of Rajasthan on <a href=\"http://www.news18.com/news/india/sikar-standoff-farmers-lay-siege-to-collectorate-internet-services-shut-1515473.html\" target=\"_blank\">11th September, 2017</a> to prevent law and order circumstances after the situation became intense with farmers setting off on a march to seize the collectorate following the ongoing farmers' protest in the State.</p>",
+    "networksAffected": "both",
+    "nature": "preventive",
+    "active": false,
+    "verified": false
   }
 ]
