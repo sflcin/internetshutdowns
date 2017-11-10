@@ -41,6 +41,7 @@ map.once('load', function() {
     setupLayers();
     sidebar.reset();
     mobileHeader.reset();
+    // generateCharts();
   });
 });
 
@@ -527,5 +528,80 @@ $(document).ready(function(){
 
 // Colorbox init
 baguetteBox.run('.trends-gallery');
+
+// Charts with Charts.js
+function generateCharts() {
+  var ctx = document.getElementById("service").getContext("2d");
+  var labels = [], counts = [],
+      mobileCounts = [], fixedCounts = [], bothCounts = [], noinfoCounts = [];
+
+  var shutdownsByYear = shutdowns.byYear.slice();
+  shutdownsByYear.sort(function (a,b) {
+    return a.year - b.year;
+  }).forEach(function (d) {
+    labels.push(d.year);
+    var mobile = 0,
+        fixed = 0,
+        both = 0,
+        noinfo = 0;
+    d.shutdowns.forEach(function (shutdown) {
+      switch (shutdown.networksAffected) {
+        case "mobile":
+          mobile += 1;
+          break;
+        case "fixed":
+          fixed += 1;
+          break;
+        case "both":
+          both += 1;
+          break;
+        default:
+          noinfo += 1;
+          console.log("undefined");
+          break;
+      }
+    })
+    mobileCounts.push(mobile);
+    fixedCounts.push(fixed);
+    bothCounts.push(both);
+    noinfoCounts.push(noinfo);
+    counts.push(d.shutdowns.length);
+  });
+
+  var yearlyChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'Mobile',
+        data: mobileCounts,
+        backgroundColor: 'red'
+      },{
+        label: 'Fixed Line',
+        data: fixedCounts,
+        backgroundColor: 'green'
+      },{
+        label: 'Both networks',
+        data: bothCounts,
+        backgroundColor: 'yellow'
+      },{
+        label: 'No Information',
+        data: noinfoCounts,
+        backgroundColor: 'grey'
+      }]
+    },
+    options: {
+      scales: {
+        xAxes: [{
+          stacked: true
+        }],
+        yAxes: [{
+          stacked: true
+        }]
+      }
+    }
+  });
+}
+
 
 },{}]},{},[1]);
