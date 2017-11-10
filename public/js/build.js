@@ -30,7 +30,7 @@ map.once('load', function() {
   mapboxgl.addClaimedBoundaries(map, 'IN');
 
   // Get shutdowns data
-  $.get("../data/shutdowns.json", function (data) {
+  $.get("http://ist-backend.herokuapp.com/shutdowns", function (data) {
     data = sortShutdownsByDate(data);
     shutdowns.count = data.length;
     shutdowns.data = data;
@@ -299,7 +299,7 @@ function getShutdownsByState(shutdowns) {
   var shutdownsByState = {};
 
   shutdowns.forEach(function(shutdown) {
-    var stateName = shutdown["state:name"];
+    var stateName = shutdown["state"];
     shutdownsByState[stateName] =
       (stateName in shutdownsByState)
         ? shutdownsByState[stateName].concat([shutdown])
