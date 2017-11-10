@@ -30,7 +30,7 @@ map.once('load', function() {
   mapboxgl.addClaimedBoundaries(map, 'IN');
 
   // Get shutdowns data
-  $.get("http://ist-backend.herokuapp.com/shutdowns", function (data) {
+  $.get("https://ist-backend.herokuapp.com/shutdowns", function (data) {
     data = sortShutdownsByDate(data);
     shutdowns.count = data.length;
     shutdowns.data = data;
