@@ -483,6 +483,29 @@ $(function(){
 
 });
 
+// Share your Experince
+// TODO: Captcha?
+
+$(function(){
+  $('#share').on('click', function(e){
+    e.preventDefault();
+    $.ajax({
+      url: '/experience',
+      type: 'POST',
+      data: $('#share-experince').serialize(),
+      success: function(data){
+        $('#shareExperienceModal').modal('hide');
+        $('#shareExperienceSuccessModal').modal('show');
+      },
+      error: function(){
+        $('#shareExperienceModal').modal('hide');
+        $('#shareExperienceFailureModal').modal('show');
+      }
+    });
+  });
+
+});
+
 // Splash prompt to sign the petition
 /*
 $(function(){

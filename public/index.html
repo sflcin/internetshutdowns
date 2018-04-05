@@ -77,8 +77,11 @@
               <div class="name"><strong>{{title}}</strong></div>
             </div>
             <div class="col-md-6 report-mobile">
-              <button title="Report a Shutdown" type="button" id="reportBtnMobile" class="btn btn-link btn-sm" data-toggle="modal" data-target="#reportShutdownModal">
-                REPORT A SHUTDOWN
+              <button class="btn btn-link btn-sm" type="button" title="Report a Shutdown" id="reportBtnMobile" data-toggle="modal" data-target="#reportShutdownModal" googl="true">
+                <span class="glyphicon glyphicon-bullhorn"></span> REPORT A SHUTDOWN
+              </button>
+              <button class="btn btn-link btn-sm" type="button" title="Share your experience" id="shareExperienceBtn" data-toggle="modal" data-target="#shareExperienceModal" googl="true" >
+                <span class="glyphicon glyphicon-comment"></span> SHARE YOUR EXPERINECE
               </button>
             </div>
           </div>
@@ -113,8 +116,11 @@
           <div id="sidebar"></div>
           <script id="sidebar-template" type="text/ractive">
             <div class="actions row hidden-sm hidden-xs">
-              <button title="Report a Shutdown" type="button" id="reportBtn" class="btn btn-danger btn-sm btn-block" data-toggle="modal" data-target="#reportShutdownModal">
-                <span class="glyphicon glyphicon-bullhorn"/> REPORT A SHUTDOWN
+              <button type="button" title="Share your experience" id="shareExperienceBtn" data-toggle="modal" data-target="#shareExperienceModal" googl="true" class="btn btn-share btn-sm btn-block">
+                <span class="glyphicon glyphicon-comment"></span> SHARE YOUR EXPERINECE
+              </button>
+              <button class="btn btn-danger btn-sm btn-block" type="button" title="Report a Shutdown" data-toggle="modal" data-target="#reportShutdownModal" googl="true" id="reportBtn">
+                <span class="glyphicon glyphicon-bullhorn"></span> REPORT A SHUTDOWN
               </button>
             </div>
             <div class="header row hidden-sm hidden-xs">
@@ -423,6 +429,81 @@
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
+
+  <!-- Share experience Modals -->
+  <!-- form id: share-experience -->
+  <div class="modal fade" id="shareExperienceModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="exampleModalLabel">Share your experience</h4>
+        </div>
+        <div class="modal-body">
+          <form id="share-experience">
+            <div class="form-group">
+              <label for="name" class="control-label">Name:</label>
+              <input type="text" class="form-control" name="name">
+            </div>
+            <div class="form-group">
+              <label for="locality" class="control-label">Locality:</label>
+              <input type="text" class="form-control" name="locality">
+            </div>
+            <div class="form-group">
+              <label for="date" class="control-label">Date:</label>
+              <input type="text" class="form-control" name="date" type="date">
+            </div>
+            <div class="form-group">
+              <label for="experience" class="control-label">Experience:</label>
+              <textarea class="form-control" name="experience"></textarea>
+            </div>
+            <!-- <div class="form-group">
+              <label for="source" class="control-label">Source:</label>
+              <input type="text" class="form-control" name="source" type="url">
+            </div> -->
+            <div class="form-group">
+              <label for="email" class="control-label">
+                Email:
+              </label>
+              <span class="form-label-subtext">(Optional. Will not be published.)</span>
+              <input class="form-control" name="email" type="email">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <input type="submit" id="report" value="Report" class="btn btn-primary btn-success"></input>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id = "shareExperienceSuccessModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p>Thank you for sharing your experience!</p>
+          <p>We will get back to you shortly.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  <div class="modal fade" id = "shareExperienceFailureModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p>Thank you for sharing your experince!</p>
+          <p>There was some trouble receiving your information. Please try again, or drop us an email with the details.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-failure" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
   <!-- Petiton Prompt Modal -->
   <!-- <div class="modal fade" id = "petitionModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">

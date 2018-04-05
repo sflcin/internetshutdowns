@@ -309,3 +309,12 @@ ul.resources-list li {
 ul.resources-list li:last-child {
   margin-bottom: 20px;
 }
+
+.btn-share {
+    color: #fff;
+    background-color: #3ab3d4;
+    border-color: #3ab3d4;
+}
+#shareExperienceBtn {
+    float: right;
+}

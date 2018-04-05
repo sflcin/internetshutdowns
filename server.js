@@ -92,7 +92,25 @@ app.post('/shutdown', function (req, res) {
   smtpTransport.sendMail({
     from: process.env.EMAIL_FROM || 'internetshutdowns@sflc.in',
     to: process.env.EMAIL_TO || ['internetshutdowns@sflc.in'],
-    subject: 'New Submission from InternetShutdowns.in',
+    subject: 'New Shutdown Submission from InternetShutdowns.in',
+    text: JSON.stringify(req.body),
+    //html: htmlify??
+  }, function (err, response) {
+    console.log(err);
+    console.log(response);
+    if (err) {
+      res.sendStatus(400);
+    } else {
+      res.sendStatus(200);
+    }
+  });
+});
+
+app.post('/experience', function (req, res) {
+  smtpTransport.sendMail({
+    from: process.env.EMAIL_FROM || 'internetshutdowns@sflc.in',
+    to: process.env.EMAIL_TO || ['internetshutdowns@sflc.in'],
+    subject: 'New Experience Submission from InternetShutdowns.in',
     text: JSON.stringify(req.body),
     //html: htmlify??
   }, function (err, response) {
