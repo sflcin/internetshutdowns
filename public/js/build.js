@@ -492,7 +492,7 @@ $(function(){
     $.ajax({
       url: '/experience',
       type: 'POST',
-      data: $('#share-experince').serialize(),
+      data: $('#share-experience').serialize(),
       success: function(data){
         $('#shareExperienceModal').modal('hide');
         $('#shareExperienceSuccessModal').modal('show');
