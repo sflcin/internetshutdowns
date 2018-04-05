@@ -3037,8 +3037,8 @@ select[multiple].input-lg {
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  color: #ffffff;
-  text-decoration: none;
+  color: #ffffff !important;
+  text-decoration: none !important;
 }
 .btn:active,
 .btn.active {
@@ -3458,7 +3458,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-block {
   display: block;
-  width: 50%;
+  width: 100%;
 }
 .btn-block + .btn-block {
   margin-top: 5px;
