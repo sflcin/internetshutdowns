@@ -438,23 +438,35 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" id="exampleModalLabel">Share your experience</h4>
+          <p>You can help us in addressing the issue of/our fight against Internet shutdowns! If you have ever experienced an Internet shutdown or know someone who has, share your story with us. We will/may publish them on our website and/or on other media to highlight the impact it has on the lives of the people.
+          </p>
+          <p>While we may edit your experience to make it publishable, the facts will remain unchanged.
+          </p>
+          <p>You can view our Privacy Policy <a title="Privacy Policy" href="https://internetshutdowns.in/privacy-policy">here</a>.
+          </p>
+          <p>Please note that fields marked * are mandatory.
+          </p>
         </div>
         <div class="modal-body">
           <form id="share-experience">
             <div class="form-group">
               <label for="name" class="control-label">Name:</label>
+              <span class="form-label-subtext">(You may choose to remain anonymous. However, a name gives more credibility to the story.)</span>
               <input type="text" class="form-control" name="name">
             </div>
             <div class="form-group">
-              <label for="locality" class="control-label">Locality:</label>
+              <label for="locality" class="control-label">Locality*:</label>
+              <span class="form-label-subtext">(This is the city/State where the Internet was shutdown.)</span>
               <input type="text" class="form-control" name="locality">
             </div>
             <div class="form-group">
-              <label for="date" class="control-label">Date:</label>
+              <label for="date" class="control-label">Date*:</label>
+              <span class="form-label-subtext">(When was the Internet shut down in your area?)</span>
               <input type="text" class="form-control" name="date" type="date">
             </div>
             <div class="form-group">
-              <label for="experience" class="control-label">Experience:</label>
+              <label for="experience" class="control-label">Experience*:</label>
+              <span class="form-label-subtext">(What impact did the shutdown have on your life? You can share the challenges and difficulties that you had to face due to shutdown or the losses incurred during that period.)</span>
               <textarea class="form-control" name="experience"></textarea>
             </div>
             <!-- <div class="form-group">
@@ -465,8 +477,13 @@
               <label for="email" class="control-label">
                 Email:
               </label>
-              <span class="form-label-subtext">(Optional. Will not be published.)</span>
+              <span class="form-label-subtext">(We will not share or publish this, but we may use it to contact you.)</span>
               <input class="form-control" name="email" type="email">
+            </div>
+            <div class="form-group">
+              <label for="other-details" class="control-label">Other Details:</label>
+              <span class="form-label-subtext">(You may choose to provide other details like your age, gender, profession, duration of shutdown  or any other detail which might help us understand and highlight your story better)</span>
+              <textarea class="form-control" name="other-details"></textarea>
             </div>
           </form>
         </div>
