@@ -3461,7 +3461,7 @@ fieldset[disabled] .btn-link:focus {
   border-radius: 0;
 }
 .btn-block {
-  display: block;
+  /* display: block; */
   width: 50%;
 }
 /* .btn-block + .btn-block {
