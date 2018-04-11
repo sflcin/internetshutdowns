@@ -414,7 +414,7 @@ var sidebar = {
     ractive.set({
       shutdowns: data.shutdownsByYear[year]
     });
-  }
+  },
   setTitle: function (title) {
     ractive.set({
       title: title
