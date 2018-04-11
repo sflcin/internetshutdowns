@@ -379,7 +379,7 @@ $('#backBtn').on('click', function () {
 });
 
 $('#year-list-item').on('click', function () {
-  var year = document.getElementById("yeay").innerHTML;
+  var year = document.getElementById("year").innerHTML;
   sidebar.setShutdowns(year);
   mobileHeader.setShutdowns(year);
 });
