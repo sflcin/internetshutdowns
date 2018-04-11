@@ -7,12 +7,12 @@
     <meta name="twitter:site" content="@SFLCin" />
     <meta name="twitter:title" content="Internet Shutdowns in India" />
     <meta name="twitter:description" content="An interactive information portal about Internet shutdowns in India." />
-    <meta name="twitter:image" content="http://internetshutdowns.in/img/twitter_thumbnail.png" />
+    <meta name="twitter:image" content="https://internetshutdowns.in/img/twitter_thumbnail.png" />
     <meta property="og:title" content="Internet Shutdowns in India" />
-    <meta property="og:url" content="http://internetshutdowns.in" />
+    <meta property="og:url" content="https://internetshutdowns.in" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="An interactive information portal about Internet shutdowns in India." />
-    <meta property="og:image" content="http://internetshutdowns.in/img/og-image.png" />
+    <meta property="og:image" content="https://internetshutdowns.in/img/og-image.png" />
     <title>Internet Shutdown Tracker</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
@@ -77,11 +77,11 @@
               <div class="name"><strong>{{title}}</strong></div>
             </div>
             <div class="col-md-6 report-mobile">
-              <button class="btn btn-link btn-sm" type="form-button" title="Report a Shutdown" id="reportBtnMobile" data-toggle="modal" data-target="#reportShutdownModal" googl="true">
-                <span class="glyphicon glyphicon-bullhorn"></span> REPORT A SHUTDOWN
-              </button>
               <button class="btn btn-link btn-sm" type="form-button" title="Share your experience" id="shareExperienceBtnMobile" data-toggle="modal" data-target="#shareExperienceModal" googl="true" >
                 <span class="glyphicon glyphicon-comment"></span> SHARE YOUR EXPERINECE
+              </button>
+              <button class="btn btn-link btn-sm" type="form-button" title="Report a Shutdown" id="reportBtnMobile" data-toggle="modal" data-target="#reportShutdownModal" googl="true">
+                <span class="glyphicon glyphicon-bullhorn"></span> REPORT A SHUTDOWN
               </button>
             </div>
           </div>
@@ -116,11 +116,11 @@
           <div id="sidebar"></div>
           <script id="sidebar-template" type="text/ractive">
             <div class="actions row hidden-sm hidden-xs">
-              <button class="btn btn-danger btn-sm btn-block" type="button" title="Report a Shutdown" data-toggle="modal" data-target="#reportShutdownModal" googl="true" id="reportBtn">
-                <span class="glyphicon glyphicon-bullhorn"></span> REPORT A SHUTDOWN
-              </button>
               <button type="button" title="Share your experience" id="shareExperienceBtn" data-toggle="modal" data-target="#shareExperienceModal" googl="true" class="btn btn-share btn-sm btn-block">
                 <span class="glyphicon glyphicon-comment"></span> SHARE YOUR EXPERINECE
+              </button>
+              <button class="btn btn-danger btn-sm btn-block" type="button" title="Report a Shutdown" data-toggle="modal" data-target="#reportShutdownModal" googl="true" id="reportBtn">
+                <span class="glyphicon glyphicon-bullhorn"></span> REPORT A SHUTDOWN
               </button>
             </div>
             <div class="header row hidden-sm hidden-xs">
