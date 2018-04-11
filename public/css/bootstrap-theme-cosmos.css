@@ -3351,10 +3351,12 @@ fieldset[disabled] .btn-warning.focus {
   background-color: #ff0039;
   border-color: #ff0039;
   border-radius: 0px !important;
+  width: 50%;
 }
 .btn-share {
   border-radius: 0px !important;
   margin-top: 0px !important;
+  width: 50%;
 }
 .btn-danger:focus,
 .btn-danger.focus {
@@ -3462,10 +3464,10 @@ fieldset[disabled] .btn-link:focus {
   line-height: 1.5;
   border-radius: 0;
 }
-.btn-block {
+/* .btn-block { */
   /* display: block; */
-  width: 50%;
-}
+  /* width: 50%;
+} */
 /* .btn-block + .btn-block {
   margin-top: 5px;
 } */
