@@ -400,7 +400,7 @@ var sidebar = {
     ractive.set({
       title: "India",
       count: shutdowns.count,
-      shutdowns: undefined,
+      shutdowns: shutdowns.data,
       shutdownsByYear: shutdowns.byYear
     });
   },
@@ -436,7 +436,7 @@ var mobileHeader = {
     mobileHeaderRactive.set({
       title: "India",
       count: shutdowns.count,
-      shutdowns: undefined,
+      shutdowns: shutdowns.data,
       shutdownsByYear: shutdowns.byYear
     });
   },
