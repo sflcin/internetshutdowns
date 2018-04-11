@@ -377,12 +377,12 @@ $('#backBtn').on('click', function () {
   sidebar.reset();
   mobileHeader.reset();
 });
-
-$('#year-list-item').on('click', function () {
-  var year = $(this).attr('title');
-  sidebar.setShutdowns(year);
-  mobileHeader.setShutdowns(year);
-});
+//
+// $('#year-list-item').on('click', function () {
+//   var year = $(this).attr('title');
+//   sidebar.setShutdowns(year);
+//   mobileHeader.setShutdowns(year);
+// });
 
 // Ractive Stuff
 var ractive = new Ractive({
