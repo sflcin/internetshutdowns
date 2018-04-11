@@ -323,4 +323,5 @@ ul.resources-list li:last-child {
 }
 .btn-danger {
     width: 50% !important;
+    margin-top: 0px !important;
 }
