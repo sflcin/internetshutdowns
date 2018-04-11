@@ -3351,12 +3351,6 @@ fieldset[disabled] .btn-warning.focus {
   background-color: #ff0039;
   border-color: #ff0039;
   border-radius: 0px !important;
-  width: 50%;
-}
-.btn-share {
-  border-radius: 0px !important;
-  margin-top: 0px !important;
-  width: 50%;
 }
 .btn-danger:focus,
 .btn-danger.focus {

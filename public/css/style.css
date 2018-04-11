@@ -314,7 +314,13 @@ ul.resources-list li:last-child {
     color: #fff;
     background-color: #3ab3d4;
     border-color: #3ab3d4;
+    border-radius: 0px !important;
+    margin-top: 0px !important;
+    width: 50%!important;
 }
 #shareExperienceBtn {
     float: right;
+}
+.btn-danger {
+    width: 50% !important;
 }
