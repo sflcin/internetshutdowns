@@ -134,6 +134,7 @@ select {
 }
 button,
 html input[type="button"],
+html input[type="form-button"],
 input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
