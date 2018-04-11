@@ -410,11 +410,11 @@ var sidebar = {
       shutdownsByYear: shutdowns.byYear
     });
   },
-  setShutdowns: function (year) {
-    ractive.set({
-      shutdowns: data.shutdownsByYear[year]
-    });
-  },
+  // setShutdowns: function (year) {
+  //   ractive.set({
+  //     shutdowns: data.shutdownsByYear[year]
+  //   });
+  // },
   setTitle: function (title) {
     ractive.set({
       title: title
