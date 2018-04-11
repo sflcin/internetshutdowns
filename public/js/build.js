@@ -378,6 +378,12 @@ $('#backBtn').on('click', function () {
   mobileHeader.reset();
 });
 
+$('#year-list-item').on('click', function () {
+  var year = document.getElementById("yeay").innerHTML;
+  sidebar.setShutdowns(year);
+  mobileHeader.setShutdowns(year);
+});
+
 // Ractive Stuff
 var ractive = new Ractive({
   el: "#sidebar",
@@ -404,6 +410,11 @@ var sidebar = {
       shutdownsByYear: shutdowns.byYear
     });
   },
+  setShutdowns: function (year) {
+    ractive.set({
+      shutdowns: data.shutdownsByYear[year]
+    });
+  }
   setTitle: function (title) {
     ractive.set({
       title: title

@@ -138,9 +138,9 @@
                 <div class="row">
                 {{#if shutdownsByYear}}
                   {{#each shutdownsByYear}}
-                  <div class="col-lg-2 col-md-2">
+                  <div id="year-list-item" class="col-lg-2 col-md-2">
                     <div class="count-secondary">{{shutdowns.length}}</div>
-                    <div class="year">{{year}}</div>
+                    <div id="year"class="year">{{year}}</div>
                   </div>
                   {{/each}}
                 {{/if}}
