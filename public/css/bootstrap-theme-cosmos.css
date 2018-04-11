@@ -3354,6 +3354,7 @@ fieldset[disabled] .btn-warning.focus {
 }
 .btn-share {
   border-radius: 0px !important;
+  margin-top: 0px !important;
 }
 .btn-danger:focus,
 .btn-danger.focus {
