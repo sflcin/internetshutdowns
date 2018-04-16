@@ -326,3 +326,7 @@ ul.resources-list li:last-child {
     margin-top: 0px !important;
     border-radius: 0px !important;
 }
+
+.share-mobile {
+  padding-left: 0px;
+}
