@@ -412,7 +412,7 @@ var sidebar = {
     ractive.set({
       title: "India",
       count: shutdowns.count,
-      shutdowns: shutdowns.data,
+      shutdowns: shutdowns.data.slice(0,10),
       shutdownsByYear: shutdowns.byYear
     });
   },
