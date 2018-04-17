@@ -68,8 +68,10 @@
       </div> <!-- /.mobile-header -->
       <!-- Template for mobile header -->
       <script id="mobile-header-template" type="text/ractive">
-        <div id="mobileBackBtn" class="col-xs-1 col-md-2">
-          <span on-click="resetMapAndSidebar" class="glyphicon glyphicon-arrow-left"/>
+        <div class="col-xs-1 col-md-2">
+          <button title="Back" type="button" id="mobileBackBtn" class="btn btn-link" on-click="resetMapAndSidebar">
+            <span class="glyphicon glyphicon-arrow-left"/>
+          </button>
         </div>
         <div class="col-xs-6 col-md-6">
           <div class="row">
