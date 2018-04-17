@@ -380,12 +380,7 @@ $('#backBtn').on('click', function () {
 
 $('#mobileBackBtn').on('click', function () {
   map.reset();
-  sidebar.set({
-    title: "India",
-    count: shutdowns.count,
-    shutdowns: shutdowns.data,
-    shutdownsByYear: shutdowns.byYear
-  });
+  sidebar.reset();
   mobileHeader.reset();
 });
 //
@@ -410,7 +405,6 @@ var ractive = new Ractive({
 ractive.on('resetMapAndSidebar', function () {
   map.reset();
   sidebar.reset();
-  mobileHeader.reset();
 });
 
 var sidebar = {
@@ -481,6 +475,7 @@ var mobileHeader = {
 mobileHeaderRactive.on('resetMapAndSidebar', function () {
   map.reset();
   mobileHeader.reset();
+  sidebar.reset();
 });
 
 // Report a shutdown
