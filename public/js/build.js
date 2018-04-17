@@ -380,7 +380,12 @@ $('#backBtn').on('click', function () {
 
 $('#mobileBackBtn').on('click', function () {
   map.reset();
-  sidebar.reset();
+  sidebar.set({
+    title: "India",
+    count: shutdowns.count,
+    shutdowns: shutdowns.data,
+    shutdownsByYear: shutdowns.byYear
+  });
   mobileHeader.reset();
 });
 //
