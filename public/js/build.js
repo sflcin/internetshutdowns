@@ -399,6 +399,7 @@ var ractive = new Ractive({
 ractive.on('resetMapAndSidebar', function () {
   map.reset();
   sidebar.reset();
+  mobileHeader.reset();
 });
 
 var sidebar = {
