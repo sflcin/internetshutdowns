@@ -68,7 +68,60 @@
       </div> <!-- /.mobile-header -->
       <!-- Template for mobile header -->
       <script id="mobile-header-template" type="text/ractive">
-        <div class="col-xs-1 col-md-2">
+        <div class="actions row">
+          <button type="button" title="Share your experience" id="shareExperienceBtn" data-toggle="modal" data-target="#shareExperienceModal" googl="true" class="btn btn-share btn-sm btn-block">
+            <span class="glyphicon glyphicon-comment"></span> SHARE YOUR EXPERIENCE
+          </button>
+          <button class="btn btn-danger btn-sm btn-block" type="button" title="Report a Shutdown" data-toggle="modal" data-target="#reportShutdownModal" googl="true" id="reportBtn">
+            <span class="glyphicon glyphicon-bullhorn"></span> REPORT A SHUTDOWN
+          </button>
+        </div>
+        <div class="header row">
+          <div class="col-xs-8">
+            <div class="row">
+              <div class="col-xs-2">
+                <button title="Back" type="button" id="mobileBackBtn" class="btn btn-link" on-click="resetMapAndSidebar">
+                  <span class="glyphicon glyphicon-arrow-left"/>
+                </button>
+              </div>
+              <div class="col-xs-10">
+                <div class="name"><strong>{{title}}</strong></div>
+              </div>
+            </div>
+            <div class="row">
+            {{#if shutdownsByYear}}
+              {{#each shutdownsByYear}}
+              <!-- <button title={{year}} id="year-list-item" class="year-btn btn-link"> -->
+                <div class="col-xs-3 col-sm-2">
+                  <div class="count-secondary">{{shutdowns.length}}</div>
+                  <div class="year">{{year}}</div>
+                </div>
+              <!-- </button> -->
+              {{/each}}
+            {{/if}}
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="count text-center">{{count}}</div>
+            <div class="count-label text-center">TOTAL</div>
+          </div>
+        </div>
+        <!-- Shutdowns List -->
+        <!-- <div class="shutdowns-list">
+          <div class="well">
+            {{#each shutdowns as shutdown}}
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  {{{shutdown.description}}}
+                </div>
+                <div class="panel-footer">
+                  {{formatDate(shutdown.date)}} &nbsp;&nbsp;&nbsp; <a href="{{shutdown.source}}" target="_blank">Source</a>
+                </div>
+              </div>
+            {{/each}}
+          </div>
+        </div> -->
+        <!-- <div class="col-xs-1 col-md-2">
           <button title="Back" type="button" id="mobileBackBtn" class="btn btn-link" on-click="resetMapAndSidebar">
             <span class="glyphicon glyphicon-arrow-left"/>
           </button>
@@ -97,10 +150,10 @@
               <div class="count-label text-center">TOTAL</div>
             </div>
           </div>
-        </div>
+        </div> -->
       </script>
       <!-- End of mobile header template -->
-      <div class="row">
+      <div class="map-row row">
         <div class="col col-lg-8 col-md-8 map-container">
           <div id='map'></div>
           <div class="mobile-map-helper hidden-md hidden-lg">
@@ -141,7 +194,7 @@
                 {{#if shutdownsByYear}}
                   {{#each shutdownsByYear}}
                   <!-- <button title={{year}} id="year-list-item" class="year-btn btn-link"> -->
-                    <div class="col-lg-2 col-md-2">
+                    <div class="col-lg-2 col-md-3">
                       <div class="count-secondary">{{shutdowns.length}}</div>
                       <div class="year">{{year}}</div>
                     </div>
@@ -155,9 +208,10 @@
                 <div class="count-label text-center">TOTAL</div>
               </div>
             </div>
-            {{#if shutdowns}}
+            <!-- {{#if shutdowns}} -->
             <div class="shutdowns-list">
               <div class="well">
+                <div class="text-center shutdowns-list-title">{{shutdownsListTitle}}</div>
                 {{#each shutdowns as shutdown}}
                   <div class="panel panel-default">
                     <div class="panel-body">
@@ -170,11 +224,11 @@
                 {{/each}}
               </div>
             </div>
-            {{else}}
+            <!-- {{else}}
               <div class="well" id="about">
                 Instances of Internet shutdowns in India are increasing at a worrisome pace. As the Internet is a key enabler of many fundamental rights, including freedom of speech and expression, such frequent disruptions have been a cause for concern. They threaten the democratic working of nations, and also point to the gradual normalization of the mindset that permits such blanket restriction on Internet access. As a part of this project, we track incidents of Internet shutdowns across India in at attempt to draw attention to the troubling trend of disconnecting access to Internet services. With this tracker, we aim to stand strong with the message that Internet is essential for the holistic socio-economic and cultural development of the country. #KeepItOn.
               </div>
-            {{/if}}
+            {{/if}} -->
           </script>
         </div>
       </div>
@@ -204,6 +258,7 @@
 
   <section id="trends">
     <div class="container">
+      <h2 class="text-center"> Trends </h2>
       <div class="row trends-gallery">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
           <div class="panel panel-default">
@@ -325,6 +380,7 @@
 
   <section id="about-us">
     <div class="container text-justify">
+      <h2 class="text-center"> An Initiative of SFLC.In </h2>
       <p> <a href="http://sflc.in"><abbr title="Software Freedom Law Center, India" class="initialism">SFLC.IN</abbr></a> is a donor supported legal services organisation that brings together lawyers, policy analysts, technologists, and students to protect freedom in the digital world. SFLC.IN promotes innovation and open access to knowledge by helping developers make great Free and Open Source Software, protect privacy and civil liberties for citizens in the digital world by educating and providing free legal advice and help policy makers make informed and just decisions with the use and adoption of technology. </p>
       <p> SFLC.IN is a society registered under the Societies Registration Act, 1860, operating all over India.</p>
     </div>

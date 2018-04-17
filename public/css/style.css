@@ -98,18 +98,18 @@ section, .navbar {
 #sidebar .header {
   color: #fff;
   background-color: #232323;
-  padding: 15px 20px;
+  padding: 15px 0px;
 }
 
 #sidebar .header .name {
   font-size: 18px;
-  margin-bottom: 15px;
+  margin-top: 5px;
   text-transform: uppercase;
 }
 
 #sidebar .count {
   color: #ffd42a;
-  font-size: 44px;
+  font-size: 36px;
   font-weight: bolder;
 }
 
@@ -127,9 +127,9 @@ section, .navbar {
   height: 75%;
 }
 
-#trends {
+/* #trends {
   height: 70vh;
-}
+} */
 
 footer {
   color: #ffffff;
@@ -156,11 +156,20 @@ footer a:hover, footer a:focus {
   color: #ffffff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
 
-  #intro, #map, #trends-header, #tracker, #sidebar, #trends
+  #tracker, #map, #trends-header, #trends
   {
     height: unset;
+  }
+
+  #sidebar {
+    height: 80vh;
+    margin-bottom: 20px;
+  }
+  #sidebar .shutdowns-list {
+    overflow-y: scroll;
+    height: 100%;
   }
 
   #map {
@@ -193,10 +202,25 @@ footer a:hover, footer a:focus {
 .mobile-header {
   color: #fff;
   background-color: #232323;
-  padding: 15px 5px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
-@media screen and (max-width: 768px) {
+#mobile-header .row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+#mobile-header .header {
+  padding: 15px 0px !important;
+}
+
+#sidebar .row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 991px) {
   .map-container {
     width: 100%;
     margin-left: 0;
@@ -204,11 +228,15 @@ footer a:hover, footer a:focus {
     padding-left: 0;
     padding-right: 0;
   }
+  .map-row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .count {
   color: #ffd42a;
-  font-size: 18px;
+  font-size: 36px;
   font-weight: bolder;
 }
 
@@ -219,9 +247,10 @@ footer a:hover, footer a:focus {
 
 #mobile-header .name {
   font-size: 18px;
+  margin-top: 5px;
   text-transform: uppercase;
-  margin-left: 10px; /* because the button below the header has a padding */
 }
+
 
 .trends {
   font-size: 12px;
@@ -280,7 +309,7 @@ button.close {
 
 /* Slick Slide Styles */
 .quotes-slideshow {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .slick-slide > img {
@@ -317,6 +346,7 @@ ul.resources-list li:last-child {
     border-radius: 0px !important;
     margin-top: 0px !important;
     width: 50%!important;
+    white-space:normal !important;
 }
 #shareExperienceBtn {
     float: right;
@@ -325,8 +355,50 @@ ul.resources-list li:last-child {
     width: 50% !important;
     margin-top: 0px !important;
     border-radius: 0px !important;
+    white-space:normal !important;
 }
 
+@media (max-width: 438px) {
+  .btn-danger, .btn-share{
+    height: 48px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1310px) {
+  .btn-danger, .btn-share{
+    height: 48px;
+  }
+}
 .share-mobile {
   padding-left: 0px;
+}
+
+.container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#intro .container{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#slideshow .container {
+  padding-top: 0px;
+}
+
+#slideshow, #news, #about-us {
+  background-color: #f5f5f5;
+}
+
+.panel {
+  margin-top: 20px;
+}
+
+#sidebar {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.shutdowns-list-title {
+  text-transform: uppercase;
 }

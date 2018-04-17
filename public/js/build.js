@@ -413,7 +413,8 @@ var sidebar = {
       title: "India",
       count: shutdowns.count,
       shutdowns: shutdowns.data.slice(0,10),
-      shutdownsByYear: shutdowns.byYear
+      shutdownsByYear: shutdowns.byYear,
+      shutdownsListTitle: "RECENT SHUTDOWNS"
     });
   },
   // setShutdowns: function (year) {
@@ -431,7 +432,8 @@ var sidebar = {
       title: data.state,
       count: data.count,
       shutdowns: data.shutdowns,
-      shutdownsByYear: data.shutdownsByYear
+      shutdownsByYear: data.shutdownsByYear,
+      shutdownsListTitle: data.state + " SHUTDOWNS LIST"
     });
   }
 };
@@ -454,7 +456,9 @@ var mobileHeader = {
       title: "India",
       count: shutdowns.count,
       shutdowns: shutdowns.data,
-      shutdownsByYear: shutdowns.byYear
+      shutdownsByYear: shutdowns.byYear,
+      shutdownsListTitle: "RECENT SHUTDOWNS",
+
     });
   },
   setTitle: function (title) {
@@ -467,7 +471,8 @@ var mobileHeader = {
       title: data.state,
       count: data.count,
       shutdowns: data.shutdowns,
-      shutdownsByYear: data.shutdownsByYear
+      shutdownsByYear: data.shutdownsByYear,
+      shutdownsListTitle: data.state + " SHUTDOWNS LIST"
     });
   }
 };
