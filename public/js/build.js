@@ -377,6 +377,12 @@ $('#backBtn').on('click', function () {
   sidebar.reset();
   mobileHeader.reset();
 });
+
+$('#mobileBackBtn').on('click', function () {
+  map.reset();
+  sidebar.reset();
+  mobileHeader.reset();
+});
 //
 // $('#year-list-item').on('click', function () {
 //   var year = $(this).attr('title');
