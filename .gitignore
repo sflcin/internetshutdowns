@@ -1,3 +1,4 @@
 node_modules/
 scripts/config.txt
 public/vendor
+npm-debug.log
