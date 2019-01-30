@@ -414,7 +414,8 @@ var sidebar = {
       count: shutdowns.count,
       shutdowns: shutdowns.data.slice(0,10),
       shutdownsByYear: shutdowns.byYear,
-      shutdownsListTitle: "RECENT SHUTDOWNS"
+      shutdownsListTitle: "RECENT SHUTDOWNS",
+      shutdownsListTitleState: ""
     });
   },
   // setShutdowns: function (year) {
@@ -433,7 +434,8 @@ var sidebar = {
       count: data.count,
       shutdowns: data.shutdowns,
       shutdownsByYear: data.shutdownsByYear,
-      shutdownsListTitle: data.state + " SHUTDOWNS LIST"
+      shutdownsListTitle: " SHUTDOWNS LIST",
+      shutdownsListTitleState: data.state
     });
   }
 };

@@ -14,8 +14,10 @@
     <meta property="og:type" content="website" />
     <meta property="og:description" content="An interactive information portal about Internet shutdowns in India." />
     <meta property="og:image" content="https://internetshutdowns.in/img/og-image.png" />
-    <title>Internet Shutdown Tracker</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <title>Internet Shutdown Tracker</title>
+
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
     <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
     <link href='vendor/bootstrap/dist/css/bootstrap.css' rel='stylesheet' />
@@ -26,8 +28,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/baguettebox.js/1.8.2/baguetteBox.min.css">
     <link href='css/style.css' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+
 </head>
 <body>
+  <!--
+===========================================================
+    Navigation Bar
+===========================================================
+  -->
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -56,17 +65,31 @@
     </div><!-- /.container-fluid -->
   </nav>
 
+  <!--
+===========================================================
+    Introduction
+===========================================================
+  -->
   <section id="intro">
     <div class="container">
     </div>
   </section>
 
+  <!--
+===========================================================
+    Tracker
+===========================================================
+  -->
   <section id="tracker">
     <div class="container-fluid">
       <!-- A mobile-only header that appears over the map -->
       <!-- TODO Need to avoid this duplication of functionality -->
       <div id="mobile-header" class="row header mobile-header hidden-md hidden-lg">
-      </div> <!-- /.mobile-header -->
+      </div>
+
+      <!--
+        Mobile Header
+      -->
       <!-- Template for mobile header -->
       <script id="mobile-header-template" type="text/ractive">
         <div class="actions row">
@@ -78,18 +101,18 @@
           </button>
         </div>
         <div class="header row">
-          <div class="col-xs-8">
-            <div class="row">
-              <div class="col-xs-2">
-                <button title="Back" type="button" id="mobileBackBtn" class="btn btn-link" on-click="resetMapAndSidebar">
-                  <span class="glyphicon glyphicon-arrow-left"/>
-                </button>
-              </div>
-              <div class="col-xs-10">
-                <div class="name"><strong>{{title}}</strong></div>
-              </div>
+          <div class="row">
+            <div class="col-xs-2">
+              <button title="Back" type="button" id="mobileBackBtn" class="btn btn-link" on-click="resetMapAndSidebar">
+                <span class="glyphicon glyphicon-arrow-left"/>
+              </button>
             </div>
-            <div class="row">
+            <div class="col-xs-10">
+              <div class="name"><strong>{{title}}</strong></div>
+            </div>
+          </div>
+          <div class="row">
+          <div class="col-xs-8">
             {{#if shutdownsByYear}}
               {{#each shutdownsByYear}}
               <!-- <button title={{year}} id="year-list-item" class="year-btn btn-link"> -->
@@ -101,11 +124,12 @@
               {{/each}}
             {{/if}}
             </div>
+            <div class="col-xs-4">
+              <div class="count text-center">{{count}}</div>
+              <div class="count-label text-center">TOTAL</div>
+            </div>
           </div>
-          <div class="col-xs-4">
-            <div class="count text-center">{{count}}</div>
-            <div class="count-label text-center">TOTAL</div>
-          </div>
+
         </div>
         <!-- Shutdowns List -->
         <!-- <div class="shutdowns-list">
@@ -167,10 +191,23 @@
               </div>
             </div>
           </div>
+          <div class="map-helper">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <!-- <a href="#about" class="trends"> <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span> WHAT IS THIS? </a> -->
+                  <small> Click on a state to see the details of shutdowns in the sidebar. Click outside to zoom out.</small>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- Sidebar-->
         <div class="col col-lg-4 col-md-4">
-          <div id="sidebar"></div>
+          <div id="sidebar">
           <script id="sidebar-template" type="text/ractive">
+            <!-- Sidebar Action Header -->
             <div class="actions row hidden-sm hidden-xs">
               <button type="button" title="Share your experience" id="shareExperienceBtn" data-toggle="modal" data-target="#shareExperienceModal" googl="true" class="btn btn-share btn-sm btn-block">
                 <span class="glyphicon glyphicon-comment"></span> SHARE YOUR EXPERIENCE
@@ -179,18 +216,20 @@
                 <span class="glyphicon glyphicon-bullhorn"></span> REPORT A SHUTDOWN
               </button>
             </div>
+
+            <!-- Sidebar Count Header -->
             <div class="header row hidden-sm hidden-xs">
-              <div class="col-md-9">
-                <div class="row">
-                  <div class="col-md-2">
-                    <button title="Back" type="button" id="backBtn" class="btn btn-link" on-click="resetMapAndSidebar">
-                      <span class="glyphicon glyphicon-arrow-left"/>
-                    </button>
-                  </div>
-                  <div class="col-md-10">
-                    <div class="name"><strong>{{title}}</strong></div>
-                  </div>
+              <div class="row">
+                <div class="col-md-2">
+                  <button title="Back" type="button" id="backBtn" class="btn btn-link" on-click="resetMapAndSidebar">
+                    <span class="glyphicon glyphicon-arrow-left"/>
+                  </button>
                 </div>
+                <div class="col-md-10">
+                  <div class="name"><strong>{{title}}</strong></div>
+                </div>
+              </div>
+              <div class="col-md-9">
                 <div class="row">
                 {{#if shutdownsByYear}}
                   {{#each shutdownsByYear}}
@@ -210,21 +249,24 @@
               </div>
             </div>
             <!-- {{#if shutdowns}} -->
+
+            <!-- Shutdowns list -->
             <div class="shutdowns-list">
               <div class="well">
-                <div class="text-center shutdowns-list-title">{{shutdownsListTitle}}</div>
+                <div class="text-center shutdowns-list-title"><span class='highlight-state'>{{shutdownsListTitleState}}</span>{{shutdownsListTitle}}</div>
                 {{#each shutdowns as shutdown}}
                   <div class="panel panel-default">
                     <div class="panel-body">
                       {{{shutdown.description}}}
                     </div>
                     <div class="panel-footer">
-                      {{formatDate(shutdown.date)}} &nbsp;&nbsp;&nbsp; <a href="{{shutdown.source}}" target="_blank">Source</a>
+                      {{formatDate(shutdown.date)}} &nbsp;&nbsp;&nbsp; <a href="{{shutdown.source}}" target="_blank">Source</a> &nbsp;&nbsp;&nbsp; <strong>{{shutdown.state}}</strong>
                     </div>
                   </div>
                 {{/each}}
               </div>
             </div>
+
             <!-- {{else}}
               <div class="well" id="about">
                 Instances of Internet shutdowns in India are increasing at a worrisome pace. As the Internet is a key enabler of many fundamental rights, including freedom of speech and expression, such frequent disruptions have been a cause for concern. They threaten the democratic working of nations, and also point to the gradual normalization of the mindset that permits such blanket restriction on Internet access. As a part of this project, we track incidents of Internet shutdowns across India in at attempt to draw attention to the troubling trend of disconnecting access to Internet services. With this tracker, we aim to stand strong with the message that Internet is essential for the holistic socio-economic and cultural development of the country. #KeepItOn.
@@ -236,57 +278,157 @@
     </div>
   </section>
 
+  <!--
+===========================================================
+    Internet Shutdowns Report
+===========================================================
+  -->
   <section id="reports" style="margin-bottom:15px;">
-    <div class="container" style="border-width:2px; border-color:#ff4812; border-style:solid;">
-      <div class="col-xs-12 col-sm-12 col-md-6 com-lg-6">
-        <img src="https://sflc.in/sites/default/files/styles/latest_blog_thumbnail/public/2018-05/internetshudowns_report.png?itok=SyN-ZMDE" width="100%"></img>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-6 com-lg-6">
-        <h2>Living in Digital Darkness - A Handbook on Internet Shutdowns in India</h2>
-        <p>A report by SFLC.in on the state of Internet shutdowns in India, analyzing its emergence as a public policy issue, governing laws, recorded instances, and impact among others.
-        </p>
-        <p><a class= "btn" href='https://sflc.in/sites/default/files/reports/Living%20in%20Digital%20Darkness%20-%20A%20Handbook%20on%20Internet%20Shutdowns%20in%20India%2c%20May%202018%20-%20by%20SFLCin.pdf', target='_blank'><span class="glyphicon glyphicon-download-alt"></span> Download the report</a>
+    <div class="container">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-top: 2em; padding-bottom: 1em;">
+        <p style="font-size: 1.75em;"><span style="font-size: 2em;">We are tracking instances of <strong style="color: #ff3100;">internet shutdowns</strong> in India</span> drawing attention to the troubling trend of disconnecting access to Internet services
+          <br></br>
+          <span><strong style="color: #ff3100;">#</strong>KeepItOn</span>
         </p>
       </div>
-    </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="report" style="border-width:2px; border-color:#ff4812; border-style:solid;">
+          <div class="report-image" style="padding:10px;">
+            <img src="https://sflc.in/sites/default/files/styles/latest_blog_thumbnail/public/2018-05/internetshudowns_report.png?itok=SyN-ZMDE" width="100%"></img>
+          </div>
+          <div class="report-text" style="padding:10px;">
+            <p style="font-size: 24px">Living in Digital Darkness - A Handbook on Internet Shutdowns in India</p>
+            <p>A report by SFLC.in on the state of Internet shutdowns in India, analyzing its emergence as a public policy issue, governing laws, recorded instances, and impact among others.
+            </p>
+            <p><a class= "btn" href='https://sflc.in/sites/default/files/reports/Living%20in%20Digital%20Darkness%20-%20A%20Handbook%20on%20Internet%20Shutdowns%20in%20India%2c%20May%202018%20-%20by%20SFLCin.pdf', target='_blank'><span class="glyphicon glyphicon-download-alt"></span> Download the report</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    <div>
   </section>
 
-  <section id="slideshow">
+  <!--
+===========================================================
+    Updates
+===========================================================
+  -->
+  <section id="news">
     <div class="container">
-      <div class="row">
-        <div class="quotes-slideshow col-lg-10 col-lg-offset-1">
-          <div>
-            <img class="img-responsive" data-lazy="/img/slides/abhinandan_twitter.png">
+      <h2 class="title">Updates</h2>
+      <div class= "latest-news">
+
+        <div class="news-list">
+          <ul>
+
+            <li>
+              <a target="_blank" href="https://sflc.in/sflcin-shortlised-2019-index-censorship-freedom-expression-awards">
+                SFLC.in Shortlised for 2019 Index on Censorship Freedom of Expression Awards
+              </a> ( 28 January 2019 )
+            </li>
+            <li>
+              <a target="_blank" href="https://sflc.in/second-appeal-rti-application-revealed-procedural-lapses-only-11-review-committee-meetings-despite">
+                Second Appeal to the RTI Application revealed procedural lapses: only 11 review committee meetings despite 40 Internet Shutdowns in Rajasthan
+              </a> ( 6 December 2018 )
+            </li>
+            <li>
+              <a target="_blank" href="https://sflc.in/home-department-state-rajasthan-no-more-internet-shutdowns-prevention-cheating-examinations">
+                Home Department, State of Rajasthan: No more Internet Shutdowns for prevention of cheating in examinations.
+              </a> ( 29 November 2018 )
+            </li>
+            <li>
+              <a target="_blank" href="https://sflc.in/sflcin-igf-2018-paris-overview-our-lightning-talk-internet-shutdowns">
+                SFLC.in at IGF 2018, Paris: Overview of our Lightning Talk on Internet Shutdowns
+              </a> ( 28 November 2018 )
+            </li>
+            <li>
+              <a target="_blank" href="https://sflc.in/rti-applications-mp-about-number-internet-shutdowns-dismissed-returned">
+                RTI Applications to MP & UP about number of Internet Shutdowns: Dismissed & Returned
+              </a> ( 12 September 2018 )
+            </li><li>
+              <a target="_blank" href="https://sflc.in/panel-discussion-aprigf-18-internet-restrictions-asia-pacific-region-and-how-mitigate">
+                Panel Discussion at APrIGF 18: Internet Restrictions in Asia Pacific Region and How to Mitigate.
+              </a> ( 27 August 2018 )
+            </li>
+
+            <!-- <li>
+              <a target="_blank" href="https://kashmirobserver.net/2017/local-news/internet-ban-keeps-situation-control-dg-police-16621">
+                Internet Ban Keeps Situation in Control: DG Police
+              </a> (Kashmir Observer - 11 April, 2017)
+            </li>
+            <li>
+              <a target="_blank" href="http://timesofindia.indiatimes.com/business/india-business/ngos-individuals-urge-state-cms-to-curb-internet-shutdown/articleshow/58011598.cms">
+                NGOs, individuals urge state CMs to curb Internet shutdown
+              </a> (Times of India - 4 April, 2017)
+            </li>
+            <li>
+              <a target="_blank" href="http://bwdisrupt.businessworld.in/article/Organizations-Citizens-Urge-12-States-CMs-to-Stop-Internet-Shutdowns/28-03-2017-115251/">
+                Organizations & Citizens Urge 12 States CMs to Stop Internet Shutdowns
+              </a> (Business World - 28 March, 2017)
+            </li>
+            <li>
+              <a target="_blank" href="http://indianexpress.com/article/technology/tech-news-technology/internet-shutdowns-in-india-why-it-is-bad-for-modis-digital-india-4587416/">
+                Internet shutdowns in India: Why it is bad for Modi’s Digital India
+              </a> (Indian Express - 27 March, 2017)
+            </li>
+            <li>
+              <a target="_blank" href="http://www.huffingtonpost.in/2017/03/21/india-had-the-highest-number-of-internet-shut-downs-in-2016_a_21903918/">
+                India Had The Highest Number Of Internet Shutdowns In 2016 In The World
+              </a> (Huffington Post - 21 March, 2017)
+            </li>
+            <li>
+              <a target="_blank" href="http://gadgets.ndtv.com/internet/features/internet-shutdowns-have-no-place-in-digital-india-1666641">
+                Internet Shutdowns Have No Place in Digital India
+              </a> (NDTV - 6 March, 2017)
+            </li>
+            <li>
+              <a target="_blank" href="http://tech.firstpost.com/news-analysis/this-internet-shutdown-tracker-will-let-you-know-of-instances-of-govt-imposed-internet-bans-in-india-361531.html">
+                This Internet shutdown tracker will let you know of instances of govt-imposed internet bans in India
+              </a> (FirstPost - 09 February, 2017)
+            </li>
+            <li>
+              <a target="_blank" href="http://economictimes.indiatimes.com/articleshow/57037888.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst">
+                The number of Internet shutdowns in India is startling: SFLC
+              </a> (Economic Times - 08 February, 2017)
+            </li> -->
+          </ul>
+          <div class="more-updates">
+            <a href="https://sflc.in/tags/internet-shutdown">More Updates</a>
           </div>
-          <div>
-            <img class="img-responsive" data-lazy="/img/slides/Daniel_twitter.png">
-          </div>
-          <div>
-            <img class="img-responsive" data-lazy="/img/slides/faisal_twitter.png">
-          </div>
-          <div>
-            <img class="img-responsive" data-lazy="/img/slides/sheroes_twitter.png">
-          </div>
+        </div>
+        <div class="twitter-embed">
+          <a class="twitter-timeline" data-width="400" data-height="600" href="https://twitter.com/NetShutdowns?ref_src=twsrc%5Etfw">Tweets by NetShutdowns</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
       </div>
     </div>
   </section>
 
+  <!--
+===========================================================
+    Trends
+===========================================================
+  -->
   <section id="trends">
     <div class="container">
-      <h2 class="text-center"> Trends (January 2012 - April 2018) </h2>
+      <h2 class="text-center"> Trends</h2>
+
+      <!-- <div class="bar-chart"></div>
+      <script src="https://d3js.org/d3.v3.min.js"  charset="utf-8"></script>
+ -->
+
+
       <div class="row trends-gallery">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
           <div class="panel panel-default">
             <!-- <div class="panel-heading"> </div> -->
             <div class="panel-body">
-              <a data-caption="Type of Shutdown" href="img/trends/1-types-of-shutdowns.jpg">
-                <img class="img-responsive" src="img/trends/1-types-of-shutdowns.jpg" />
+              <a data-caption="Type of Shutdown" href="img/trends/1-types-of-shutdowns.png">
+                <img class="img-responsive" src="img/trends/1-types-of-shutdowns.png" />
               </a>
             </div>
             <div class="panel-footer">
               <h4> Type of Shutdown </h4>
-              <p>Of the 172 reported incidents, 124 were targeted at mobile Internet services alone (3 in 2012, 5 shutdowns each in 2013 & 2014, 8 in 2015 and 19 in 2016, 44 in 2017 and 40 till April 2018), 17 targeted both mobile and fixed-line Internet services (4 each in 2015 and 2016, 9 in 2017, and 2 in 2018), while only 2 shutdowns targeting fixed-line services alone were recorded during the period of study.</p>
+              <p>Of the 278 Internet shutdowns recorded between January 2012 and January 2019, 160 were observed to be preventive measures i.e. restrictions imposed in anticipation of law and order breakdowns, whereas 118 shutdowns were reactive in nature i.e. imposed in order to contain on-going law and order breakdowns.</p>
             </div>
           </div>
         </div>
@@ -294,13 +436,13 @@
           <div class="panel panel-default">
             <!-- <div class="panel-heading"> </div> -->
             <div class="panel-body">
-              <a data-caption="Duration of Shutdown" href="img/trends/2-durations-of-shutdowns.jpg">
-                <img class="img-responsive" src="img/trends/2-durations-of-shutdowns.jpg" />
+              <a data-caption="Duration of Shutdown" href="img/trends/2-durations-of-shutdowns.png">
+                <img class="img-responsive" src="img/trends/2-durations-of-shutdowns.png" />
               </a>
             </div>
             <div class="panel-footer">
               <h4> Duration of Shutdown </h4>
-              <p>47 of the 172 Internet shutdowns between 2012 and 2018 lasted less than 24 hours, 38 lasted between 24 and 72 hours, 37 lasted for over 72 hours, while no information was available on the respective durations of 50 Internet shutdowns. The non-availability of information is attributable chiefly to the fact that no public notifications are issued by the Government or Internet Service Providers before, during, or after shutdowns, leaving stakeholders outside affected areas to source this information from available news reports, which do not consistently mention the durations for which Internet access was blocked.</p>
+              <p>60 of the 278 Internet shutdowns between January, 2012-2019 lasted less than 24 hours, 55 lasted between 24 and 72 hours, 39 lasted for over 72 hours, while no information was available on the respective durations of 113 Internet shutdowns. The non-availability of information is attributable chiefly to the fact that no public notifications are issued by the Government or Internet Service Providers before, during, or after shutdowns, leaving stakeholders outside affected areas to source this information from available news reports, which do not consistently mention the durations for which Internet access was blocked.</p>
             </div>
           </div>
         </div>
@@ -308,13 +450,13 @@
           <div class="panel panel-default">
             <!-- <div class="panel-heading"></div> -->
             <div class="panel-body">
-              <a data-caption="Nature of Shutdown" href="img/trends/3-nature-of-shutdowns.jpg">
-                <img class="img-responsive" src="img/trends/3-nature-of-shutdowns.jpg" />
+              <a data-caption="Nature of Shutdown" href="img/trends/3-nature-of-shutdowns.png">
+                <img class="img-responsive" src="img/trends/3-nature-of-shutdowns.png" />
               </a>
             </div>
             <div class="panel-footer">
               <h4> Nature of Shutdown </h4>
-              <p>Of the 172 Internet shutdowns recorded between January 2012 and April 2018, 92 were observed to be preventive measures i.e. restrictions imposed in anticipation of law and order breakdowns, whereas 80 shutdowns were reactive in nature i.e. imposed in order to contain on-going law and order breakdowns.</p>
+              <p>Of the 278 reported incidents, 224 were targeted at mobile Internet services alone (3 in 2012, 5 shutdowns each in 2013 & 2014, 8 in 2015 and 20 in 2016, 51 in 2017, 126 in 2018 and 6 till January 2019), 19 targeted both mobile and fixed-line Internet services (4 each in 2015 and 2016, 9 in 2017, and 4 in 2018), while only 2 shutdowns targeting fixed-line services alone were recorded during the period of study.</p>
             </div>
           </div>
         </div>
@@ -322,61 +464,37 @@
     </div>
   </section>
 
-  <section id="news">
+  <!--
+===========================================================
+    Quotes slideshow
+===========================================================
+  -->
+  <section id="slideshow">
     <div class="container">
-      <h2 class="title"> In The News </h2>
-      <ul>
-        <!--
-        <li>
-          <a target="_blank" href="">
-
-          </a> ( - )
-        </li>
-        -->
-        <li>
-          <a target="_blank" href="https://kashmirobserver.net/2017/local-news/internet-ban-keeps-situation-control-dg-police-16621">
-            Internet Ban Keeps Situation in Control: DG Police
-          </a> (Kashmir Observer - 11 April, 2017)
-        </li>
-        <li>
-          <a target="_blank" href="http://timesofindia.indiatimes.com/business/india-business/ngos-individuals-urge-state-cms-to-curb-internet-shutdown/articleshow/58011598.cms">
-            NGOs, individuals urge state CMs to curb Internet shutdown
-          </a> (Times of India - 4 April, 2017)
-        </li>
-        <li>
-          <a target="_blank" href="http://bwdisrupt.businessworld.in/article/Organizations-Citizens-Urge-12-States-CMs-to-Stop-Internet-Shutdowns/28-03-2017-115251/">
-            Organizations & Citizens Urge 12 States CMs to Stop Internet Shutdowns
-          </a> (Business World - 28 March, 2017)
-        </li>
-        <li>
-          <a target="_blank" href="http://indianexpress.com/article/technology/tech-news-technology/internet-shutdowns-in-india-why-it-is-bad-for-modis-digital-india-4587416/">
-            Internet shutdowns in India: Why it is bad for Modi’s Digital India
-          </a> (Indian Express - 27 March, 2017)
-        </li>
-        <li>
-          <a target="_blank" href="http://www.huffingtonpost.in/2017/03/21/india-had-the-highest-number-of-internet-shut-downs-in-2016_a_21903918/">
-            India Had The Highest Number Of Internet Shutdowns In 2016 In The World
-          </a> (Huffington Post - 21 March, 2017)
-        </li>
-        <li>
-          <a target="_blank" href="http://gadgets.ndtv.com/internet/features/internet-shutdowns-have-no-place-in-digital-india-1666641">
-            Internet Shutdowns Have No Place in Digital India
-          </a> (NDTV - 6 March, 2017)
-        </li>
-        <li>
-          <a target="_blank" href="http://tech.firstpost.com/news-analysis/this-internet-shutdown-tracker-will-let-you-know-of-instances-of-govt-imposed-internet-bans-in-india-361531.html">
-            This Internet shutdown tracker will let you know of instances of govt-imposed internet bans in India
-          </a> (FirstPost - 09 February, 2017)
-        </li>
-        <li>
-          <a target="_blank" href="http://economictimes.indiatimes.com/articleshow/57037888.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst">
-            The number of Internet shutdowns in India is startling: SFLC
-          </a> (Economic Times - 08 February, 2017)
-        </li>
-      </ul>
+      <div class="row">
+        <div class="quotes-slideshow col-lg-10 col-lg-offset-1">
+          <div>
+            <img class="img-responsive" data-lazy="/img/slides/abhinandan.png">
+          </div>
+          <div>
+            <img class="img-responsive" data-lazy="/img/slides/Daniel.png">
+          </div>
+          <div>
+            <img class="img-responsive" data-lazy="/img/slides/faisal.png">
+          </div>
+          <div>
+            <img class="img-responsive" data-lazy="/img/slides/sheroes.png">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!--
+===========================================================
+    Supporting Organizations
+===========================================================
+  -->
   <section id="supporting-orgs">
     <div class="container">
       <h2 class="text-center"> Supporting Organizations </h2>
@@ -394,6 +512,11 @@
     </div>
   </section>
 
+  <!--
+===========================================================
+    About Us
+===========================================================
+  -->
   <section id="about-us">
     <div class="container text-justify">
       <h2 class="text-center"> An Initiative of SFLC.In </h2>
@@ -402,6 +525,11 @@
     </div>
   </section>
 
+  <!--
+===========================================================
+    Footer
+===========================================================
+  -->
   <footer>
     <div class="container">
       <div class="row">
@@ -433,7 +561,13 @@
       </div>
     </div>
   </footer>
-  <!-- Modals -->
+
+  <!--
+===========================================================
+    Modals
+===========================================================
+  -->
+  <!-- Report Shutdown Modals -->
   <div class="modal fade" id="reportShutdownModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -506,7 +640,7 @@
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 
-  <!-- Share experience Modals -->
+  <!-- Share Experience Modals -->
   <!-- form id: share-experience -->
   <div class="modal fade" id="shareExperienceModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
@@ -597,7 +731,7 @@
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 
-  <!-- Petiton Prompt Modal -->
+  <!-- Sign Petiton Modals -->
   <!-- <div class="modal fade" id = "petitionModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -624,6 +758,12 @@
       <!-- </div><!-- /.modal-content -->
     <!-- </div><!-- /.modal-dialog -->
   <!-- </div><!-- /.modal -->
+
+  <!--
+===========================================================
+    Sticky Share buttons
+===========================================================
+  -->
   <div class="ssk-group ssk-sticky ssk-left ssk-center ssk-sm">
     <a rel="nofollow" href="" class="ssk ssk-facebook"></a>
     <a rel="nofollow" href="" class="ssk ssk-twitter"></a>
@@ -631,7 +771,9 @@
     <a rel="nofollow" href="" class="ssk ssk-linkedin"></a>
     <a rel="nofollow" href="" class="ssk ssk-email"></a>
   </div>
+
 </body>
+
 <script src='js/jquery-3.1.1.min.js'></script>
 <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
@@ -645,4 +787,7 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/baguettebox.js/1.8.2/baguetteBox.min.js"></script>
 <script src='js/build.js'></script>
+<!-- <script src='js/charts.js'></script>
+<script src="https://d3js.org/d3.v5.min.js"></script> -->
+
 </html>
