@@ -570,6 +570,14 @@ color: white;
 a:hover {
   text-decoration: underline;
 }
+.btn-ooni {
+  color: #3b3a3a;
+  background-color: #fff300;
+  border-color: #fff300;
+  border-radius: 0px !important;
+  margin-top: 0px !important;
+  white-space:normal !important;
+}
 
 
 /*
