@@ -11,6 +11,7 @@ TODO:
 * Update Longest shutdown section with the latest content
 * States update in the json
 * Update all the depreciated packages to the latest ones (bower -> yarn, jade -> pug)
+* Adding tests for the deployment (make sure you check the tests before deploying)
 
 
 ## To setup the project locally:
