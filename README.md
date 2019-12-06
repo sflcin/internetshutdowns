@@ -1,6 +1,8 @@
 ## Internet Shutdowns Tracker
 An interactive map of India showing instances of Internet shutdowns by state governments.
 
+### Why do we need to track Internet Shutdowns?
+
 TODO:
 * Document the working of current website
 * comment all code used and clean as much as possible
@@ -8,6 +10,7 @@ TODO:
 * Add the blog section in the menu, redirecting to "blog.internetshutdowns.in"
 * Update Longest shutdown section with the latest content
 * States update in the json
+* Update all the depreciated packages to the latest ones (bower -> yarn, jade -> pug)
 
 
 ## To setup the project locally:
