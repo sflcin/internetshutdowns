@@ -80,8 +80,8 @@ app.get('/resources', function (req, res) {
   res.render('resources');
 });
 
-app.get('/privacy-policy', function (req, res) {
-  res.render('privacy-policy');
+app.get('/policy-tracker', function (req, res) {
+  res.render('policy-tracker');
 });
 
 app.get('/updates', function (req, res) {

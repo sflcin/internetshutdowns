@@ -21,6 +21,8 @@ html
     link(rel="stylesheet", type="text/css", href="vendor/fontawesome/css/font-awesome.css")
     link(rel="stylesheet", type="text/css", href="css/style.css")
     link(rel="stylesheet", type="text/css", href="https://fonts.googleapis.com/css?family=Montserrat:400,700")
+    link(rel="stylesheet", href="css/colorbox.css", type="text/css")
+    link(rel="stylesheet" href="css/timeliner.css" type="text/css")
     script(src="vendor/ractive/ractive.js")
 
   body
@@ -36,4 +38,22 @@ html
       script(src="vendor/leaflet/dist/leaflet.js")
       script(src="vendor/chroma-js/chroma.min.js")
       script(src="vendor/moment/min/moment.min.js")
+      script(src="js/timeliner.js")
+      script(src='js/colorbox.js')
+      script.
+        $(document).ready(function() {
+        $.timeliner({});
+          $.timeliner({
+            timelineContainer: '#timeline',
+            timelineSection: '.timeline-wrapper',
+            timelineSectionMarker: '.timeline-time',
+            oneOpen: true,
+            startState: 'flat',
+            expandAllText: '+ expand all',
+            collapseAllText: '- collapse all'
+          });
+
+          // Colorbox Modal
+          $(".CBmodal").colorbox({inline:true, initialWidth:100, maxWidth:682, initialHeight:100, transition:"elastic",speed:750});
+        });
     //- script(src="/js/app.js")
