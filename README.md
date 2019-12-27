@@ -1,10 +1,51 @@
-## Internet Shutdowns Tracker
+# Internet Shutdowns Tracker
+(Add the build status and twitter and github icon)
 An interactive map of India showing instances of Internet shutdowns by state governments.
 
-> TODO:
+
+History of IST
+ How old is the project, how it started and all.
+
+ABOUT IST
+features and what can you do
+ Report shutdown via our hotline.
+ How to Report the Shutdown
+ Check if your website is reachable using our OONI probe integration
+
+How To setup the project locally
+ Fork the project or download the zip.
+ cd project and start the project local server using `npm start`.
+ The project is available at `localhost:3000`.
+
+CONTRIBUTION
+How can you contribute? Read our contribution guidelines(optional) and documentation to know more about the project structure and development guide.
+ Advocacy
+ Reporting Shutdown 
+ Updating the IST and bug fixes
+
+FAQ
+ What is internet shutdown?
+ WHy do they happen and why do we track them?
+ Read more at our FAQ page.
+
+LICENSE
+
+
+Documentation 
+ Project structure
+ Different components
+ Tech stack and dependencies
+
+Contribution guidelines
+ Coding style guide
+ The preferred method to contribute, create a fork, pr and get it merged.
+ Advocate
+ Report shutdowns
 
 ### Why do we need to track Internet Shutdowns?
+To document all the internet shutdowns imposed by the government and realize the fact that internet, which is a popular medium to express, is controlled by government.
 
+To know more about internet shutdowns, check out our FAQ page [here](https://internetshutdowns.in/about).
 
 ### To setup the project locally:
 The project uses stack including Node, Bower, Express and MongoDB. Follow the steps to setup the project locally:
@@ -23,7 +64,7 @@ The project uses stack including Node, Bower, Express and MongoDB. Follow the st
 
 ### Structure
 The project uses MVC architecture, views are under views directory, model (in separate repository, shutdowns-backend), controller. Development stack includes Node, Express and MongoDB.
-
+https://internetshutdowns.in/about
 The project is primarily an `express` webapp that serves two kinds of pages.
 1. The home page containing the map from `public/index.html`
 2. All Other pages like `/about`, `/resources` which are coded as `pug.js` templates in `/views` directory
@@ -55,12 +96,15 @@ initialized in `public/js/build.js`
 * **Sliding Quote Cards** - rendered using [jQuery Slick.js plugin](http://kenwheeler.github.io/slick/)
 initialized in `public/js/build.dst-curriculmjs'
 
-## Dependencies
+
+### Dependencies
 All pacage dependencies can be installed via `npm install` and are listed in *package.json*.
 
 ## Contribute
 Internet shutdowns frontend is open source and welcomes all types of contributions. The current task to be done should be added to the 'issues'. Make sure you read contributing guidelines to know more about hte contribution workflow and guidelines.
 
 ## License
-The data available on the website including the Shutdown data is under Open Database license (ODbl).
-The project is under AGPLv3 license.
+The data available on the website including the Shutdown data is under Open Database license (ODbl). The project codebase is under AGPLv3 license. Detailed license can be found in [LICENSE](./LICENSE).
+
+
+

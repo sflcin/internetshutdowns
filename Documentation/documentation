@@ -1,0 +1,15 @@
+Documentation
+=============
+The project uses Node, express web development stack and open street map to build the map pointing the internet shutdowns occured in india since January 26, 2012. 
+
+### Project Structure
+
+#### Sections of the Homepage
+
+
+### Map Components
+
+### To update Longest shutdowns
+
+
+Note: Read the comments in the code to understand the purpose of that code section.
