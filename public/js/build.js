@@ -653,3 +653,17 @@ function generateCharts() {
 
 
 },{}]},{},[1]);
+
+// Adding automatic update for longest shutdown in kashmir
+function date_diff(start, end) {
+  var start = new Date(start);
+  var end = new Date(end)
+  var diff = (end.getTime() - start.getTime()) / (1000*60*60*24);
+  return Math.floor(diff);
+}
+
+var kashmir_shutdown_large = document.getElementById('kashmir-shutdown-large');
+var kashmir_shutdown_small = document.getElementById('kashmir-shutdown-small');
+
+kashmir_shutdown_large.innerHTML = date_diff('2019-08-04', Date().toString());
+kashmir_shutdown_small.innerHTML = date_diff('2019-08-04', Date().toString());
