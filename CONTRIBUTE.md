@@ -7,6 +7,11 @@ TODO
 * Adding contribution guidelines button in "What Can I do page"
 * Update the What Can I do page
 
+Contribution guidelines
+ Coding style guide
+ The preferred method to contribute, create a fork, pr and get it merged.
+
+
 
 ### Ways to contribute?
 * Development on the website and bug fixes for Internetshutdowns.in website.
@@ -19,3 +24,11 @@ The project is based on Node, Express web development stack and uses the open st
 
 ### Contact Us
 In case of any help, contact us at our email, github issues or mattermost.
+
+Add community channel
+Twitter
+Facebook
+email
+address
+phone number
+website
