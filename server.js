@@ -88,6 +88,10 @@ app.get('/updates', function (req, res) {
   res.render('updates');
 });
 
+app.get('/testimonials', function (req, res) {
+  res.render('testimonials')
+});
+
 app.post('/shutdown', function (req, res) {
   smtpTransport.sendMail({
     from: process.env.EMAIL_FROM || 'internetshutdowns@sflc.in',
