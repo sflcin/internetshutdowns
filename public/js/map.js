@@ -1,4 +1,4 @@
-mapboxgl.accessToken = 'pk.eyJ1IjoiYXJ1bmFzYW5rIiwiYSI6ImRKNlNQa3MifQ.SIx-g-J1oWWlP4grTXopcg';
+mapboxgl.accessToken = 'pk.eyJ1Ijoic2ZsY2luIiwiYSI6ImNrNWZhY2FjbTJpbGczbGxqcXByeTVxbWUifQ.C7Gq7kt2mtMHGUI7tzhbZQ';
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/arunasank/ciwbud66o004b2pockn08tjkq',
