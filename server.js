@@ -68,6 +68,14 @@ app.get('/about', function (req, res) {
   });
 });
 
+app.get('/downloads', function (req, res) {
+  res.render('downloads')
+});
+
+app.get('/knowledge', function (req, res) {
+  res.render('knowledge')
+});
+
 app.get('/why-care', function (req, res) {
   res.render('why-care');
 });
@@ -76,8 +84,8 @@ app.get('/contribute', function (req, res) {
   res.render('contribute');
 });
 
-app.get('/resources', function (req, res) {
-  res.render('resources');
+app.get('/research', function (req, res) {
+  res.render('research');
 });
 
 app.get('/policy-tracker', function (req, res) {
