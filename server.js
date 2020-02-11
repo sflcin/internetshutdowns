@@ -84,6 +84,10 @@ app.get('/policy-tracker', function (req, res) {
   res.render('policy-tracker');
 });
 
+app.get('/privacy-policy', function (req, res) {
+  res.render('privacy-policy');
+});
+
 app.get('/updates', function (req, res) {
   res.render('updates');
 });
