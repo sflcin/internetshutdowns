@@ -69,7 +69,7 @@ footer a:hover, footer a:focus {
 }
 
 li.dropdown {
-  display: inline-block;
+  display: block;
 }
 
 .dropdown-content {
@@ -93,6 +93,7 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  position: absolute;
 }
 
 section, .navbar {
