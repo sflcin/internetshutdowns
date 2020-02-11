@@ -14,17 +14,22 @@ nav.navbar.navbar-default
       ul.nav.navbar-nav.navbar-right
         li
           a(href='/about') About
-        //-
-          li
-          a(href='https://blog.internetshutdowns.in/', target='_blank') Blog 
         li
-          a(href='/why-care') Why I should care
-        li
-          a(href='/contribute') What can I do
-        li
-          a(href="https://sflc.in/donate" target='_blank') Donate
+          a(href='/testimonials') Testimonials
+        //li
+         // a(href='https://blog.internetshutdowns.in/', target='_blank') Blog 
+        li.dropdown
+          a(href='javascript:void(0)' class='dropbtn') Resources
+          div.dropdown-content
+            a(href="/policy-tracker") Policy Tracker
+            //a(href="/downloads") Downloads
+            //a(href="/knowledge") Knowledge Base
+            a(href="/research") Relevant Research
         li.dropdown
           a(href='javascript:void(0)' class='dropbtn') More
           div.dropdown-content
-            a(href='/resources') Resources
-            a(href='/policy-tracker') Policy Tracker
+            a(href='/why-care') Why I should care
+            a(href='/contribute') What can I do
+        li
+          a(href="https://sflc.in/donate" target='_blank') Donate
+ 
