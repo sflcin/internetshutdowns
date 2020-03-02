@@ -100,8 +100,8 @@ app.get('/updates', function (req, res) {
   res.render('updates');
 });
 
-app.get('/testimonials', function (req, res) {
-  res.render('testimonials')
+app.get('/lost-voices', function (req, res) {
+  res.render('lost-voices')
 });
 
 app.post('/shutdown', function (req, res) {
