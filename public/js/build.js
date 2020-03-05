@@ -662,8 +662,8 @@ function date_diff(start, end) {
   return Math.floor(diff);
 }
 
-var kashmir_shutdown_large = document.getElementById('kashmir-shutdown-large');
-var kashmir_shutdown_small = document.getElementById('kashmir-shutdown-small');
-
-kashmir_shutdown_large.innerHTML = date_diff('2019-08-04', Date().toString());
-kashmir_shutdown_small.innerHTML = date_diff('2019-08-04', Date().toString());
+// Following code was used to automatically update longest shutdown on IST tracker for kashmir
+//var kashmir_shutdown_large = document.getElementById('kashmir-shutdown-large');
+//var kashmir_shutdown_small = document.getElementById('kashmir-shutdown-small');
+//kashmir_shutdown_large.innerHTML = date_diff('2019-08-04', Date().toString());
+//kashmir_shutdown_small.innerHTML = date_diff('2019-08-04', Date().toString());
