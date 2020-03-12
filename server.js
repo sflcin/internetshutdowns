@@ -88,6 +88,10 @@ app.get('/research', function (req, res) {
   res.render('research');
 });
 
+app.get('/in-news', function (req, res) {
+  res.render('in-news');
+});
+
 app.get('/policy-tracker', function (req, res) {
   res.render('policy-tracker');
 });
