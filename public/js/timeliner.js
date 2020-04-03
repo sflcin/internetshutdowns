@@ -100,7 +100,7 @@
                 // value: numeric
                 // default: 4
 
-                fontOpen: options['fontOpen'] || '1.2em',
+                fontOpen: options['fontOpen'] || '1em',//'1.2em',
                 // sets the font size of an event after it is opened
                 // value: any valid CSS font-size value,
                 // default: 1.2em
